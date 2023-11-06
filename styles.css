@@ -196,6 +196,7 @@ canvas {
 }
 
 .desktop {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100%;
