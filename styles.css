@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=DotGothic16&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=DotGothic16&family=Archivo:wght@400;500;600&display=swap");
 
 body {
   height: 100dvh;
@@ -8,7 +8,8 @@ body {
   color: whitesmoke;
   overflow: scroll;
   font-family: "IBM Plex Mono", monospace;
-  --primary-color: #ae3444;
+  --primary-color: rgb(65, 32, 37);
+  --accent-color: rgb(255, 151, 165);
 }
 
 canvas {
@@ -32,12 +33,12 @@ canvas {
 .menu-holder {
   right: 0;
   padding: 1rem;
+  color: black;
 }
 
 .logo-holder {
-  visibility: hidden;
   left: 0;
-  padding-left: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .heading {
@@ -46,8 +47,7 @@ canvas {
 
 .para {
   font-size: 14px;
-  margin-top: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .pixelated {
@@ -60,31 +60,12 @@ canvas {
   font-family: "IBM Plex Mono", monospace;
 }
 
-.scroll-snap {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
-.page {
-  z-index: 10;
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  scroll-snap-align: center;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  max-width: 30rem;
 }
 
 .red-bg {
@@ -92,25 +73,13 @@ canvas {
   width: 100%;
 }
 
-.pattern {
-  width: 100%;
-  position: absolute;
-  bottom: 25%;
-}
-
-.pattern > img {
-  width: 100%;
-  object-fit: cover;
-  transform: scale(1.2);
-}
-
-.content {
-  padding: 1rem;
+#particles-js {
+  padding: 1rem 2.5rem;
   z-index: 20;
-  height: 35%;
+  height: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 .white-bg {
@@ -118,12 +87,12 @@ canvas {
   color: black;
 }
 
-.more-info {
-  width: 100%;
-  height: 7%;
+.content {
+  margin-bottom: 15%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 30;
 }
 
 .black-bg {
@@ -131,86 +100,58 @@ canvas {
   color: white;
 }
 
-.info {
+button {
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  opacity: 100;
+  z-index: 30;
+}
+
+.button-group {
+  display: flex;
+  position: relative;
+  left: -0.5rem;
+}
+
+.cta-button-text {
+  border-radius: 10rem;
+  font-family: "Archivo";
+  font-weight: 400;
+  font-size: 18px;
+  padding: 1rem 2rem;
+}
+
+.cta-button-icon {
+  width: 50px;
+  border-radius: 10rem;
+}
+
+.black-bg {
+  height: 25%;
+  padding: 1rem 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 20;
-}
-
-.info > .heading {
-  flex-basis: 35%;
-  padding: 0 2rem;
-  margin-top: 3.5rem;
-  font-size: 28px;
-  max-width: 15rem;
-}
-
-.info > .para {
-  flex-basis: 20%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 0 2rem;
+  gap: 0.75rem;
 }
-
-.info > .timer {
-  flex-basis: 30%;
-  padding: 0 2rem;
-  background-color: var(--primary-color);
-}
-
-.info > .timer > .larger-text {
-  font-size: 30px;
-}
-
-.info > .timer > .smaller-text {
-  font-size: 16px;
-}
-
-.info > .register {
-  padding: 0 2rem;
-  flex-basis: 15%;
-  background-color: var(--primary-color);
-}
-.info > .register > .larger-text {
+.larger-text {
   font-size: 24px;
-}
-
-.info > .register > .larger-text:active {
-  text-decoration: underline;
 }
 
 .larger-icon {
   font-size: 32px;
 }
 
-.smallerText {
+.smaller-icon {
+  font-size: 20px;
+}
+
+.smaller-text {
   font-size: 24px;
 }
 
 .link-pointer {
   cursor: pointer;
-}
-
-.desktop {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-@media only screen and (min-width: 570px) {
-  .mobile {
-    background-color: lightblue;
-    display: none;
-  }
-  .desktop {
-    display: flex;
-  }
 }
