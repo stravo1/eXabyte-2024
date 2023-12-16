@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=DotGothic16&family=Archivo:wght@400;500;600&display=swap");
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  margin: 0px;
+  background-color: black;
+  color: whitesmoke;
+  overflow: scroll;
+  font-family: "IBM Plex Mono", monospace;
+  --primary-color: #AE3444;
+  --accent-color: rgb(255, 151, 165);
+}
+
+canvas {
+  font-family: "IBM Plex Mono", monospace;
+  position: fixed;
+  z-index: 10;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  user-select: none;
+}
+
+.mobile,
+.desktop {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 850px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
