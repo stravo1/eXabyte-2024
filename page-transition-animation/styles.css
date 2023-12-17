@@ -1,3 +1,5 @@
+@import url("./spinner.css");
+
 .transition-wrapper {
   display: flex;
   position: fixed;
@@ -9,7 +11,7 @@
   align-items: center;
   background-color: black;
   z-index: 101;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .transition-visible {
@@ -47,6 +49,10 @@
 }
 .gap-1rem{
     gap: 1rem;
+}
+
+.opacity-50 {
+    opacity: 50%;
 }
 .spinner {
   -webkit-animation: rotator 1.4s linear infinite;
