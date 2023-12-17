@@ -22,12 +22,12 @@ routesLinks.forEach((node) => {
 })
 
 
-// if (localStorage.getItem("playTransitionAnimation")) {
-//     localStorage.removeItem("playTransitionAnimation");
-//     setTimeout(() => {
-//         transitionWrapper.classList.add("transition-invisible");
-//         transitionWrapper.classList.remove("transition-visible");
-//     }, 250)
-// } else {
-//     transitionWrapper.classList.add("transition-invisible-no-anim");
-// }
+if (localStorage.getItem("playTransitionAnimation")) {
+    localStorage.removeItem("playTransitionAnimation");
+    setTimeout(() => {
+        transitionWrapper.classList.add("transition-invisible");
+        transitionWrapper.classList.remove("transition-visible");
+    }, 250)
+} else {
+    transitionWrapper.classList.add("transition-invisible-no-anim");
+}
