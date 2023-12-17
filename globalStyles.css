@@ -9,6 +9,8 @@ body {
   overflow: scroll;
   font-family: "IBM Plex Mono", monospace;
   --primary-color: #AE3444;
+  --primary-color-text: #FF5F74;
+  --primary-color-text-dark: #611A23;
   --accent-color: rgb(255, 151, 165);
 }
 
