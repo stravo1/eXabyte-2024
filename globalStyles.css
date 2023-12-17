@@ -31,6 +31,26 @@ canvas {
   height: 100dvh;
 }
 
+.pixelated {
+  line-height: 1.5;
+  font-family: "DotGothic16", monospace;
+}
+
+.monospace {
+  line-height: 1.5;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.black-bg {
+  background-color: black;
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+  color: black;
+}
+
 @media only screen and (max-width: 850px) {
   .mobile {
     display: block;

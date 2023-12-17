@@ -33,7 +33,25 @@ closeButton.addEventListener("click", closeMenu);
 
 console.log(window.location.pathname);
 
-switch(path){
+switch (path) {
     case "/":
         home.childNodes[0].classList.add("current-route");
+        break;
+    case "/events/":
+        events.childNodes[0].classList.add("current-route");
+        break;
+    case "/sponsors/":
+        sponsors.childNodes[0].classList.add("current-route");
+        break;
+    case "/magazines/":
+        magazines.childNodes[0].classList.add("current-route");
+        break;
+    case "/contact/":
+        contact.childNodes[0].classList.add("current-route");
+        break;
+    case "/about/":
+        about.childNodes[0].classList.add("current-route");
+        break;
 }
+
+var routesLinks = document.getElementsByClassName("routes-mobile")[0].childNodes

@@ -12,7 +12,7 @@ class CustomMobileMenu extends HTMLElement {
                 close
               </span>
             </div>
-            <div class="routes pixelated">
+            <div class="routes-mobile pixelated">
               <li id="home" class="slides slide-out" style="--i:0"><a href="/">home</a></li>
               <li id="events" style="--i:1"><a href="/events">events</a></li>
               <li id="sponsors"  style="--i:2"><a href="/sponsors">sponsors</a></li>
@@ -20,12 +20,12 @@ class CustomMobileMenu extends HTMLElement {
               <li id="contact" style="--i:4"><a href="/contact">contact us</a></li>
               <li id="about" style="--i:5"><a href="/about">about us</a></li>
             </div>
-            <div class="socials mono">
+            <div class="socials-mobile mono">
               <div class="icons-group">
-                <img src="./assets/insta.svg">
-                <img src="./assets/site.svg">
+                <img src="/assets/insta.svg">
+                <img src="/assets/site.svg">
               </div>
-              <div class="info">
+              <div class="info-mobile">
                 Department of Computer Science
                 <br>
                 St. Xavier's College (Autonomous), Kolkata

@@ -30,7 +30,11 @@ const scrollToNextByte = () => {
 if (localStorage.getItem("fontsCached")) {
     el.classList.remove("hidden-no-anim")
     st.classList.remove("hidden-no-anim")
-    reset()
+    if (window.location.pathname == "/" && !localStorage.getItem("playTransitionAnimation")) {
+        reset();
+    } else {
+        loader.classList.add("hidden-no-anim")
+    }
 }
 
 window.addEventListener("load", () => {

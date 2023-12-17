@@ -34,6 +34,10 @@
 
     <script src="./mobile-menu/component.js"></script>
     <link rel="stylesheet" href="./mobile-menu/style.css" />
+
+    <script src="./page-transition-animation/component.js"></script>
+    <link rel="stylesheet" href="./page-transition-animation/styles.css">
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -49,8 +53,11 @@
     <title>eXabyte</title>
   </head>
   <body>
+
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
+    <custom-page-transition></custom-page-transition>
+
     <div class="mobile">
       <div class="menu-holder link-pointer fixed top-0 right-0 z-100" onclick="openMenu()">
         <span class="material-symbols-outlined smaller-icon">
@@ -132,9 +139,10 @@
       </div>
     </div>
   </body>
-  <script src="./buttonActions.js"></script>
-  <script src="./loading-animation/animate.js"></script>
-  <script src="./mobile-menu/script.js"></script>
+  <script src="/buttonActions.js"></script>
+  <script src="/loading-animation/animate.js"></script>
+  <script src="/mobile-menu/script.js"></script>
+  <script src="/page-transition-animation/script.js"></script>
   <script>
     particlesJS.load(
       "particles-js-mobile",

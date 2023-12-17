@@ -29,16 +29,6 @@
   font-weight: 500;
 }
 
-.pixelated {
-  line-height: 1.5;
-  font-family: "DotGothic16", monospace;
-}
-
-.monospace {
-  line-height: 1.5;
-  font-family: "IBM Plex Mono", monospace;
-}
-
 #particles-js-mobile {
   padding: 1rem 2.5rem;
 }
@@ -54,10 +44,6 @@
 .justify-end {
   justify-content: end;
 }
-.white-bg {
-  background-color: white;
-  color: black;
-}
 
 .margin-bottom-15 {
   margin-bottom: 15%;
@@ -65,11 +51,6 @@
 
 .content {
   gap: 1.5rem;
-}
-
-.black-bg {
-  background-color: black;
-  color: white;
 }
 
 button {
