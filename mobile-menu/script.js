@@ -9,11 +9,14 @@ const magazines = document.getElementById("magazines");
 const contact = document.getElementById("contact");
 const about = document.getElementById("about");
 
+var metaTag = document.querySelector('meta[name="theme-color"]');
+
 function openMenu() {
     menu.classList.remove("menu-invisible");
     home.classList.remove("slide-out");
     menu.classList.add("menu-visible");
     home.classList.add("slide-in");
+    metaTag.setAttribute('content', '#000000');
 }
 
 function closeMenu() {
@@ -21,6 +24,9 @@ function closeMenu() {
     home.classList.add("slide-out");
     menu.classList.remove("menu-visible");
     home.classList.remove("slide-in");
+    setTimeout(() => {
+        metaTag.setAttribute('content', '#ffffff');
+    }, 250);
 }
 
 closeButton.addEventListener("click", closeMenu);
