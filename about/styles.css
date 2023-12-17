@@ -1,0 +1,49 @@
+.top-0 {
+  top: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.menu-holder {
+  padding: 1rem;
+  color: black;
+}
+
+.logo-holder {
+  left: 0;
+  padding: 0.5rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.link-pointer {
+  cursor: pointer;
+}
