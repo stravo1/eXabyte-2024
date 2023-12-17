@@ -1,31 +1,107 @@
 .transition-wrapper {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100dvh;
-    width: 100dvw;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    z-index: 101;
-    font-size: 24px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 101;
+  font-size: 24px;
 }
 
 .transition-visible {
-    visibility: visible;
-    opacity: 100%;
-    transition: all 0.2s ease-in;
+  visibility: visible;
+  opacity: 100%;
+  transition: all 0.2s ease-in;
 }
 
 .transition-invisible {
-    visibility: hidden;
-    opacity: 0%;
-    transition: all 0.2s ease-in;
+  visibility: hidden;
+  opacity: 0%;
+  transition: all 0.2s ease-in;
 }
 
 .transition-invisible-no-anim {
-    visibility: hidden;
-    opacity: 0%;
-    transition: none;
+  visibility: hidden;
+  opacity: 0%;
+  transition: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+.gap-1rem{
+    gap: 1rem;
+}
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+  animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  stroke: #ffffff;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite;
+  animation: dash 1.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
 }
