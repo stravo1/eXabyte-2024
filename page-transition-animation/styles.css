@@ -1,4 +1,4 @@
-@import url("./square-loader.css");
+@import url("./domino.css");
 
 .transition-wrapper {
   display: flex;
@@ -32,36 +32,15 @@
   transition: none;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-dir-col {
-  flex-direction: column;
-}
-.gap-1rem{
-    gap: 1rem;
-}
-
-.opacity-50 {
+.bottom-text{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
     opacity: 75%;
 }
 
-.top-0{
-    top: 0;
-}
-.right-50{
-    right: -50%;
-}
-
-.w-100{
-    width: 100%;
+.domino{
+    opacity: 75%;
 }
