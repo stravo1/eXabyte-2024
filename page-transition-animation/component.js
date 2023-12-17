@@ -7,19 +7,12 @@ class CustomPageTransition extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <div class="transition-wrapper transition-visible">
-                <div class="pixelated flex gap-1rem justify-center items-center">
-                  <div class="ispinner">
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                  </div>
-                  <span class="opacity-50">eXabyte '24</span>
-                </div>
+              <div class="top-0 w-100 fixed right-50">
+                <div class="dot-floating"></div>
+              </div>
+              <div class="pixelated flex gap-1rem justify-center items-center opacity-50">
+                  eXabyte '24
+              </div>
             </div>
           `
   }

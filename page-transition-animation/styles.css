@@ -1,4 +1,5 @@
 @import url("./spinner.css");
+@import url("./dots.css");
 
 .transition-wrapper {
   display: flex;
@@ -52,7 +53,22 @@
 }
 
 .opacity-50 {
-    opacity: 50%;
+    opacity: 75%;
+}
+
+.top-0{
+    top: 0;
+}
+.right-50{
+    right: -50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
 }
 .spinner {
   -webkit-animation: rotator 1.4s linear infinite;
