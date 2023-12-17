@@ -7,11 +7,8 @@ class CustomPageTransition extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <div class="transition-wrapper transition-visible">
-              <div class="top-0 w-100 fixed right-50">
-                <div class="dot-floating"></div>
-              </div>
               <div class="pixelated flex gap-1rem justify-center items-center opacity-50">
-                  eXabyte '24
+                <span class="square-loader"><span class="square-loader-inner"></span></span>eXabyte '24
               </div>
             </div>
           `
