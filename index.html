@@ -29,14 +29,17 @@
     />
     <meta name="theme-color" content="#ffffff" />
 
-    <script src="./loading-animation/component.js"></script>
-    <link rel="stylesheet" href="./loading-animation/styles.css" />
+    <script src="/custom-tags/loading-animation/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/loading-animation/styles.css" />
 
-    <script src="./mobile-menu/component.js"></script>
-    <link rel="stylesheet" href="./mobile-menu/style.css" />
+    <script src="/custom-tags/mobile-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
-    <script src="./page-transition-animation/component.js"></script>
-    <link rel="stylesheet" href="./page-transition-animation/styles.css">
+    <script src="/custom-tags/page-transition-animation/component.js"></script>
+    <link
+      rel="stylesheet"
+      href="/custom-tags/page-transition-animation/styles.css"
+    />
 
     <link
       rel="stylesheet"
@@ -53,16 +56,16 @@
     <title>eXabyte</title>
   </head>
   <body>
-
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
 
     <div class="mobile">
-      <div class="menu-holder link-pointer fixed top-0 right-0 z-100" onclick="openMenu()">
-        <span class="material-symbols-outlined smaller-icon">
-          menu
-        </span>
+      <div
+        class="menu-holder link-pointer fixed top-0 right-0 z-100"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
         <img src="./assets/logo-dark.png" width="50px" alt="" srcset="" />
@@ -140,9 +143,9 @@
     </div>
   </body>
   <script src="/buttonActions.js"></script>
-  <script src="/loading-animation/animate.js"></script>
-  <script src="/mobile-menu/script.js"></script>
-  <script src="/page-transition-animation/script.js"></script>
+  <script src="/custom-tags/loading-animation/animate.js"></script>
+  <script src="/custom-tags/mobile-menu/script.js"></script>
+  <script src="/custom-tags/page-transition-animation/script.js"></script>
   <script>
     particlesJS.load(
       "particles-js-mobile",
