@@ -72,7 +72,7 @@ root
 ### Custom Tags Usage
 - In the pages that require a certain custom tag (say mobile-menu), in the head section of the page include the `/custom-tags/mobile-menu/component.js`, this script registers the custom tag for that page. 
 - Also import the `/custom-tags/mobile-menu/styles.css`, this contains the styles for all the html elements used in the mobile-menu custom tag.
-- Right after the `<body>` tag, place the custom tags like
+- Right after the `<body>` tag, place the custom tags (except for `<custom-desktop-menu>`) like
     ```html
     <body>
          <custom-mobile-menu>
@@ -94,8 +94,10 @@ root
          <script src="/custom-tags/loader/animate.js"></script>
     </body>
     ```
+- For the mobile menu, add the menu icon where it is required and add the `onclick="openMenu()"` on that element.
+- For `<custom-desktop-menu />` it needs to be placed in it's expected position (and NOT after the `<body>` tag), also it has a `textColor` attribute which can either be `black` or `white`.
 
-==**IMPORTANT**==: To use the `page-transition-animation` custom tag, the custom tags for nav (both mobile and desktop) need to be included first.
+**⚠️ IMPORTANT ⚠️**: To use the `page-transition-animation` custom tag, the custom tags for nav (both mobile and desktop) need to be included first.
 
 ### CSS Methodology
 The project uses a utility-first CSS methodology like Tailwind CSS. Each tag consists of small, single-purpose utility classes that have been composed together to create layouts and designs. This, although involves a little more effort but, ensures that the CSS is expandable, readable and manageable in the long term and scale.
