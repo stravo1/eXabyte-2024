@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-li > a {
+.route-mobile > a {
   color: white;
   text-decoration: none;
   font-size: 28px;
@@ -81,7 +81,7 @@ li > a {
 }
 
 .current-route {
-  color: var(--primary-color-text);
+  color: var(--primary-color-text) !important;
 }
 
 .slide-in{

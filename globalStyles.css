@@ -6,7 +6,6 @@ body {
   margin: 0px;
   background-color: black;
   color: whitesmoke;
-  overflow: scroll;
   font-family: "IBM Plex Mono", monospace;
   --primary-color: #AE3444;
   --primary-color-text: #FF5F74;

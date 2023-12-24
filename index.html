@@ -35,6 +35,9 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
@@ -57,7 +60,7 @@
   </head>
   <body>
     <custom-mobile-menu></custom-mobile-menu>
-    <custom-loader></custom-loader>
+    <!-- <custom-loader></custom-loader> -->
     <custom-page-transition></custom-page-transition>
 
     <div class="mobile">
@@ -99,6 +102,12 @@
       </div>
     </div>
     <div class="desktop">
+      <div class="menu-holder link-pointer fixed top-0 right-0 z-100">
+        <custom-desktop-menu textColor="black" />
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
+      </div>
       <div class="horizontal-split flex width-100 height-100">
         <div
           class="primary-color-bg relative width-33 height-100 overflow-hidden"
@@ -145,6 +154,7 @@
   <script src="/buttonActions.js"></script>
   <script src="/custom-tags/loading-animation/animate.js"></script>
   <script src="/custom-tags/mobile-menu/script.js"></script>
+  <script src="/custom-tags/desktop-menu/script.js"></script>
   <script src="/custom-tags/page-transition-animation/script.js"></script>
   <script>
     particlesJS.load(
