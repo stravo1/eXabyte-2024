@@ -35,6 +35,9 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
@@ -57,7 +60,9 @@
     <custom-page-transition></custom-page-transition>
 
     <div class="desktop">
-      
+      <div class="menu-holder link-pointer fixed top-0 right-0 z-100">
+        <custom-desktop-menu/>
+      </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
         <a href="/"><img src="/assets/logo-bright.png" width="50px" alt="" srcset="" /></a>
       </div>
@@ -335,6 +340,7 @@
 
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
+    <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
 
   </body>
