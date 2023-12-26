@@ -51,6 +51,10 @@ body {
   width: 33%;
 }
 
+.width-63 {
+  width: 63%;
+}
+
 .width-67 {
   width: 67%;
 }
@@ -119,7 +123,6 @@ body {
   background: black;
 }
 
-
 /* Mobile mode */
 
 @media screen and (max-width: 850px) {
@@ -170,14 +173,14 @@ body {
   filter: grayscale(0.9);
 }
 
-.brand-name, .sponsor-title {
+.brand-name,
+.sponsor-title {
   margin-bottom: 5px;
 }
 .brand-name {
   font-size: 1.4rem;
   font-weight: bold;
 }
-
 
 /* Desktop mode */
 
@@ -197,7 +200,6 @@ body {
   }
   ::-webkit-scrollbar-thumb:active {
     background: rgb(42, 47, 49);
-    
   }
 }
 
@@ -207,7 +209,9 @@ body {
   background: var(--primary-color);
 }
 
-.LHS header, .LHS p, .socials-desktop {
+.LHS header,
+.LHS p,
+.socials-desktop {
   padding: 0 40px;
 }
 
@@ -241,7 +245,8 @@ body {
   padding: 0 60px;
 }
 
-.brand-name-desktop, .sponsor-title-desktop {
+.brand-name-desktop,
+.sponsor-title-desktop {
   margin-bottom: 5px;
 }
 .brand-name-desktop {
@@ -279,7 +284,8 @@ body {
   font-size: 1.3rem;
 }
 
-.bigger-card > .brand-name-desktop, .bigger-card > .sponsor-title-desktop {
+.bigger-card > .brand-name-desktop,
+.bigger-card > .sponsor-title-desktop {
   width: fit-content;
   margin: 5px auto;
   padding: 0 15px;
@@ -287,7 +293,8 @@ body {
   justify-content: center;
 }
 
-.bigger-card > .brand-name-desktop span, .bigger-card > .sponsor-title-desktop span {
+.bigger-card > .brand-name-desktop span,
+.bigger-card > .sponsor-title-desktop span {
   font-weight: bold;
   position: relative;
   z-index: 1;
@@ -313,9 +320,18 @@ body {
 .sponsor-card:hover > div > .highlighter {
   height: 45%;
   opacity: 1;
-  }
-  
+}
+
 .sponsor-card:hover > .brand-logo-desktop {
   transform: scale(1.15);
   box-shadow: 0 0 30px rgb(141, 63, 219);
+}
+
+.transparent-glass-bg {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
 }
