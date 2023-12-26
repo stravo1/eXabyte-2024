@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -15,6 +19,10 @@ body {
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .left-0 {
@@ -125,29 +133,29 @@ body {
 
 /* Mobile mode */
 
-@media screen and (max-width: 850px) {
-  html {
-    overflow-y: scroll;
-  }
-}
-
 .top-section {
   background: var(--primary-color);
+  min-height: 250px;
+  transition: 0.3s;
 }
 
 .top-section header {
-  height: 23vh;
+  height: 55px;
   font-size: 2.5rem;
-  padding: 0 40px 20px;
+  padding: 0 0 0 40px;
   background: var(--primary-color);
+  transition: 0.2s ease font-size, 0.1s padding, top 0.3s linear;
 }
 .top-section p {
-  padding: 0 40px;
+  margin: 0;
+  padding: 10px 40px;
+  background: var(--primary-color);
 }
 
 .sponsor-items {
   gap: 1rem;
   padding: 70px 0px 40px;
+  transition: 0.3s;
 }
 .sponsor-items header {
   font-size: 2rem;
