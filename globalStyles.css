@@ -15,7 +15,8 @@ body {
 
 canvas {
   font-family: "IBM Plex Mono", monospace;
-  position: fixed;
+  position: absolute;
+  width: 100%;
   z-index: 10;
 }
 
