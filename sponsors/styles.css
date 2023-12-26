@@ -201,6 +201,8 @@ body {
   }
 }
 
+/* Body elements styling */
+
 .LHS {
   background: var(--primary-color);
 }
@@ -234,46 +236,61 @@ body {
   padding-bottom: 30px;
 }
 
-.desktop {
-  .brand-logo {
-    height: 150px;
-    width: 230px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-  }
-  .partners {
-    padding: 0 60px;
-  }
-  .sponsor-title {
-    width: 230px;
-    margin: auto;
-  }
+.partners-desktop {
+  gap: 2rem;
+  padding: 0 60px;
+}
+
+.brand-name-desktop, .sponsor-title-desktop {
+  margin-bottom: 5px;
+}
+.brand-name-desktop {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.sponsor-title-desktop {
+  width: 230px;
+  margin: auto;
+}
+
+.brand-logo-desktop {
+  height: 150px;
+  width: 230px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  transition: 0.3s ease;
 }
 
 .bigger-card {
   margin-bottom: 20px;
-  .brand-logo {
-    height: 200px;
-    width: 300px;
-  }
-  .brand-name {
-    font-size: 2rem;
-  }
-  .sponsor-title {
-    font-size: 1.3rem;
-  }
-  .brand-name, .sponsor-title {
-    width: fit-content;
-    margin: 5px auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-  }
-  .brand-name span, .sponsor-title span {
-    position: relative;
-    z-index: 1;
-    font-weight: bold;
-  }
+}
+
+.bigger-card > .brand-logo-desktop {
+  height: 200px;
+  width: 300px;
+}
+
+.bigger-card > .brand-name-desktop {
+  font-size: 2rem;
+}
+
+.bigger-card > .sponsor-title-desktop {
+  font-size: 1.3rem;
+}
+
+.bigger-card > .brand-name-desktop, .bigger-card > .sponsor-title-desktop {
+  width: fit-content;
+  margin: 5px auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.bigger-card > .brand-name-desktop span, .bigger-card > .sponsor-title-desktop span {
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .highlighter {
@@ -283,7 +300,7 @@ body {
   height: 0px;
   opacity: 0;
   z-index: 0;
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
 }
 
 .hl-1 {
@@ -293,13 +310,12 @@ body {
   background: rgb(96, 66, 230);
 }
 
-.desktop .sponsor-card:hover {
-  .highlighter {
-    height: 45%;
-    opacity: 1;
+.sponsor-card:hover > div > .highlighter {
+  height: 45%;
+  opacity: 1;
   }
-  .brand-logo {
-    transform: scale(1.15);
-    box-shadow: 0 0 30px rgb(141, 63, 219);
-  }
+  
+.sponsor-card:hover > .brand-logo-desktop {
+  transform: scale(1.15);
+  box-shadow: 0 0 30px rgb(141, 63, 219);
 }
