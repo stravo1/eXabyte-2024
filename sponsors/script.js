@@ -17,7 +17,7 @@ const resetPositions = () => {
     sponsorSection.style.paddingTop = "70px";
 }
 
-window.addEventListener("wheel", function () {
+window.addEventListener("scroll", function () {
     let msgPositionFromTop = msg.getBoundingClientRect().top;
     console.log(msgPositionFromTop);
     if (msg.style.paddingTop == "65px") {
