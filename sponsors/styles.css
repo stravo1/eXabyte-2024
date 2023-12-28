@@ -136,20 +136,22 @@ body {
 .top-section {
   background: var(--primary-color);
   min-height: 250px;
-  transition: 0.3s;
+  transition: 0.1s ease-in-out;
 }
 
 .top-section header {
-  height: 55px;
+  height: 60px;
   font-size: 2.5rem;
   padding: 0 0 0 40px;
   background: var(--primary-color);
-  transition: 0.2s ease font-size, 0.1s padding, top 0.3s linear;
+  box-shadow: 0 0 0 black;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, box-shadow 1s linear;
 }
 .top-section p {
   margin: 0;
   padding: 10px 40px;
   background: var(--primary-color);
+  transition: 0.8s;
 }
 
 .sponsor-items {
