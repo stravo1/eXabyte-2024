@@ -20,55 +20,6 @@ body
   height:10dvh;
 
 }
-.top-0 {
-  top: 0;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.right-0 {
-  right: 0;
-}
-
-.menu-holder {
-  padding: 1rem;
-  color: black;
-}
-
-.logo-holder {
-  left: 0;
-  padding: 0.5rem 1rem;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-dir-col {
-  flex-direction: column;
-}
-
-.width-100 {
-  width: 100%;
-}
-
-.height-100 {
-  height: 100%;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.link-pointer {
-  cursor: pointer;
-}
 
 * {
     box-sizing: border-box;
@@ -203,7 +154,26 @@ body
     background: black;
   }
     
-
+  .material-symbols-outlined
+{
+  position: absolute;
+  left:4px;
+  top:3px;
+  font-size: 30px;
+}
+  .ellipseshape
+  {
+    position: relative;
+    left:17vw;
+    bottom:8vh;
+    display:flex;
+    margin-left: 12px;
+    width: 2vw;
+    height: 2vw;
+    align-content: end;
+    background-color: #FF5F74;
+    border-radius: 50%;
+  }
   
   /* Desktop mode */
   
@@ -280,7 +250,7 @@ body
     top:20px;
     left:10px;
   }
-  .registerbtn1 
+  .registerbtn1 button
 {
   position: relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -288,15 +258,102 @@ body
   border:0;
   outline:0;
   padding:15px 40px;
-  top:200px;
   border-radius: 30px;
   color:white;
   background-color: #AE3444;
   cursor: pointer;
 }
+.registerbtn1 button:hover
+{
+  background-color: WHITE;
+  transition-duration: 2s;
+  color:#AE3444;
+  border: solid 1px #AE3444;
+}
+.registerbtn2 button
+{
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  border:0;
+  outline:0;
+  padding:15px 40px;
+  top:7vh;
+  left:30px;
+  border-radius: 30px;
+  color:white;
+  background-color: #AE3444;
+  cursor: pointer;
+}
+.detailsbtn button
+{
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  border: 1px solid #AE3444;
+  outline:0;
+  border-radius: 30px;
+  padding:15px 40px;
+  color:#AE3444;
+  background-color: white;
+  cursor: pointer;
+}
+.uppercontent
+{
+  display:flex;
+  position: relative;
+  top:30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.buttons
+{
+  display:flex;
+  position: relative;
+  top:30px;
+  align-items: center;
+  justify-content: space-around;
+}
+.detailsbtn button:hover
+{
+  background-color: #AE3444;
+  transition-duration: 2s;
+  color:white;
+  border: solid 1px #6934ae;
+}
+
+.detailsbtn2 button
+{
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  border: 1px solid #AE3444;
+  outline:0;
+  top:5vh;
+  left:10vw;
+  border-radius: 30px;
+  padding:15px 40px;
+  color:#AE3444;
+  background-color: white;
+  cursor: pointer;
+}
+.detailsbtn2 button:hover
+{
+  background-color: #AE3444;
+  transition-duration: 2s;
+  color:white;
+  border: solid 1px #6934ae;
+}
+.registerbtn2 button:hover
+{
+  background-color: WHITE;
+  transition-duration: 2s;
+  color:#AE3444;
+  border: solid 1px #AE3444;
+}
   .caption
   {
-    top:50px;
+    top:40px;
     left:20px;
     font-size: 16px;
     font-weight: bold;
@@ -309,7 +366,7 @@ body
   
   .event-logo-desktop {
     width:20dvw;
-    height:24dvh;
+    height:28dvh;
     margin-bottom: 20px;
     border-radius: 15px;
     transition: 0.3s ease;
@@ -367,4 +424,37 @@ body
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
   }
-  
+  @media (max-width: 1366px) {
+    .registerbtn1 button{
+      color:white;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    .registerbtn2 button{
+      color:white;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    .detailsbtn button
+    {
+      color:#AE3444;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    .detailsbtn2 button
+    {
+      color:#AE3444;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    .event-logo-desktop {
+      width:24dvw;
+      height:35dvh;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      transition: 0.3s ease;
+      background-color: white;
+    }
+    }
