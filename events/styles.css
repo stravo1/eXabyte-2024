@@ -1,3 +1,25 @@
+body
+{
+  height:100dvh;
+  width: 100dvw;
+  margin:0px;
+  background-color: black;
+  color:whitesmoke;
+  overflow: scroll;
+  font-family: "IBM Plex Mono",monospace;
+  --primary-color:#AE3444;
+  --primary-color-text:#FF5F74;
+  --primary-color-text-dark:#611A23;
+  --accent-color:rgb(255,151,165);
+}
+
+
+
+.favicon img
+{
+  height:10dvh;
+
+}
 .top-0 {
   top: 0;
 }
@@ -47,3 +69,302 @@
 .link-pointer {
   cursor: pointer;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  .top-70 {
+    top: 70px;
+  }
+  
+  .fixed {
+    position: fixed;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .sticky {
+    position: sticky;
+  }
+  
+  .left-0 {
+    left: 0;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .menu-holder {
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .logo-holder {
+    left: 0;
+    padding: 0.5rem 1rem;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-dir-col {
+    flex-direction: column;
+  }
+  
+  .width-33 {
+    width: 33%;
+  }
+  
+  .width-63 {
+    width: 63%;
+  }
+  
+  .width-67 {
+    width: 67%;
+  }
+  
+  .width-100 {
+    width: 100%;
+  }
+  
+  .height-45 {
+    height: 45%;
+  }
+  
+  .height-100 {
+    height: 100%;
+  }
+  
+  .height-screen {
+    height: 100vh;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-end {
+    justify-content: end;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .items-end {
+    align-items: end;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .link-pointer {
+    cursor: pointer;
+  }
+  
+  .z-1 {
+    z-index: 1;
+  }
+  
+  .z-100 {
+    z-index: 100;
+  }
+  
+  .padding-bottom-16 {
+    padding-bottom: 16px;
+  }
+  
+  .initial {
+    position: initial;
+  }
+  
+  .bg-black {
+    background: black;
+  }
+    
+
+  
+  /* Desktop mode */
+  
+  /* Scroll Bar styling code: */
+  @media screen and (min-width: 850px) {
+    ::-webkit-scrollbar {
+      background: rgb(0, 0, 0);
+      width: 18px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(59, 60, 61);
+      border: 5px solid rgb(0, 0, 0);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(71, 74, 77);
+    }
+    ::-webkit-scrollbar-thumb:active {
+      background: rgb(42, 47, 49);
+    }
+  }
+  
+  /* Body elements styling */
+  
+  .LHS {
+    background: var(--primary-color);
+  }
+  
+  .LHS header,
+  .LHS p,
+  .socials-desktop {
+    padding: 0 40px;
+  }
+  
+  .LHS header {
+    font-size: 3rem;
+  }
+  
+  .RHS {
+    padding: 80px 0 50px;
+    gap: 1rem;
+  }
+  
+  .RHS header {
+    font-size: 2rem;
+    margin: 25px 0 10px;
+  }
+  
+  .lhs-sect-wrapper {
+    height: 50vh;
+  }
+  
+  .socials-desktop {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  
+  .cardinit {
+    gap: 2.8rem;
+    padding: 0 40px;
+  }
+  
+  .carddetails,
+  .sponsor-title-desktop {
+    margin-bottom: 5px;
+  }
+  .carddetails {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top:20px;
+    left:10px;
+  }
+  .registerbtn1 
+{
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  border:0;
+  outline:0;
+  padding:15px 40px;
+  top:200px;
+  border-radius: 30px;
+  color:white;
+  background-color: #AE3444;
+  cursor: pointer;
+}
+  .caption
+  {
+    top:50px;
+    left:20px;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+  }
+  .sponsor-title-desktop {
+    width: 230px;
+    margin: auto;
+  }
+  
+  .event-logo-desktop {
+    width:20dvw;
+    height:24dvh;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    background-color: white;
+  }
+  
+  .bigger-card {
+    margin-bottom: 20px;
+  }
+  
+  .bigger-card > .event-logo-desktop {
+    height: 200px;
+    width: 300px;
+  }
+  
+  .bigger-card > .carddetails {
+    font-size: 2rem;
+  }
+  
+  .bigger-card > .sponsor-title-desktop {
+    font-size: 1.3rem;
+  }
+  .bigger-card>
+  .bigger-card > .carddetails,
+  .bigger-card > .sponsor-title-desktop {
+    width: fit-content;
+    margin: 5px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bigger-card > .carddetails span,
+  .bigger-card > .sponsor-title-desktop span {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  .cards:hover > div > .highlighter {
+    height: 45%;
+    opacity: 1;
+  }
+  
+  .cards:hover > .event-logo-desktop {
+    transform: scale(1.15);
+  }
+  
+  .transparent-glass-bg {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+  }
+  
