@@ -143,9 +143,7 @@ body {
   height: 60px;
   font-size: 2.5rem;
   padding: 0 0 0 40px;
-  background: var(--primary-color);
-  box-shadow: 0 0 0 black;
-  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, box-shadow 1s linear;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, /* box-shadow 1s linear */;
 }
 .top-section p {
   margin: 0;
@@ -342,6 +340,12 @@ body {
   background: rgba(0, 0, 0, 0.36);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
+.transparent-glass-bg-top {
+  background: rgba(174, 52, 68, 0.9);
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
 }
