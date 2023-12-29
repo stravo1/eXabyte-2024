@@ -13,7 +13,39 @@ body
   --accent-color:rgb(255,151,165);
 }
 
+.top-section {
+  background: var(--primary-color);
+  min-height: 250px;
+  transition: 0.1s ease-in-out;
+}
 
+.top-section header {
+  height: 60px;
+  font-size: 2.5rem;
+  padding: 0 0 0 40px;
+  background: var(--primary-color);
+  box-shadow: 0 0 0 black;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, box-shadow 1s linear;
+}
+.top-section p {
+  margin: 0;
+  padding: 10px 40px;
+  background: var(--primary-color);
+  transition: 0.8s;
+}
+
+.events-items {
+  gap: 1rem;
+  padding: 70px 0px 40px;
+  transition: 0.3s;
+}
+.events-items header {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+.sponsor-card {
+  margin-bottom: 10px;
+}
 
 .favicon img
 {
@@ -270,21 +302,6 @@ body
   color:#AE3444;
   border: solid 1px #AE3444;
 }
-.registerbtn2 button
-{
-  position: relative;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  border:0;
-  outline:0;
-  padding:15px 40px;
-  top:7vh;
-  left:30px;
-  border-radius: 30px;
-  color:white;
-  background-color: #AE3444;
-  cursor: pointer;
-}
 .detailsbtn button
 {
   position: relative;
@@ -297,14 +314,6 @@ body
   color:#AE3444;
   background-color: white;
   cursor: pointer;
-}
-.uppercontent
-{
-  display:flex;
-  position: relative;
-  top:30px;
-  align-items: center;
-  justify-content: space-around;
 }
 .buttons
 {
@@ -358,6 +367,8 @@ body
     font-size: 16px;
     font-weight: bold;
     color:black;
+    text-overflow: ellipsis;
+
   }
   .sponsor-title-desktop {
     width: 230px;
@@ -365,19 +376,84 @@ body
   }
   
   .event-logo-desktop {
-    width:20dvw;
-    height:28dvh;
+    width:350px;
+    height:350px;
     margin-bottom: 20px;
     border-radius: 15px;
     transition: 0.3s ease;
     background-color: white;
+    text-overflow: ellipsis;
   }
   
+  /*mobile*/
+  .mregisterbtn button
+  {
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    border:0;
+    outline:0;
+    padding:15px 40px;
+    border-radius: 30px;
+    color:white;
+    background-color: #AE3444;
+    cursor: pointer;
+  }
+  .mregisterbtn button:hover
+  {
+    background-color: WHITE;
+    transition-duration: 2s;
+    color:#AE3444;
+    border: solid 1px #AE3444;
+  }
+  .mdetailsbtn button
+  {
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    border: 1px solid #AE3444;
+    outline:0;
+    border-radius: 30px;
+    padding:15px 40px;
+    color:#AE3444;
+    background-color: white;
+    cursor: pointer;
+  }
+  .buttons
+  {
+    display:flex;
+    position: relative;
+    top:90px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .mdetailsbtn button:hover
+  {
+    background-color: #AE3444;
+    transition-duration: 2s;
+    color:white;
+    border: solid 1px #6934ae;
+  }
+  .event-logo-mobile {
+    width:290px;
+    height:270px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    background-color: white;
+    text-overflow: ellipsis;
+  }
+
   .bigger-card {
     margin-bottom: 20px;
   }
   
   .bigger-card > .event-logo-desktop {
+    height: 200px;
+    width: 300px;
+  }
+
+  .bigger-card > .event-mobile-desktop {
     height: 200px;
     width: 300px;
   }
@@ -457,4 +533,4 @@ body
       transition: 0.3s ease;
       background-color: white;
     }
-    }
+  }
