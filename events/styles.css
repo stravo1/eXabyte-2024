@@ -189,6 +189,7 @@ body
   .material-symbols-outlined
 {
   position: absolute;
+  color:#611A23;
   left:4px;
   top:3px;
   font-size: 30px;
@@ -207,6 +208,42 @@ body
     border-radius: 50%;
   }
   
+  .mellipseshape
+  {
+    position:relative;
+    display:flex;
+    margin-left: 250px;
+    width: 30px;
+    height: 30px;
+    align-content: end;
+    background-color: #FF5F74;
+    border-radius: 50%;
+  }
+ /*ID'S */
+  #icon1
+  {
+bottom:70px;
+  }
+  #icon2
+  {
+    bottom:110px;
+  }
+  #icon3
+  {
+    bottom:90px;
+  }
+  #icon4
+  {
+    bottom:70px;
+  }
+  #button2
+  {
+    top:45px;
+  }
+  #button3
+  {
+    top:70px
+  }
   /* Desktop mode */
   
   /* Scroll Bar styling code: */
@@ -319,10 +356,17 @@ body
 {
   display:flex;
   position: relative;
-  top:30px;
   align-items: center;
   justify-content: space-around;
 }
+.buttons
+{
+  display:flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .detailsbtn button:hover
 {
   background-color: #AE3444;
@@ -364,7 +408,7 @@ body
   {
     top:40px;
     left:20px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color:black;
     text-overflow: ellipsis;
@@ -402,7 +446,7 @@ body
   .mregisterbtn button:hover
   {
     background-color: WHITE;
-    transition-duration: 2s;
+    transition-duration: 1s;
     color:#AE3444;
     border: solid 1px #AE3444;
   }
@@ -430,7 +474,7 @@ body
   .mdetailsbtn button:hover
   {
     background-color: #AE3444;
-    transition-duration: 2s;
+    transition-duration: 1s;
     color:white;
     border: solid 1px #6934ae;
   }
@@ -443,7 +487,6 @@ body
     background-color: white;
     text-overflow: ellipsis;
   }
-
   .bigger-card {
     margin-bottom: 20px;
   }
