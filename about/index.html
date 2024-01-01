@@ -45,7 +45,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
     <script src="/particles/particles.js"></script>
     <title>About Us | eXabyte '24</title>
@@ -86,13 +86,16 @@
               Lobwo</div>
           </div>
           <div class="card-wrapper-2 flex justify-between items-center">
-            <div class="role">Convenor</div>
+            <div class="role">Public Relations</div>
             <div class="profile-icons-group flex items-center">
-              <a href="tel:+910123456789"><span class="material-symbols-outlined">call</span></a>
-              <a href="mailto:"><span class="material-symbols-outlined">mail</span></a>
-              <div class="social-icons-group relative flex flex-dir-col">
-                <span class="material-symbols-outlined">add_circle</span>
-                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt=""></a>
+              <a id="call" href="tel:+910123456789"><span class="material-symbols-outlined">call</span></a>
+              <div class="more-items relative flex flex-dir-col">
+                <a class="more-item-links" href="mailto:xyz@example.com"><img class="mailbox-icon" src="/assets/logos/mail-outlined.svg" alt="mail"></a>
+                <a class="more-item-links" href="http://" target="_blank" rel="noopener noreferrer"><img class="insta-icon" src="/assets/logos/insta.svg" alt="instagram"></a>
+                <a class="more-item-links" href="http://" target="_blank" rel="noopener noreferrer"><img class="linkedin-icon" src="/assets/logos/linkedin-outlined.svg" alt="linkedin"></a>
+                <div class="embedded-icon" onclick="moreItems()">
+                  <span class="material-symbols-outlined more-items-icon">add_circle</span>
+                </div>
               </div>
             </div>
           </div>

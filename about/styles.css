@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -197,8 +198,10 @@ body {
 
 .card-wrapper-2 {
   color: rgba(0, 0, 0, 0.8);
-  padding: 10px 15px;
+  padding: 5px 15px;
+  height: 50px;
   gap: 1rem;
+  position: relative;
 }
 
 .role {
@@ -209,6 +212,7 @@ body {
 
 .profile-icons-group {
   gap: 5px;
+  /* position: relative; */
 }
 
 .profile-icons-group > a {
@@ -218,21 +222,68 @@ body {
   align-items: center;
 }
 
-.profile-icons-group > a > img {
-  height: 25px;
-  width: 25px;
-}
-
-.social-icons-group > a {
-  position: absolute;
-}
-
 .material-symbols-outlined {
   font-size: 1.6rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.material-symbols-outlined:hover {
-  color: var(--primary-color);
+@media (hover: hover), (-ms-high-contrast:none) {
+  .material-symbols-outlined:hover {
+    color: var(--primary-color);;
+  }
+}
+
+#call {
+  margin-right: 34px;
+}
+
+.more-items {
+  height: 45px;
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border: 4px solid transparent;
+  border-radius: 50px;
+  transition: 0.4s, 0.2s box-shadow;
+}
+
+.more-items > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 5px;
+  transition: .3s;
+  user-select: none;
+}
+
+.more-items > a > img {
+  height: 22px;
+  width: 22px;
+}
+
+
+.embedded-icon {
+  height: 35px;
+  width: 35px;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: .3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.more-items-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
