@@ -201,8 +201,8 @@ body
     bottom:8vh;
     display:flex;
     margin-left: 12px;
-    width: 2vw;
-    height: 2vw;
+    width: 40px;
+    height: 40px;
     align-content: end;
     background-color: #FF5F74;
     border-radius: 50%;
@@ -404,6 +404,27 @@ bottom:70px;
   color:#AE3444;
   border: solid 1px #AE3444;
 }
+#dicon1
+{
+  bottom:70px;
+  left:250px;
+}
+#dicon2
+{
+  left:250px;
+  bottom:105px;
+}
+#dicon3
+{
+  left:250px;
+  bottom:90px;
+}
+#dicon4
+{
+  left:250px;
+  bottom:70px;
+}
+
   .caption
   {
     top:40px;
@@ -420,8 +441,8 @@ bottom:70px;
   }
   
   .event-logo-desktop {
-    width:350px;
-    height:350px;
+    width:320px;
+    height:320px;
     margin-bottom: 20px;
     border-radius: 15px;
     transition: 0.3s ease;
@@ -542,38 +563,4 @@ bottom:70px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
-  }
-  @media (max-width: 1366px) {
-    .registerbtn1 button{
-      color:white;
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-    .registerbtn2 button{
-      color:white;
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-    .detailsbtn button
-    {
-      color:#AE3444;
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-
-    .detailsbtn2 button
-    {
-      color:#AE3444;
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-
-    .event-logo-desktop {
-      width:24dvw;
-      height:35dvh;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      transition: 0.3s ease;
-      background-color: white;
-    }
   }
