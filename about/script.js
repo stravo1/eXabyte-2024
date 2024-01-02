@@ -43,3 +43,10 @@ function moreItems() {
         closeItems();
     c++;
 }
+
+document.addEventListener('click', function(event) {
+    if(event.target.id != 'plus-icon') {
+        closeItems();
+        c++;
+    }
+})
