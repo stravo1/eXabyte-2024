@@ -269,7 +269,7 @@ body {
 }
 
 
-.embedded-icon {
+.plus-icon-wrapper {
   height: 35px;
   width: 35px;
   background: rgb(255, 255, 255);
@@ -280,10 +280,4 @@ body {
   z-index: 1;
   transition: .3s;
   -webkit-tap-highlight-color: transparent;
-}
-
-.more-items-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
