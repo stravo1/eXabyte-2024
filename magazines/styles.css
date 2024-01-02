@@ -144,10 +144,10 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  position: absolute; /* Positioning relative to the parent .banner-container */
-  bottom: 10px; /* Space from the bottom */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
 
 .dot {
