@@ -1,4 +1,5 @@
-let c = 0;
+// Code for plus icon on click action:
+// -- START
 let plus_icon = document.querySelector('#plus-icon');
 let plus_icon_wrapper = document.querySelector('.plus-icon-wrapper');
 let item = document.querySelectorAll('.more-item-links');
@@ -7,6 +8,8 @@ let items_wrapper = document.querySelector('.more-items');
 function openItems() {
     plus_icon.style.transform = "rotate(45deg)";
     plus_icon.style.color = "rgba(255, 255, 255, 0.8)";
+    plus_icon_wrapper.classList.add('open');
+    plus_icon_wrapper.classList.remove('close');
     plus_icon_wrapper.style.background = "var(--primary-color)";
     items_wrapper.style.background = "wheat";
     items_wrapper.style.borderColor = "goldenrod";
@@ -26,6 +29,8 @@ function closeItems() {
     plus_icon.style.transform = "rotate(0deg)";
     plus_icon.style.color = "rgba(0, 0, 0, 0.8)";
     plus_icon_wrapper.style.background = "white";
+    plus_icon_wrapper.classList.add('close');
+    plus_icon_wrapper.classList.remove('open');
     for (i = 0; i < item.length; i++) {
         item[i].style.bottom = "5px";
         item[i].style.opacity = 0;
@@ -37,16 +42,16 @@ function closeItems() {
 }
 
 function moreItems() {
-    if (c % 2 == 0)
+    if (plus_icon_wrapper.className.includes('close'))
         openItems();
     else
         closeItems();
-    c++;
 }
 
 document.addEventListener('click', function(event) {
     if(event.target.id != 'plus-icon') {
         closeItems();
-        c++;
     }
-})
+});
+
+// -- END
