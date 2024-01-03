@@ -40,4 +40,11 @@ window.addEventListener("scroll", function () {
     else {
         resetPositions();
     }
+    setTimeout(() => {
+        let msgPositionFromTop = msg.getBoundingClientRect().top;
+        console.log(msgPositionFromTop);
+        if (msgPositionFromTop > 110) {
+            resetPositions()
+        }
+    }, 100)
 });
