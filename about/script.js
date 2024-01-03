@@ -7,6 +7,8 @@ let items_wrapper = document.querySelectorAll('.more-items');
 function openItems(n) {
     plus_icon[n].style.transform = "rotate(45deg)";
     plus_icon[n].style.color = "rgba(255, 255, 255, 0.8)";
+    plus_icon[n].style.transitionDelay = "0s";
+    plus_icon_wrapper[n].style.transitionDelay = "0s";
     plus_icon_wrapper[n].classList.add('open');
     plus_icon_wrapper[n].classList.remove('close');
     plus_icon_wrapper[n].style.background = "var(--primary-color)";
@@ -18,22 +20,28 @@ function openItems(n) {
         val += 35;
         if (i == 0)
             val = 45;
+        item[i].style.transitionDelay = '0.21s';
         item[i].style.opacity = 1;
         item[i].style.bottom = val + 'px';
     }
     items_wrapper[n].style.height = val + 45 + 'px';
+    items_wrapper[n].style.transitionDelay = "0.12s";
 }
 
 function closeItems(n) {
     plus_icon[n].style.transform = "rotate(0deg)";
     plus_icon[n].style.color = "rgba(0, 0, 0, 0.8)";
+    plus_icon[n].style.transitionDelay = "0.2s";
+    plus_icon_wrapper[n].style.transitionDelay = "0.2s";
     plus_icon_wrapper[n].style.background = "white";
     plus_icon_wrapper[n].classList.add('close');
     plus_icon_wrapper[n].classList.remove('open');
     for (let i = 0; i < item.length; i++) {
+        item[i].style.transitionDelay = '0s';
         item[i].style.bottom = "5px";
         item[i].style.opacity = 0;
     }
+    items_wrapper[n].style.transitionDelay = "0.05s";
     items_wrapper[n].style.height = '45px';
     items_wrapper[n].style.background = "transparent";
     items_wrapper[n].style.borderColor = "transparent";

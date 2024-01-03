@@ -248,7 +248,7 @@ body {
   align-items: center;
   border: 4px solid transparent;
   border-radius: 50px;
-  transition: 0.4s, 0.2s box-shadow;
+  transition: 0.35s, 0.2s box-shadow;
 }
 
 .more-items > a {
@@ -259,7 +259,8 @@ body {
   justify-content: center;
   position: absolute;
   bottom: 5px;
-  transition: .3s;
+  transition: .35s ease;
+  transition-delay: .21s;
   user-select: none;
 }
 
