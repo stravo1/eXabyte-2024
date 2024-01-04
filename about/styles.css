@@ -157,7 +157,17 @@ body {
 
 .middle-section {
   gap: 2rem;
-  padding: 70px 0 40px;
+  padding: 70px 0px 40px;
+}
+.middle-section header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 2rem 10px;
+}
+
+.team-members {
+  gap: 2rem;
+  padding: 0 2rem;
 }
 
 .profile-card {
@@ -230,7 +240,7 @@ body {
 
 @media (hover: hover), (-ms-high-contrast:none) {
   .material-symbols-outlined:hover {
-    color: var(--primary-color);;
+    color: var(--primary-color);
   }
 }
 
