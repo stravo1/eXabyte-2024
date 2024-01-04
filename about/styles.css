@@ -116,6 +116,10 @@ body {
   z-index: 1;
 }
 
+.z-2 {
+  z-index: 2;
+}
+
 .z-100 {
   z-index: 100;
 }
@@ -155,9 +159,25 @@ body {
   transition: 0.8s;
 }
 
+.transparent-glass-bg-top {
+  background: rgba(174, 52, 68, 0.9);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
 .middle-section {
   gap: 2rem;
-  padding: 70px 0 40px;
+  padding: 70px 0px 40px;
+}
+.middle-section header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px 2rem 10px;
+}
+
+.team-members {
+  gap: 2rem;
+  padding: 0 2rem;
 }
 
 .profile-card {
@@ -230,7 +250,7 @@ body {
 
 @media (hover: hover), (-ms-high-contrast:none) {
   .material-symbols-outlined:hover {
-    color: var(--primary-color);;
+    color: var(--primary-color);
   }
 }
 
