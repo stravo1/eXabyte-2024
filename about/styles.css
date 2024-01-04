@@ -116,6 +116,10 @@ body {
   z-index: 1;
 }
 
+.z-2 {
+  z-index: 2;
+}
+
 .z-100 {
   z-index: 100;
 }
@@ -153,6 +157,12 @@ body {
   padding: 10px 40px;
   background: var(--primary-color);
   transition: 0.8s;
+}
+
+.transparent-glass-bg-top {
+  background: rgba(174, 52, 68, 0.9);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
 }
 
 .middle-section {
