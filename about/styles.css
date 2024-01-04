@@ -176,7 +176,7 @@ body {
 }
 
 .team-members {
-  gap: 2rem;
+  gap: 2.2rem;
   padding: 0 2rem;
 }
 
@@ -185,6 +185,10 @@ body {
   border-radius: 20px;
   padding: 3px 3px 0;
   background: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  transition: 0.3s ease, 0.35s bottom;
+  transform: perspective(1px);
 }
 
 .card-wrapper-1 {
@@ -281,7 +285,6 @@ body {
   bottom: 5px;
   transition: .35s ease;
   transition-delay: .21s;
-  user-select: none;
 }
 
 .more-items > a > img {
