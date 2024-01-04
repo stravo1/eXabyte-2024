@@ -92,7 +92,7 @@
 					<div class="swiper-scrollbar"></div>
 				</div>
 				<div class="socials-mobile mono initial  padding-bottom-16">
-					<div class="icons-group"><a href="#"><img src="../assets/insta.svg"></a><a href="#"><img src="../assets/site.svg"></a></div>
+					<div class="icons-group"><a href=""><img src="../assets/insta.svg"></a><a href=""><img src="../assets/site.svg"></a></div>
 					<div class="info-mobile">Department of Computer Science<br>St. Xavier's College (Autonomous), Kolkata</div>
 				</div>
 			</div>
@@ -115,6 +115,11 @@
 				//el: ".swiper-pagination",
 			},*/
 		});
+    </script>
+    <script>
+		if (/Mobi|Android/i.test(navigator.userAgent)) {
+			document.body.classList.add('is-mobile');
+		}
     </script>
 	<script src="script.js"></script>
     <script src="../custom-tags/loading-animation/animate.js"></script>
