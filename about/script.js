@@ -56,6 +56,7 @@ window.addEventListener("scroll", function () {
 let plus_icon = document.querySelectorAll('.plus-icon');
 let plus_icon_wrapper = document.querySelectorAll('.plus-icon-wrapper');
 let items_wrapper = document.querySelectorAll('.more-items');
+let profile_card = document.querySelectorAll('.profile-card');
 
 function openItems(n) {
     plus_icon[n].style.transform = "rotate(45deg)";
@@ -79,6 +80,8 @@ function openItems(n) {
     }
     items_wrapper[n].style.height = val + 45 + 'px';
     items_wrapper[n].style.transitionDelay = "0.12s";
+    profile_card[n].style.bottom = "12px";
+    profile_card[n].style.boxShadow = "rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px"
 }
 
 function closeItems(n) {
@@ -99,6 +102,8 @@ function closeItems(n) {
     items_wrapper[n].style.background = "transparent";
     items_wrapper[n].style.borderColor = "transparent";
     items_wrapper[n].style.boxShadow = '0 0 0';
+    profile_card[n].style.bottom = "0";
+    profile_card[n].style.boxShadow = '0 0 0'
 }
 
 function initItems() {
