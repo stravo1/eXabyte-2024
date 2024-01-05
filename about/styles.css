@@ -305,3 +305,99 @@ body {
   transition: .3s;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Desktop mode (desktop + mobile mode css is combined): */
+
+/* Scroll Bar styling code: */
+@media screen and (min-width: 850px) {
+  ::-webkit-scrollbar {
+    background: rgb(0, 0, 0);
+    width: 18px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(59, 60, 61);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(71, 74, 77);
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: rgb(42, 47, 49);
+  }
+}
+
+/* Body elements styling */
+
+.LHS {
+  background: var(--primary-color);
+}
+
+.LHS header,
+.LHS p,
+.socials-desktop {
+  padding: 0 40px;
+}
+
+.LHS header {
+  font-size: 3rem;
+}
+
+.RHS {
+  padding: 80px 0 50px;
+  gap: 1rem;
+}
+
+.RHS header {
+  font-size: 2rem;
+  margin: 25px 0 10px;
+}
+
+.lhs-sect-wrapper {
+  height: 50vh;
+}
+
+.socials-desktop {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.plus-icon-desktop {
+  width: 25px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.plus-icon-desktop-hover:hover {
+  filter: sepia(1) saturate(100) hue-rotate(40deg);
+}
+
+.phone-number-box {
+  position: absolute;
+  bottom: 54px;
+  right: 4px;
+  text-wrap: nowrap;
+  background: wheat;
+  padding: 10px 15px;
+  border: 4px solid rgb(201, 164, 115);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.show-number {
+  opacity: 1;
+}
+.hide-number {
+  opacity: 0;
+}
+
+.copy-icon {
+  opacity: 0.8;
+}

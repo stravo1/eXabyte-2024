@@ -54,14 +54,16 @@ window.addEventListener("scroll", function () {
 // Code for plus icon on click action:
 // -- START
 let plus_icon = document.querySelectorAll('.plus-icon');
+let plus_icon_desktop = document.querySelectorAll('.plus-icon-desktop')[0];
 let plus_icon_wrapper = document.querySelectorAll('.plus-icon-wrapper');
 let items_wrapper = document.querySelectorAll('.more-items');
 let profile_card = document.querySelectorAll('.profile-card');
 
 function openItems(n) {
     plus_icon[n].style.transform = "rotate(45deg)";
-    plus_icon[n].style.color = "rgba(255, 255, 255, 0.8)";
+    plus_icon[n].style.color = "rgba(255, 255, 255, 0.8) !important";
     plus_icon[n].style.transitionDelay = "0s";
+    plus_icon[n].style.filter = "invert(1)";
     plus_icon_wrapper[n].style.transitionDelay = "0s";
     plus_icon_wrapper[n].classList.add('open');
     plus_icon_wrapper[n].classList.remove('close');
@@ -88,6 +90,7 @@ function closeItems(n) {
     plus_icon[n].style.transform = "rotate(0deg)";
     plus_icon[n].style.color = "rgba(0, 0, 0, 0.8)";
     plus_icon[n].style.transitionDelay = "0.2s";
+    plus_icon[n].style.filter = "invert(0)";
     plus_icon_wrapper[n].style.transitionDelay = "0.2s";
     plus_icon_wrapper[n].style.background = "white";
     plus_icon_wrapper[n].classList.add('close');
@@ -125,8 +128,55 @@ function moreItems(card_number) {
 
 document.addEventListener('click', function (event) {
     if (!event.target.className.includes('plus-icon')) {
-        initItems()   ;
+        initItems();
     }
 });
 
 // -- END
+
+let phone_number_box = document.querySelectorAll('.phone-number-box');
+
+function openBox(n) {
+    phone_number_box[n].classList.remove('hide-number');
+        phone_number_box[n].classList.add('show-number');
+}
+
+function closeBox(n) {
+    phone_number_box[n].classList.add('hide-number');
+    phone_number_box[n].classList.remove('show-number');
+}
+
+function initBox() {
+    for(let i=0; i < phone_number_box.length; i++)
+        closeBox(i);
+}
+
+function phoneBox(card_number) {
+    
+    if(phone_number_box[card_number].className.includes('hide-number')) {
+        initBox();
+        openBox(card_number);
+    }
+    else if(phone_number_box[card_number].className.includes('show-number')) {
+        closeBox(card_number);
+    }
+}
+
+document.addEventListener('click', function (event) {
+    if (!event.target.className.includes('call-icon') && !event.target.className.includes('phone-number-box') && !event.target.className.includes('phone-number') && !event.target.className.includes('copy-icon')) {
+        initBox();
+    }
+});
+
+function copyNumber(card_number) {
+    let copy_icon = document.querySelectorAll('.copy-icon');
+    let phone_number = document.querySelectorAll('.phone-number');
+
+    navigator.clipboard.writeText(phone_number[card_number].innerHTML);
+    setTimeout(() => {
+        copy_icon[card_number].innerHTML = "content_copy";
+        copy_icon[card_number].style.color = "black";
+    }, 1500);
+    copy_icon[card_number].innerHTML = "check_box";
+    copy_icon[card_number].style.color = "green";
+}
