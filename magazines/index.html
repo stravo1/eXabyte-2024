@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
-	<link rel="stylesheet" href="../custom-tags/page-transition-animation/styles.css"/>
+    <link rel="stylesheet" href="../custom-tags/page-transition-animation/styles.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../globalStyles.css" />
-	<link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="../custom-tags/loading-animation/styles.css" />
-	<link rel="stylesheet" href="../custom-tags/mobile-menu/style.css" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../custom-tags/loading-animation/styles.css" />
+    <link rel="stylesheet" href="../custom-tags/mobile-menu/style.css" />
     <link rel="stylesheet" href="../custom-tags/desktop-menu/style.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="../custom-tags/loading-animation/component.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="../custom-tags/loading-animation/component.js"></script>
     <script src="../custom-tags/mobile-menu/component.js"></script>
     <script src="../custom-tags/desktop-menu/component.js"></script>
     <script src="../custom-tags/page-transition-animation/component.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<title>X-Cryptus | eXabyte '24</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>X-Cryptus | eXabyte '24</title>
 </head>
 <body>
     <custom-mobile-menu></custom-mobile-menu>
@@ -34,31 +34,32 @@
 		<div class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg">
 			<custom-desktop-menu></custom-desktop-menu>
 		</div>
-		<div class="horizontal-split flex width-100 height-100">
-			<div class="primary-color-bg relative width-33 height-100 flex justify-center items-center flex-dir-col">
-					<a href=""><img src="../assets/logo-bright.png" alt="Web Logo" class="logo-icon-exa" /></a>
-					<div class="text-left mb-3rem">
-						<div class="pixelated text-38px">X-Cryptus</div>
-						<p>Xcryptus is Departmental<br>magazine of Dept. of Computer<br> Science. The latest edition is <br> vol. 4.</p>
-						<p>Don't forget to check out <br>older editions.</p>
+		<div class="logo-holder link-pointer fixed top-0 z-100">
+			<a href="/"><img src="../assets/logo-bright.png" width="50px" alt="" srcset=""></a>
+		</div>
+		<div class="vertical-split flex justify-end">
+			<div class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between" id="particles-js-desktop">
+				<div class="lhs-sect-wrapper flex flex-dir-col justify-end">
+					<header class="pixelated width-100">X-Cryptus</header>
+						<p>Xcryptus is Departmental magazine of Dept. of Computer Science. The latest edition is vol. 4.<br><br>Don't forget to check out older editions.</p>
+				</div>
+				<div class="socials-desktop mono initial z-100">
+					<div class="icons-group">
+						<a href="https://www.instagram.com/exabyte.sxc" target="_blank" class="link-pointer" id="instagram"><img src="../assets/insta.svg"></a>
+						<a href="" target="_blank" class="link-pointer" id="site"><img src="../assets/site.svg"></a>
 					</div>
-					<div class="bottom-text">
-						<a href="#"><img src="../assets/insta.svg" alt="Instagram Logo" class="logo-icon" /></a>
-						<a href="#"><img src="../assets/site.svg" alt="Web Language Logo" class="web-logo-icon" /></a>
-						<p>Postgraduate and Research<br>Department of Computer Science<br>St. Xavier's college (Autonomous), Kolkata</p>
+					<div class="info-desktop">
+						Postgraduate and Research <br> Department of Computer Science <br> St. Xavier's College (Autonomous), Kolkata
 					</div>
+				</div>
 			</div>
-			<div class="vertical-split flex flex-dir-col width-100 height-100">
-				<div class="black-bg-2 height-0 flex flex-dir-col padding-3rem justify-center gap-3rem" id="particles-js-desktop">
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><a href=""><img src="banners/vol1.jpg" alt="Banner 1"/></a></div>
-							<div class="swiper-slide"><a href=""><img src="banners/vol2.jpg" alt="Banner 2"/></a></div>
-							<div class="swiper-slide"><a href=""><img src="banners/vol3.jpg" alt="Banner 3"/></a></div>
-							<div class="swiper-slide"><a href=""><img src="banners/vol4.jpg" alt="Banner 4"/></a></div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-scrollbar"></div>
+			<div class="RHS width-67 height-screen">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href=""><img src="banners/vol1.jpg" alt="Banner 1"/></a></div>
+						<div class="swiper-slide"><a href=""><img src="banners/vol2.jpg" alt="Banner 2"/></a></div>
+						<div class="swiper-slide"><a href=""><img src="banners/vol3.jpg" alt="Banner 3"/></a></div>
+						<div class="swiper-slide"><a href=""><img src="banners/vol4.jpg" alt="Banner 4"/></a></div>
 					</div>
 				</div>
 			</div>
@@ -69,57 +70,53 @@
 		<div class="menu-holder link-pointer fixed top-0 right-0 z-100" onclick="openMenu()">
 			<span class="material-symbols-outlined smaller-icon"> menu </span>
 		</div>
-		<div class="horizontal-split flex width-100 height-38">
-			<div class="primary-color-bg relative width-100 height-33 flex justify-center items-center flex-dir-col">
-			<a href=""><img src="../assets/logo-bright.png" alt="Web Logo" class="logo-icon-exa" /></a>
-				<div class="text-left mb-3rem">
-					<div class="pixelated text-30px">X-Cryptus</div>
-					<p>Xcryptus is Departmental<br>magazine of Dept. of Computer<br> Science. The latest edition is <br> vol. 4.</p>
-					<p>Don't forget to check out <br>older editions.</p>
+		<div class="logo-holder link-pointer fixed top-0 z-100">
+			<a href="/"><img src="../assets/logo-bright.png" width="50px" alt="" srcset=""></a>
+		</div>
+		<div class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative" id="particles-js-mobile">
+			<div class="top-sect-wrapper">
+			  <header id="page-header" class="pixelated width-100 top-0 flex items-center z-1 transparent-glass-bg-top">X-cryptus</header>
+			  <p id="page-msg">Xcryptus is Departmental magazine of Dept. of Computer Science. The latest edition is vol. 4.<br> <br> Don't forget to check out older editions.</p>
+			</div>
+		</div>
+		<div class=" xcryptusmob-items bg-black flex flex-dir-col justify-center items-center">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href=""><img src="banners/vol1.jpg" alt="Banner 1"/></a></div>
+					<div class="swiper-slide"><a href=""><img src="banners/vol2.jpg" alt="Banner 2"/></a></div>
+					<div class="swiper-slide"><a href=""><img src="banners/vol3.jpg" alt="Banner 3"/></a></div>
+					<div class="swiper-slide"><a href=""><img src="banners/vol4.jpg" alt="Banner 4"/></a></div>
 				</div>
 			</div>
 		</div>
-		<div class="vertical-split flex flex-dir-col width-100 height-62">
-			<div class="black-bg-2 width-100 height-77 flex flex-dir-col padding-3rem justify-center gap-3rem" id="particles-js-desktop">
-				<div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><a href=""><img src="banners/vol1.jpg" alt="Banner 1"/></a></div>
-						<div class="swiper-slide"><a href=""><img src="banners/vol2.jpg" alt="Banner 2"/></a></div>
-						<div class="swiper-slide"><a href=""><img src="banners/vol3.jpg" alt="Banner 3"/></a></div>
-						<div class="swiper-slide"><a href=""><img src="banners/vol4.jpg" alt="Banner 4"/></a></div>
-					</div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-scrollbar"></div>
-				</div>
-				<div class="socials-mobile mono initial  padding-bottom-16">
-					<div class="icons-group"><a href=""><img src="../assets/insta.svg"></a><a href=""><img src="../assets/site.svg"></a></div>
-					<div class="info-mobile">Department of Computer Science<br>St. Xavier's College (Autonomous), Kolkata</div>
-				</div>
-			</div>
+		<div class="socials-mobile mono initial  padding-bottom-16">
+				<div class="icons-group"><a href=""><img src="../assets/insta.svg"></a><a href=""><img src="../assets/site.svg"></a></div>
+				<div class="info-mobile">Department of Computer Science<br>St. Xavier's College (Autonomous), Kolkata</div>
 		</div>
     </div>
 	<script>
-        var swiper = new Swiper('.swiper', {
-            effect: "coverflow",
-			grabCursor: true,
-			centeredSlides: true,
-			slidesPerView: 3,
-			coverflowEffect: {
-				rotate: 50,
-				stretch: 0,
-				depth: 100,
-				modifier: 1,
-				slideShadows: true,
-			},
-			/*pagination: {
-				//el: ".swiper-pagination",
-			},*/
-		});
-    </script>
-    <script>
-		if (/Mobi|Android/i.test(navigator.userAgent)) {
-			document.body.classList.add('is-mobile');
-		}
+        document.addEventListener("DOMContentLoaded", function() {
+        // Initialize Swiper for Desktop
+            var swiperDesktop = new Swiper('.desktop .swiper', {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+            },
+        });
+    
+        // Initialize Swiper for Mobile
+            var swiperMobile = new Swiper('.mobile .swiper', {
+                effect: "cards",
+                grabCursor: true,
+            });
+        });
     </script>
 	<script src="script.js"></script>
     <script src="../custom-tags/loading-animation/animate.js"></script>
@@ -127,4 +124,4 @@
     <script src="../custom-tags/desktop-menu/script.js"></script>
     <script src="../custom-tags/page-transition-animation/script.js"></script>
 </body>
-</html> 
+</html>
