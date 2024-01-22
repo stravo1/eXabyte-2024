@@ -403,3 +403,11 @@ body {
 .copy-icon {
   opacity: 0.8;
 }
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}

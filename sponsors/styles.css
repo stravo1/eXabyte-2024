@@ -353,3 +353,11 @@ body {
 .gap-1rem {
   gap: 1rem;
 }
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
