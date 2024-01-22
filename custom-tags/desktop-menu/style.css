@@ -4,7 +4,8 @@
   z-index: 101;
 }
 
-.routes-desktop, .nav-groups {
+.routes-desktop,
+.nav-groups {
   display: flex;
   gap: 1rem;
 }
@@ -46,14 +47,27 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+  border: none;
 }
 
+.text-black > .nav-group-toggle {
+  color: black;
+}
+
+.text-white > .nav-group-toggle {
+  color: white;
+}
 .current-route::after {
   background-color: var(--primary-color-text) !important;
 }
 
-.underline-on-hover::after {
-  background-color: hsl(0, 0%, 0%);
+.text-black > .underline-on-hover::after {
+  background-color: black;
+}
+
+.text-white > .underline-on-hover::after {
+  background-color: white;
 }
 
 .underline-on-hover {
@@ -66,7 +80,7 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2.5px;
+  height: 2.52px;
   bottom: 0;
   left: 0;
   transform-origin: bottom right;

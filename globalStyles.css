@@ -15,8 +15,10 @@ body {
 
 canvas {
   font-family: "IBM Plex Mono", monospace;
-  position: fixed;
+  position: absolute;
   z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 .material-symbols-outlined {
