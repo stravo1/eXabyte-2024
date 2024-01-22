@@ -184,6 +184,14 @@ body {
   background: black;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
 .material-symbols-outlined {
   position: relative;
   color: #611A23;
@@ -297,9 +305,6 @@ body {
   margin: 25px 0 10px;
 }
 
-.lhs-sect-wrapper {
-  height: 50vh;
-}
 
 .socials-desktop {
   color: rgba(255, 255, 255, 0.7);
