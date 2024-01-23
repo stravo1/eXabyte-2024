@@ -6,7 +6,7 @@ const sponsorDetails = [
             {
                 name: "Brand Name",
                 sponsorType: "Broadband Partner",
-                imageSrc: "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+                imageSrc: "/assets/images/sponsor-logos/ns_primary_logo.png",
             },
             {
                 name: "Brand Name",

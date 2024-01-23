@@ -190,6 +190,10 @@ body {
   font-weight: bold;
 }
 
+img {
+  object-fit: contain;
+  border-radius: 10px;
+}
 /* Desktop mode */
 
 /* Scroll Bar styling code: */
@@ -352,4 +356,12 @@ body {
 
 .gap-1rem {
   gap: 1rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
 }

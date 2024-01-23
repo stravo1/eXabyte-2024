@@ -35,11 +35,17 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
       href="/custom-tags/page-transition-animation/styles.css"
     />
+
+    <script src="/custom-tags/modal/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/modal/styles.css" />
 
     <link
       rel="stylesheet"
@@ -51,11 +57,139 @@
     <link rel="stylesheet" href="/globalStyles.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
+    <custom-modal></custom-modal>
+    <div class="desktop">
+      <div
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+      >
+        <custom-desktop-menu />
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
+      </div>
 
+      <div class="vertical-split flex justify-end h-full">
+        <div
+          class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
+          id="particles-js-desktop"
+        >
+          <div
+            class="lhs-sect-wrapper h-full flex flex-dir-col justify-center mt-2rem"
+          >
+            <header class="pixelated width-100">Events</header>
+            <p>
+              Whether you're a seasoned tech expert or just starting out, we
+              have an event for you.Here's the Rulebook and Schedule.So go ahead
+              and register,see you at runtime!
+            </p>
+          </div>
+
+          <div class="socials-desktop mono initial">
+            <div class="icons-group">
+              <a
+                href="https://www.instagram.com/exabyte.sxc"
+                target="_blank"
+                class="link-pointer"
+                id="instagram"
+              >
+                <img src="/assets/insta.svg" />
+              </a>
+              <a href="" target="_blank" class="link-pointer" id="site">
+                <img src="/assets/site.svg" />
+              </a>
+            </div>
+            <div class="info-desktop">
+              Postgraduate and Research <br />
+              Department of Computer Science
+              <br />
+              St. Xavier's College (Autonomous), Kolkata
+            </div>
+          </div>
+        </div>
+
+        <div class="RHS width-67 flex flex-dir-col justify-center items-center">
+          <div
+            class="cardinit event-items-desktop flex flex-wrap justify-center"
+          >
+            <div class="event-card white-bg rounded">
+              <div class="card-top flex justify-between p-1rem">
+                <div class="pixelated text-lg">Codeplay</div>
+                <div
+                  class="card-symbol flex justify-center items-center circle"
+                >
+                  <span class="material-symbols-outlined"> data_object </span>
+                </div>
+              </div>
+              <div class="card-content p-1rem text-sm font-bold">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora eaque ipsa molestias asperiores.
+              </div>
+              <div class="card-button p-1rem flex justify-between gap-1rem">
+                <button class="filled">Register</button>
+              </div>
+            </div>
+            <div class="event-card white-bg rounded">
+              <div class="card-top flex justify-between p-1rem">
+                <div class="pixelated text-lg">Codeplay</div>
+                <div
+                  class="card-symbol flex justify-center items-center circle"
+                >
+                  <span class="material-symbols-outlined"> data_object </span>
+                </div>
+              </div>
+              <div class="card-content p-1rem text-sm font-bold">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora eaque ipsa molestias asperiores.
+              </div>
+              <div class="card-button p-1rem flex justify-between gap-1rem">
+                <button class="filled">Register</button>
+              </div>
+            </div>
+            <div class="event-card white-bg rounded">
+              <div class="card-top flex justify-between p-1rem">
+                <div class="pixelated text-lg">Codeplay</div>
+                <div
+                  class="card-symbol flex justify-center items-center circle"
+                >
+                  <span class="material-symbols-outlined"> data_object </span>
+                </div>
+              </div>
+              <div class="card-content p-1rem text-sm font-bold">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora eaque ipsa molestias asperiores.
+              </div>
+              <div class="card-button p-1rem flex justify-between gap-1rem">
+                <button class="filled">Register</button>
+              </div>
+            </div>
+            <div class="event-card white-bg rounded self-start">
+              <div class="card-top flex justify-between p-1rem">
+                <div class="pixelated text-lg">Codeplay</div>
+                <div
+                  class="card-symbol flex justify-center items-center circle"
+                >
+                  <span class="material-symbols-outlined"> data_object </span>
+                </div>
+              </div>
+              <div class="card-content p-1rem text-sm font-bold">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempora eaque ipsa molestias asperiores.
+              </div>
+              <div class="card-button p-1rem flex justify-between gap-1rem">
+                <button class="filled">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mobile">
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
@@ -64,16 +198,76 @@
         <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <a href="/"><img src="/assets/logo-dark.png" width="50px" alt="" srcset="" /></a>
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
       </div>
+
       <div
-        class="main flex flex-dir-col width-100 height-100 justify-center items-center pixelated white-bg"
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+        id="particles-js-mobile"
       >
-        Events @ eXabyte '24
+        <div class="top-sect-wrapper mt-2rem">
+          <header
+            id="page-header"
+            class="pixelated width-100 top-0 flex items-center z-1 transparent-glass-bg-top"
+          >
+            Events
+          </header>
+          <p id="page-msg">
+            Whether you're a seasoned tech expert or just starting out, we have
+            an event for you.So go ahead and register,see you at runtime!
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="events-items bg-black flex flex-dir-col justify-center items-center gap-3rem"
+      >
+        <div class="event-card white-bg rounded">
+          <div class="card-top flex justify-between p-1rem">
+            <div class="pixelated text-lg">Codeplay</div>
+            <div class="card-symbol flex justify-center items-center circle">
+              <span class="material-symbols-outlined"> data_object </span>
+            </div>
+          </div>
+          <div class="card-content p-1rem text-sm font-bold">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+            eaque ipsa molestias asperiores.
+          </div>
+          <div class="card-button p-1rem flex justify-between gap-1rem">
+            <button class="filled">Register</button>
+          </div>
+        </div>
+      </div>
+      <div class="socials-mobile mono initial padding-bottom-16">
+        <div class="icons-group">
+          <img src="/assets/insta.svg" />
+          <img src="/assets/site.svg" />
+        </div>
+        <div class="info-mobile">
+          Department of Computer Science
+          <br />
+          St. Xavier's College (Autonomous), Kolkata
+        </div>
       </div>
     </div>
+    <script src="./script.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
+    <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
+    <script src="/custom-tags/modal/script.js"></script>
+
+    <script>
+      particlesJS.load(
+        "particles-js-mobile",
+        "/particles/particlesjs-config-mobile-white.json"
+      );
+      particlesJS.load(
+        "particles-js-desktop",
+        "/particles/particlesjs-config-white.json"
+      );
+    </script>
   </body>
 </html>
