@@ -35,6 +35,9 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
@@ -55,7 +58,103 @@
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
+    <div class="desktop">
+      <div
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+      >
+        <custom-desktop-menu></custom-desktop-menu>
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
+      </div>
 
+      <div class="vertical-split flex justify-end h-full">
+        <div
+          class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
+          id="particles-js-desktop"
+        >
+          <div
+            class="lhs-sect-wrapper h-full flex flex-dir-col justify-center mt-2rem"
+          >
+            <header class="pixelated width-100">Contact Us</header>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus
+              quas voluptate consequatur, ex distinctio placeat numquam dolores
+              in? Minima, perspiciatis?
+            </p>
+          </div>
+
+          <div class="socials-desktop mono initial">
+            <div class="icons-group">
+              <a
+                href="https://www.instagram.com/exabyte.sxc"
+                target="_blank"
+                class="link-pointer"
+                id="instagram"
+              >
+                <img src="/assets/insta.svg" />
+              </a>
+              <a href="" target="_blank" class="link-pointer" id="site">
+                <img src="/assets/site.svg" />
+              </a>
+            </div>
+            <div class="info-desktop">
+              Postgraduate and Research <br />
+              Department of Computer Science
+              <br />
+              St. Xavier's College (Autonomous), Kolkata
+            </div>
+          </div>
+        </div>
+
+        <div class="RHS width-67 flex flex-dir-col justify-center items-center">
+          <div
+            class="cardinit event-items-desktop flex flex-wrap justify-center"
+            style="max-width: 500px; width: 50vw;"
+          >
+            <form class="rounded w-90p pt-6 pb-8 mb-4 mt-1rem">
+              <div class="mb-4">
+                <input
+                  class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-6">
+                <textarea
+                  class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                  id="message"
+                  placeholder="Your Message"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center button-group">
+                <a class="call-button" type="submit">
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1.25rem"
+                  >
+                    call
+                  </span>
+                </a>
+                <button class="submit-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mobile">
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
@@ -64,16 +163,90 @@
         <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <a href="/"><img src="/assets/logo-dark.png" width="50px" alt="" srcset="" /></a>
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
+      </div>
+
+      <div
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+        id="particles-js-mobile"
+      >
+        <div class="top-sect-wrapper mt-2rem">
+          <header
+            id="page-header"
+            class="pixelated width-100 top-0 flex items-center z-1 transparent-glass-bg-top"
+          >
+            Contact Us
+          </header>
+          <p id="page-msg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            eos magnam nam reprehenderit quos cumque.
+          </p>
+        </div>
       </div>
       <div
-        class="main flex flex-dir-col width-100 height-100 justify-center items-center pixelated white-bg"
+        class="bg-black flex flex-dir-col justify-center items-center gap-1rem"
       >
-        Contact Us @ eXabyte '24
+        <div
+          class="main middle-section flex flex-dir-col width-100 height-100 justify-center items-center pixelated"
+        >
+          <form class="rounded w-90p pt-6 pb-8 mb-4 mt-1rem">
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="mb-6">
+              <textarea
+                class="shadow appearance-none border rounded leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+            </div>
+            <div class="flex items-center justify-center button-group">
+              <a class="call-button" type="submit">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-size: 1.25rem"
+                >
+                  call
+                </span>
+              </a>
+              <button class="submit-button" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="socials-mobile mono initial padding-bottom-16">
+          <div class="icons-group">
+            <img src="/assets/insta.svg" />
+            <img src="/assets/site.svg" />
+          </div>
+          <div class="info-mobile">
+            Department of Computer Science
+            <br />
+            St. Xavier's College (Autonomous), Kolkata
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="./script.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
+    <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
   </body>
 </html>

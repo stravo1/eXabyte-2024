@@ -190,6 +190,10 @@ body {
   font-weight: bold;
 }
 
+img {
+  object-fit: contain;
+  border-radius: 10px;
+}
 /* Desktop mode */
 
 /* Scroll Bar styling code: */

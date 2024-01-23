@@ -156,9 +156,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
-
 
 .RHS header {
   font-size: 2rem;
@@ -176,26 +174,30 @@ body {
   padding-bottom: 30px;
 }
 @media (min-width: 850px) {
-	.swiper {
-        border-radius:30px !important;
-		overflow: hidden;
-    }  
-	.swiper-slide {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 30px !important;
-		font-size: 22px;
-		font-weight: bold;
-		color: #fff;
-	}
+  .swiper {
+    border-radius: 30px !important;
+    overflow: hidden;
+    height: 70vh;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px !important;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
 
-	.swiper-slide img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		border-radius: 30px !important;
-	}
+  .swiper-slide img {
+    /* width: 100%; */
+    height: 100%;
+    aspect-ratio: calc(3/4);
+    object-fit: cover;
+    border-radius: 10px !important;
+  }
 }
 
 /* Mobile style */
@@ -225,27 +227,27 @@ body {
   transition: 0.3s;
 }
 @media (max-width: 850px) {
-    .swiper {
-        width: 40vw;
-        height: 30vh;
-        overflow: hidden;
-    }
+  .swiper {
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+  }
 
-    .xcryptusmob-items .swiper-slide {
-        display: flex;
-        justify-content: center;
-        border-radius: 18px;
-        font-size: 18px; 
-        font-weight: bold;
-        color: #fff;
-    }
+  .xcryptusmob-items .swiper-slide {
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
 
-    .xcryptusmob-items .swiper-slide img {
-        object-fit: cover; 
-        width: 100%;
-        height: 100%;
-        border-radius: 18px;
-    }
+  .xcryptusmob-items .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+  }
 }
 .transparent-glass-bg {
   background: rgba(0, 0, 0, 0.36);
@@ -256,7 +258,19 @@ body {
 }
 
 .transparent-glass-bg-top {
-  background: rgba(174, 52, 68, 0.9);
+  background: rgba(174, 52, 68, 0.9) !important;
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
+.initial{
+  position: initial !important;
 }

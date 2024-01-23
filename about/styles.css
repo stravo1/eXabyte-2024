@@ -411,3 +411,16 @@ body {
 .mt-2rem {
   margin-top: 2rem;
 }
+
+.gap-2rem {
+  gap: 2rem;
+}
+
+.transparent-glass-bg {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}

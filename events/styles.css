@@ -192,43 +192,6 @@ body {
   margin-top: 2rem;
 }
 
-.material-symbols-outlined {
-  position: relative;
-  color: #611A23;
-  left:3px;
-  top: 3px;
-  font-size: 30px;
-}
-.ellipseshape .material-symbols-outlined
-{
-  left:7px;
-  top:7px;
-}
-
-.ellipseshape {
-  display:flex;
-  position: relative;
-  left:235px;
-  bottom: 70px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  align-content: end;
-  background-color: #FF5F74;
-  border-radius: 50%;
-}
-
-.mellipseshape {
-  position: relative;
-  display: flex;
-  margin-left: 240px;
-  width: 30px;
-  height: 30px;
-  align-content: end;
-  background-color: #FF5F74;
-  border-radius: 50%;
-}
-
 /*ID'S */
 #icon1 {
   bottom: 70px;
@@ -328,93 +291,6 @@ body {
   left: 10px;
 }
 
-.registerbtn1 button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 0;
-  outline: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  color: white;
-  background-color: #AE3444;
-  cursor: pointer;
-}
-
-.registerbtn1 button:hover {
-  background-color: WHITE;
-  transition-duration: 2s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
-}
-
-.detailsbtn button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.buttons {
-  margin-bottom: 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mbuttons {
-  font-weight: bold;
-  margin-top: 80px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-}
-
-
-.detailsbtn button:hover {
-  background-color: #AE3444;
-  transition-duration: 2s;
-  color: white;
-  border: solid 1px #6934ae;
-}
-
-.detailsbtn2 button {
-  position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  top: 5vh;
-  left: 10vw;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.detailsbtn2 button:hover {
-  background-color: #AE3444;
-  transition-duration: 2s;
-  color: white;
-  border: solid 1px #6934ae;
-}
-
-.registerbtn2 button:hover {
-  background-color: WHITE;
-  transition-duration: 2s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
-}
-
 #dicon2 {
   left: 250px;
   bottom: 105px;
@@ -450,57 +326,7 @@ body {
 }
 
 /*mobile*/
-.carddetails {
-  margin-left: 10px;
-}
 
-.mregisterbtn button {
-  position: relative;
-  display: flex;
-  border: 0;
-  font-weight: bold;
-  outline: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  color: white;
-  background-color: #AE3444;
-  cursor: pointer;
-}
-
-.mregisterbtn button:hover {
-  background-color: WHITE;
-  transition-duration: 1s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
-}
-
-.mdetailsbtn button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.buttons {
-  display: flex;
-  position: relative;
-  top: 90px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mdetailsbtn button:hover {
-  background-color: #AE3444;
-  transition-duration: 1s;
-  color: white;
-  border: solid 1px #6934ae;
-}
 
 .event-logo-mobile {
   width: 290px;
@@ -552,4 +378,77 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
+}
+
+.transparent-glass-bg-top {
+  background: rgba(174, 52, 68, 0.9) !important;
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
+.event-card {
+  width: 270px;
+  height: 230px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.card-symbol {
+  background-color: var(--primary-color-text);
+  padding: 0.25rem;
+}
+
+.circle {
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.gap-1rem {
+  gap: 1rem;
+}
+
+.gap-3rem {
+  gap: 3rem;
+}
+
+.card-button, .card-content {
+  padding-top: 0.5rem;
+}
+.card-button button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.card-button .filled {
+  background-color: var(--primary-color);
+  color: white;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
