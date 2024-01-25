@@ -12,7 +12,7 @@
 
 .menu-holder {
   padding: 1rem;
-  color: black;
+  color: white;
 }
 
 .logo-holder {
@@ -68,8 +68,8 @@ button {
 
 .cta-button-text {
   border-radius: 10rem;
-  font-family: "Archivo";
-  font-weight: 400;
+  font-family: "product_sans";
+  font-weight: 500;
   font-size: 18px;
   padding: 1rem 2rem;
 }
@@ -103,10 +103,6 @@ button {
   cursor: pointer;
 }
 
-.flex {
-  display: flex;
-}
-
 .flex-dir-col {
   flex-direction: column;
 }
@@ -129,6 +125,10 @@ button {
 
 .height-25 {
   height: 25%;
+}
+
+.height-20 {
+  height: 20%;
 }
 
 .relative {
@@ -173,18 +173,6 @@ button {
 
 .gap-3rem {
   gap: 3rem;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .text-20px {

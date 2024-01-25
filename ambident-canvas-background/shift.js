@@ -1,8 +1,6 @@
-// Taken from: https://tympanus.net/Development/AmbientCanvasBackgrounds/index3.html
+let isDesktopForCanvas = window.innerWidth >= 850;
 
-'use strict';
-
-const circleCount = 150;
+const circleCount = isDesktopForCanvas ? 10 : 5;
 const circlePropCount = 8;
 const circlePropsLength = circleCount * circlePropCount;
 const baseSpeed = 0.1;
@@ -15,7 +13,7 @@ const rangeHue = 60;
 const xOff = 0.0015;
 const yOff = 0.0015;
 const zOff = 0.0015;
-const backgroundColor = 'hsla(0,0%,5%,1)';
+const backgroundColor = 'hsla(0,0%,7%,1)';
 
 let container;
 let canvas;
@@ -57,7 +55,8 @@ function initCircle(i) {
   life = 0;
   ttl = baseTTL + rand(rangeTTL);
   radius = baseRadius + rand(rangeRadius);
-  hue = baseHue + n * rangeHue;
+  hue = Math.abs((baseHue * n * rangeHue) % 50) + 150;
+  console.log(hue);
 
   circleProps.set([x, y, vx, vy, life, ttl, radius, hue], i);
 }
@@ -116,13 +115,14 @@ function checkBounds(x, y, radius) {
 }
 
 function createCanvas() {
-  container = document.querySelector('.content--canvas');
+  container = document.querySelector(isDesktopForCanvas ? '.content--canvas-desktop' :  '.content--canvas-mobile');
 	canvas = {
 		a: document.createElement('canvas'),
 		b: document.createElement('canvas')
 	};
 	canvas.b.style = `
 		position: fixed;
+    z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100%;

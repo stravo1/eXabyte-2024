@@ -56,6 +56,7 @@
     <title>Events | eXabyte '24</title>
     <link rel="stylesheet" href="/globalStyles.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cards.css" />
   </head>
 
   <body>
@@ -63,11 +64,17 @@
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
     <custom-modal></custom-modal>
-    <div class="desktop">
+    <div class="desktop overflow-scroll">
+      <div class="background absolute inset-0 w-full h-full">
+        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted>
+          <source src="/assets/videos/desktop-events.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
-        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+        class="menu-holder w-fit link-pointer fixed top-0 right-0 z-100 p-1rem m-1rem flex justify-end rounded glass-white"
       >
-        <custom-desktop-menu />
+        <custom-desktop-menu></custom-desktop-menu>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
         <a href="/"
@@ -75,19 +82,18 @@
         /></a>
       </div>
 
-      <div class="vertical-split flex justify-end h-full">
+      <div class="vertical-split z-3 relative flex justify-end h-full">
         <div
           class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
-          id="particles-js-desktop"
         >
           <div
             class="lhs-sect-wrapper h-full flex flex-dir-col justify-center mt-2rem"
           >
             <header class="pixelated width-100">Events</header>
-            <p>
+            <p class="text-md">
               Whether you're a seasoned tech expert or just starting out, we
-              have an event for you.Here's the Rulebook and Schedule.So go ahead
-              and register,see you at runtime!
+              have an event for you. Here's the Rulebook and Schedule. So go ahead
+              and register, see you at runtime!
             </p>
           </div>
 
@@ -117,80 +123,17 @@
         <div class="RHS width-67 flex flex-dir-col justify-center items-center">
           <div
             class="cardinit event-items-desktop flex flex-wrap justify-center"
-          >
-            <div class="event-card white-bg rounded">
-              <div class="card-top flex justify-between p-1rem">
-                <div class="pixelated text-lg">Codeplay</div>
-                <div
-                  class="card-symbol flex justify-center items-center circle"
-                >
-                  <span class="material-symbols-outlined"> data_object </span>
-                </div>
-              </div>
-              <div class="card-content p-1rem text-sm font-bold">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempora eaque ipsa molestias asperiores.
-              </div>
-              <div class="card-button p-1rem flex justify-between gap-1rem">
-                <button class="filled">Register</button>
-              </div>
-            </div>
-            <div class="event-card white-bg rounded">
-              <div class="card-top flex justify-between p-1rem">
-                <div class="pixelated text-lg">Codeplay</div>
-                <div
-                  class="card-symbol flex justify-center items-center circle"
-                >
-                  <span class="material-symbols-outlined"> data_object </span>
-                </div>
-              </div>
-              <div class="card-content p-1rem text-sm font-bold">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempora eaque ipsa molestias asperiores.
-              </div>
-              <div class="card-button p-1rem flex justify-between gap-1rem">
-                <button class="filled">Register</button>
-              </div>
-            </div>
-            <div class="event-card white-bg rounded">
-              <div class="card-top flex justify-between p-1rem">
-                <div class="pixelated text-lg">Codeplay</div>
-                <div
-                  class="card-symbol flex justify-center items-center circle"
-                >
-                  <span class="material-symbols-outlined"> data_object </span>
-                </div>
-              </div>
-              <div class="card-content p-1rem text-sm font-bold">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempora eaque ipsa molestias asperiores.
-              </div>
-              <div class="card-button p-1rem flex justify-between gap-1rem">
-                <button class="filled">Register</button>
-              </div>
-            </div>
-            <div class="event-card white-bg rounded self-start">
-              <div class="card-top flex justify-between p-1rem">
-                <div class="pixelated text-lg">Codeplay</div>
-                <div
-                  class="card-symbol flex justify-center items-center circle"
-                >
-                  <span class="material-symbols-outlined"> data_object </span>
-                </div>
-              </div>
-              <div class="card-content p-1rem text-sm font-bold">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Tempora eaque ipsa molestias asperiores.
-              </div>
-              <div class="card-button p-1rem flex justify-between gap-1rem">
-                <button class="filled">Register</button>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
       </div>
     </div>
-    <div class="mobile">
+    <div class="mobile relative overflow-scroll">
+      <div class="background fixed inset-0 w-full h-full">
+        <video class="w-full h-full fixed inset-0 z-1 object-cover">
+          <source src="/assets/videos/output.mp4" type="video/mp4" />
+        </video>
+        <div class="fixed inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
         onclick="openMenu()"
@@ -207,14 +150,15 @@
         class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
         id="particles-js-mobile"
       >
+        <div class="inset-0 absolute glass"></div>
         <div class="top-sect-wrapper mt-2rem">
           <header
             id="page-header"
-            class="pixelated width-100 top-0 flex items-center z-1 transparent-glass-bg-top"
+            class="pixelated width-100 top-0 flex items-center z-10 relative"
           >
             Events
           </header>
-          <p id="page-msg">
+          <p id="page-msg" class="z-3 relative">
             Whether you're a seasoned tech expert or just starting out, we have
             an event for you.So go ahead and register,see you at runtime!
           </p>
@@ -222,24 +166,8 @@
       </div>
 
       <div
-        class="events-items bg-black flex flex-dir-col justify-center items-center gap-3rem"
-      >
-        <div class="event-card white-bg rounded">
-          <div class="card-top flex justify-between p-1rem">
-            <div class="pixelated text-lg">Codeplay</div>
-            <div class="card-symbol flex justify-center items-center circle">
-              <span class="material-symbols-outlined"> data_object </span>
-            </div>
-          </div>
-          <div class="card-content p-1rem text-sm font-bold">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-            eaque ipsa molestias asperiores.
-          </div>
-          <div class="card-button p-1rem flex justify-between gap-1rem">
-            <button class="filled">Register</button>
-          </div>
-        </div>
-      </div>
+        class="events-items z-5 relative flex flex-dir-col justify-center items-center gap-3rem"
+      ></div>
       <div class="socials-mobile mono initial padding-bottom-16">
         <div class="icons-group">
           <img src="/assets/insta.svg" />
@@ -259,11 +187,15 @@
     <script src="/custom-tags/page-transition-animation/script.js"></script>
     <script src="/custom-tags/modal/script.js"></script>
 
+    <script src="/ambident-canvas-background/noise.min.js"></script>
+    <script src="/ambident-canvas-background/util.js"></script>
+    <script src="/ambident-canvas-background/shift.js"></script>
+
     <script>
-      particlesJS.load(
-        "particles-js-mobile",
-        "/particles/particlesjs-config-mobile-white.json"
-      );
+      // particlesJS.load(
+      //   "particles-js-mobile",
+      //   "/particles/particlesjs-config-mobile-white.json"
+      // );
       particlesJS.load(
         "particles-js-desktop",
         "/particles/particlesjs-config-white.json"

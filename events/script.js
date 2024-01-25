@@ -15,9 +15,10 @@ const resetPositions = () => {
   topSection.style.height = "45%";
   topSection.style.minHeight = "300px";
   sponsorSection.style.paddingTop = "70px";
+  header.classList.remove("transparent-glass-bg-top");
 };
 
-window.addEventListener("scroll", function () {
+document.querySelector(".mobile").addEventListener("scroll", function () {
   let msgPositionFromTop = msg.getBoundingClientRect().top;
   console.log(msgPositionFromTop);
   if (msg.style.paddingTop == "65px") {
@@ -28,10 +29,13 @@ window.addEventListener("scroll", function () {
   if (msgPositionFromTop < 110) {
     header.style.paddingLeft = "90px";
     header.style.transition =
-      "0.1s font-size, 0.1s padding, top 0.3s linear, 0.3s box-shadow";
+      "0.1s font-size, 0.025s padding, top 0.3s linear, 0.3s box-shadow";
     if (msgPositionFromTop < 85) {
       header.style.fontSize = "1.8rem";
       msg.style.transition = "none";
+    }
+    if (msgPositionFromTop < 55) {
+      header.classList.add("transparent-glass-bg-top");
     }
     if (msgPositionFromTop <= 0) {
       msg.style.paddingTop = "65px";
@@ -59,30 +63,209 @@ const eventDetails = [
     formLink: "https://google.com",
     icon: "data_object",
   },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+
+  {
+    name: "Codeplay",
+    description:
+      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+    modalDescription:
+      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
 ];
 
 let eventSection = document.querySelector(".events-items");
 let eventSectionDesktop = document.querySelector(".event-items-desktop");
 
-eventDetails.forEach((event) => {
-  let newEventDivDeskop = document.createElement("div");
-  newEventDivDeskop.className = "event-card white-bg rounded";
-  newEventDivDeskop.innerHTML = `
-              <div class="card-top flex justify-between p-1rem">
-                <div class="pixelated text-lg">${event.name}</div>
-                <div
-                  class="card-symbol flex justify-center items-center circle"
-                >
-                  <span class="material-symbols-outlined"> ${event.icon} </span>
-                </div>
-              </div>
-              <div class="card-content p-1rem text-sm font-bold">
-                ${event.description}
-              </div>
-              <div class="card-button p-1rem flex justify-between gap-1rem">
-                <button class="filled cursor-pointer" disabled onclick="openModal('${event.name}','${event.modalDescription}','${event.formLink}')">Registration Not Yet Open</button>
-              </div>
+eventDetails.forEach((event, index) => {
+  let newEventDivDesktop = document.createElement("div");
+  newEventDivDesktop.className = "nft relative z-3";
+  newEventDivDesktop.innerHTML = `
+  <div class="main">
+    <img
+      class="tokenImage black-bg"
+      src="/assets/images/events/bytetales1.jpg"
+    />
+    <div class="flex flex-col">
+      <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
+        >Event Name #${index + 1}</span
+      >
+    </div>
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+      harum odit tempore reprehenderit vitae delectus.
+    </p>
+    <hr />
+    <div class="cta flex justify-center">
+      <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
+    </div>
+  </div>
   `;
-  eventSectionDesktop.appendChild(newEventDivDeskop);
-  eventSection.appendChild(newEventDivDeskop);
+  eventSectionDesktop.appendChild(newEventDivDesktop);
+  let newEventDiv = document.createElement("div");
+  newEventDiv.className = "nft relative z-3";
+  newEventDiv.innerHTML = `
+  <div class="main">
+    <img
+      class="tokenImage black-bg"
+      src="/assets/images/events/bytetales1.jpg"
+    />
+    <div class="flex flex-col">
+      <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
+        >Event Name #${index + 1}</span
+      >
+    </div>
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+      harum odit tempore reprehenderit vitae delectus.
+    </p>
+    <hr />
+    <div class="cta flex justify-center">
+      <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
+    </div>
+  </div>
+  `;
+  eventSection.appendChild(newEventDiv);
 });
+
+let video = document.querySelector(".mobile video");
+let videoDesktop = document.querySelector(".desktop video");
+
+let mobileWrapper = document.querySelector(".mobile");
+let desktopWrapper = document.querySelector(".desktop");
+
+let promise;
+let lastScrollPos;
+video.currentTime = 0.5;
+mobileWrapper.addEventListener("scroll", async () => {
+  if (promise) return;
+  promise = true;
+  if (lastScrollPos > mobileWrapper.scrollTop) {
+    setTimeout(() => {
+      video.currentTime =
+        (video.currentTime - 0.05).toFixed(2) < video.currentTime
+          ? (video.currentTime - 0.05).toFixed(2)
+          : video.currentTime;
+      console.log(video.currentTime);
+      promise = false;
+    }, 100);
+  } else {
+    setTimeout(() => {
+      video.currentTime =
+        (video.currentTime + 0.05).toFixed(2) > video.currentTime
+          ? (video.currentTime + 0.05).toFixed(2)
+          : video.currentTime;
+      console.log(video.currentTime);
+      promise = false;
+    }, 100);
+  }
+  lastScrollPos = mobileWrapper.scrollTop;
+});
+
+let promiseDesktop = false;
+let lastScrollPosDesktop;
+videoDesktop.currentTime = 2.5
+videoDesktop.play();
+setTimeout(() => {
+  videoDesktop.pause();
+}, 2500);
+desktopWrapper.addEventListener("scroll", async () => {
+  console.log(99);
+  if (promiseDesktop) return;
+  promiseDesktop = true;
+  if (lastScrollPosDesktop > desktopWrapper.scrollTop) {
+    setTimeout(() => {
+      videoDesktop.currentTime =
+        (videoDesktop.currentTime - 0.3).toFixed(2) < videoDesktop.currentTime
+          ? (videoDesktop.currentTime - 0.3).toFixed(2)
+          : videoDesktop.currentTime;
+      console.log(videoDesktop.currentTime);
+      promiseDesktop = false;
+    }, 75);
+  } else {
+    setTimeout(() => {
+      videoDesktop.currentTime =
+        (videoDesktop.currentTime + 0.3).toFixed(2) > videoDesktop.currentTime
+          ? (videoDesktop.currentTime + 0.3).toFixed(2)
+          : videoDesktop.currentTime;
+      console.log(videoDesktop.currentTime);
+      promiseDesktop = false;
+    }, 75);
+  }
+  lastScrollPosDesktop = desktopWrapper.scrollTop;
+});
+
+// observerForLastCard.observe(document.querySelector(".nft"))

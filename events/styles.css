@@ -1,19 +1,6 @@
-body {
-  height: 100dvh;
-  width: 100dvw;
-  margin: 0px;
-  background-color: black;
-  color: whitesmoke;
-  overflow: scroll;
-  font-family: "IBM Plex Mono", monospace;
-  --primary-color: #AE3444;
-  --primary-color-text: #FF5F74;
-  --primary-color-text-dark: #611A23;
-  --accent-color: rgb(255, 151, 165);
-}
-
 .top-section {
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background-color: rgba(48, 48, 48, 0.421);
   min-height: 250px;
   transition: 0.1s ease-in-out;
 }
@@ -22,15 +9,16 @@ body {
   height: 60px;
   font-size: 2.5rem;
   padding: 0 0 0 40px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   box-shadow: 0 0 0 black;
-  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, box-shadow 1s linear;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear,
+    box-shadow 1s linear;
 }
 
 .top-section p {
   margin: 0;
   padding: 10px 40px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   transition: 0.8s;
 }
 
@@ -47,7 +35,6 @@ body {
 
 .favicon img {
   height: 10dvh;
-
 }
 
 * {
@@ -214,7 +201,7 @@ body {
 }
 
 #button3 {
-  top: 70px
+  top: 70px;
 }
 
 /* Desktop mode */
@@ -244,7 +231,9 @@ body {
 /* Body elements styling */
 
 .LHS {
-  background: var(--primary-color);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .LHS header,
@@ -261,13 +250,13 @@ body {
   padding: 80px 0 50px;
   gap: 1rem;
   margin-top: 120px;
+  height: fit-content;
 }
 
 .RHS header {
   font-size: 2rem;
   margin: 25px 0 10px;
 }
-
 
 .socials-desktop {
   color: rgba(255, 255, 255, 0.7);
@@ -281,12 +270,11 @@ body {
   padding: 0 40px;
 }
 
-
 .carddetails {
   font-size: 2.4rem;
   font-weight: bold;
   color: black;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   top: 20px;
   left: 10px;
 }
@@ -314,7 +302,6 @@ body {
   text-overflow: ellipsis;
 }
 
-
 .event-logo-desktop {
   width: 290px;
   height: 290px;
@@ -326,7 +313,6 @@ body {
 }
 
 /*mobile*/
-
 
 .event-logo-mobile {
   width: 290px;
@@ -342,32 +328,28 @@ body {
   margin-bottom: 20px;
 }
 
-.bigger-card>.event-logo-desktop {
+.bigger-card > .event-logo-desktop {
   height: 200px;
   width: 300px;
 }
 
-.bigger-card>.event-mobile-desktop {
+.bigger-card > .event-mobile-desktop {
   height: 200px;
   width: 300px;
 }
 
-.bigger-card>.carddetails {
+.bigger-card > .carddetails {
   font-size: 2rem;
 }
 
-
-.bigger-card>.bigger-card>.carddetails,
-
-.bigger-card>.carddetails span,
-
-
-.cards:hover>div>.highlighter {
+.bigger-card > .bigger-card > .carddetails,
+.bigger-card > .carddetails span,
+.cards:hover > div > .highlighter {
   height: 45%;
   opacity: 1;
 }
 
-.cards:hover>.event-logo-desktop {
+.cards:hover > .event-logo-desktop {
   transform: scale(1.15);
 }
 
@@ -381,9 +363,10 @@ body {
 }
 
 .transparent-glass-bg-top {
-  background: rgba(174, 52, 68, 0.9) !important;
-  backdrop-filter: blur(5.2px);
-  -webkit-backdrop-filter: blur(5.2px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  /* background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(3px); */
 }
 
 .event-card {
@@ -430,7 +413,8 @@ body {
   gap: 3rem;
 }
 
-.card-button, .card-content {
+.card-button,
+.card-content {
   padding-top: 0.5rem;
 }
 .card-button button {
@@ -451,4 +435,9 @@ body {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.glass-white {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
 }
