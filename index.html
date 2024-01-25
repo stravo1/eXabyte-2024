@@ -78,13 +78,59 @@
       <custom-desktop-menu textColor="black" />
     </div>
     <div class="logo-holder link-pointer fixed top-0 z-100">
-      <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
+      <img src="./assets/x-logo.png" width="55px" alt="" srcset="" />
     </div>
     <main>
+      <section class="intro">
+        <div class="center-graphics main-graphic">
+          <img src="/assets/eXabyte-text-logo.png" alt="">
+          <span class="version">Version 8.0</span>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="about-fest flex items-center justify-center">
+          <div class="info-button absolute flex items-center justify-center" onclick="infoButtonAction()">
+            <span class="info-button-content flex items-center justify-center">i</span>
+            <div class="arc"></div>
+          </div>
+          <div class="about-pop-up">
+            <button class="close-pop-up flex items-center justify-center" onclick="closePopUp()">
+              <span class="material-symbols-outlined">
+                close
+                </span>
+            </button>
+            <div class="about-details-wrapper flex items-center">
+              The 8th edition Annual Technical Festival of St. Xavier's College (Autonomous), Kolkata organized by Department of Computer Science, St. Xavier's College (Autonomous), Kolkata is here.
+            </div>
+          </div>
+        </div>
+
+        <div class="scattered-texts">
+          <span class="text-1 absolute">&lt;html/&gt;</span>
+          <span class="text-2 absolute">JavaScript</span>
+          <span class="text-3 absolute">CSS</span>
+          <span class="text-4 absolute">java</span>
+          <span class="text-5 absolute">C++</span>
+          <span class="text-6 absolute">#python</span>
+          <span class="text-7 absolute">sql.</span>
+          <span class="text-8 absolute">php</span>
+        </div>
+        <div class="timer flex flex-dir-col justify-center">
+          <div class="larger-text">12 - 05 - 30 - 45</div>
+          <div class="mono text-para">See you at runtime!</div>
+        </div>
+        <button class="register-button">
+          <span class="button-content-wrapper">
+            Register Now
+          </span>
+        </button>
+      </section>
       <div class="content content--canvas"></div>
     </main>
   </div>
 </body>
+<script src="/script.js"></script>
 <script src="/buttonActions.js"></script>
 <script src="/custom-tags/loading-animation/animate.js"></script>
 <script src="/custom-tags/mobile-menu/script.js"></script>
