@@ -1,113 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+    <script src="/custom-tags/loading-animation/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/loading-animation/styles.css" />
 
-  <script src="/custom-tags/loading-animation/component.js"></script>
-  <link rel="stylesheet" href="/custom-tags/loading-animation/styles.css" />
+    <script src="/custom-tags/mobile-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
-  <script src="/custom-tags/mobile-menu/component.js"></script>
-  <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
 
-  <script src="/custom-tags/desktop-menu/component.js"></script>
-  <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+    <script src="/custom-tags/page-transition-animation/component.js"></script>
+    <link
+      rel="stylesheet"
+      href="/custom-tags/page-transition-animation/styles.css"
+    />
 
-  <script src="/custom-tags/page-transition-animation/component.js"></script>
-  <link rel="stylesheet" href="/custom-tags/page-transition-animation/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="globalStyles.css" />
+    <link rel="stylesheet" href="terminal.css" />
+    <link rel="stylesheet" href="/ambident-canvas-background/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="./particles/particles.js"></script>
+    <title>eXabyte</title>
+  </head>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="globalStyles.css" />
-  <link rel="stylesheet" href="/ambident-canvas-background/style.css">
-  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon" />
-  <script src="./particles/particles.js"></script>
-  <title>eXabyte</title>
-</head>
+  <body>
+    <custom-mobile-menu></custom-mobile-menu>
+    <!-- <custom-loader></custom-loader> -->
+    <custom-page-transition></custom-page-transition>
 
-<body>
-  <custom-mobile-menu></custom-mobile-menu>
-  <!-- <custom-loader></custom-loader> -->
-  <custom-page-transition></custom-page-transition>
-
-  <div class="mobile">
-    <div class="menu-holder link-pointer fixed top-0 right-0 z-100" onclick="openMenu()">
-      <span class="material-symbols-outlined smaller-icon"> menu </span>
-    </div>
-    <div class="logo-holder link-pointer fixed top-0 z-100">
-      <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
-    </div>
-    <div class="main flex flex-dir-col width-100 height-100">
-      <div class="white-bg height-75 z-20 flex flex-dir-col justify-end relative" id="particles-js-mobile">
-        <div class="content--canvas-mobile"></div>
-        <div class="content flex flex-dir-col z-20 margin-bottom-15 text-white">
-          <div class="pixelated text-2xl">eXabyte '24</div>
-          <div class="sans text-md">
-            The 8th edition Annual Technical Festival of St. Xavier's College
-            (Autonomous), Kolkata organized by Department of Computer Science,
-            St. Xavier's College (Autonomous), Kolkata is here.
-          </div>
-          <div class="button-group flex relative">
-            <button class="cta-button-text">Register Now</button>
-            <button class="cta-button-icon">
-              <span class="material-symbols-outlined smaller-icon">
-                arrow_outward
-              </span>
-            </button>
-          </div>
-        </div>
+    <div class="mobile">
+      <div
+        class="menu-holder link-pointer fixed top-0 right-0 z-100"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
-      <div class="glass flex flex-dir-col justify-center height-20 z-20 p-2rem">
-        <div class="pixelated text-2xl">12th & 13th Feb</div>
-        <div class="mono text-lg">See you at runtime!</div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
       </div>
-    </div>
-  </div>
-
-
-  <div class="desktop">
-    <div class="menu-holder link-pointer fixed top-0 right-0 z-100">
-      <custom-desktop-menu></custom-desktop-menu>
-    </div>
-    <div class="logo-holder link-pointer fixed top-0 z-100">
-      <img src="./assets/x-logo.png" width="55px" alt="" srcset="" />
-    </div>
-    <main>
-      <section class="intro">
-        <div class="center-graphics main-graphic">
-          <img src="/assets/eXabyte-text-logo.png" alt="">
-          <span class="version">Version 8.0</span>
-        </div>
-      </section>
-
-      <section class="info-section">
-        <div class="about-fest flex items-center justify-center">
-          <div class="info-button absolute flex items-center justify-center" onclick="infoButtonAction()">
-            <span class="info-button-content flex items-center justify-center">i</span>
-            <div class="arc"></div>
-          </div>
-          <div class="about-pop-up">
-            <button class="close-pop-up flex items-center justify-center" onclick="closePopUp()">
-              <span class="material-symbols-outlined">
-                close
+      <div class="main flex flex-dir-col width-100 height-100">
+        <div
+          class="white-bg height-75 z-20 flex flex-dir-col justify-end relative"
+          id="particles-js-mobile"
+        >
+          <div class="content--canvas-mobile"></div>
+          <div
+            class="content flex flex-dir-col z-20 margin-bottom-15 text-white"
+          >
+            <div class="pixelated text-2xl">eXabyte '24</div>
+            <div class="sans text-md">
+              The 8th edition Annual Technical Festival of St. Xavier's College
+              (Autonomous), Kolkata organized by Department of Computer Science,
+              St. Xavier's College (Autonomous), Kolkata is here.
+            </div>
+            <div class="button-group flex relative">
+              <button class="cta-button-text">Register Now</button>
+              <button class="cta-button-icon">
+                <span class="material-symbols-outlined smaller-icon">
+                  arrow_outward
                 </span>
-            </button>
-            <div class="about-details-wrapper flex items-center">
-              The 8th edition Annual Technical Festival of St. Xavier's College (Autonomous), Kolkata organized by Department of Computer Science, St. Xavier's College (Autonomous), Kolkata is here.
+              </button>
             </div>
           </div>
         </div>
+        <div
+          class="glass flex flex-dir-col justify-center height-20 z-20 p-2rem"
+        >
+          <div class="pixelated text-2xl">12th & 13th Feb</div>
+          <div class="mono text-lg">See you at runtime!</div>
+        </div>
+      </div>
+    </div>
 
-        <div class="scattered-texts">
+    <div class="desktop">
+      <div class="menu-holder link-pointer fixed top-0 right-0 z-100">
+        <custom-desktop-menu></custom-desktop-menu>
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <img src="./assets/x-logo.png" width="55px" alt="" srcset="" />
+      </div>
+      <main>
+        <section class="intro">
+          <div class="center-graphics main-graphic">
+            <img src="/assets/eXabyte-text-logo.png" alt="" />
+            <span class="version">Version 8.0</span>
+          </div>
+        </section>
+
+        <section class="info-section">
+          <div class="about-fest flex items-center justify-center">
+            <div
+              class="info-button absolute flex items-center justify-center"
+              onclick="infoButtonAction()"
+            >
+              <span class="info-button-content flex items-center justify-center"
+                >i</span
+              >
+              <div class="arc"></div>
+            </div>
+            <div class="about-pop-up">
+              <button
+                class="close-pop-up flex items-center justify-center"
+                onclick="closePopUp()"
+              >
+                <span class="material-symbols-outlined"> close </span>
+              </button>
+              <div class="about-details-wrapper flex items-center">
+                The 8th edition Annual Technical Festival of St. Xavier's
+                College (Autonomous), Kolkata organized by Department of
+                Computer Science, St. Xavier's College (Autonomous), Kolkata is
+                here.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="window" onclick="prompt.input.focus()">
+          <header class="window-header">
+            <nav class="window-controls">
+              <span class="control-item control-minimize js-minimize">‒</span>
+              <span class="control-item control-maximize js-maximize">□</span>
+              <span class="control-item control-close js-close">˟</span>
+            </nav>
+          </header>
+          <main class="window-content">
+            <div class="outputs p-1rem">type :help for more</div>
+            <div class="window-cursor">
+              <span class="i-cursor-indicator" style="margin-right: 0.25rem"
+                >user@exabyte-24$</span
+              >
+              <input
+                type="text"
+                class="window-input js-prompt-input"
+                oninput="setInputWidth(this)"
+                onkeyup="detectEnter(event)"
+              />
+              <span class="i-cursor-underscore"></span>
+            </div>
+          </main>
+        </section>
+        <!-- <div class="scattered-texts">
           <span class="text-1 absolute">&lt;html/&gt;</span>
           <span class="text-2 absolute">JavaScript</span>
           <span class="text-3 absolute">CSS</span>
@@ -125,31 +194,31 @@
           <span class="button-content-wrapper">
             Register Now
           </span>
-        </button>
-      </section>
-      <div class="content content--canvas"></div>
-    </main>
-  </div>
-</body>
-<script src="/script.js"></script>
-<script src="/buttonActions.js"></script>
-<script src="/custom-tags/loading-animation/animate.js"></script>
-<script src="/custom-tags/mobile-menu/script.js"></script>
-<script src="/custom-tags/desktop-menu/script.js"></script>
-<script src="/custom-tags/page-transition-animation/script.js"></script>
+        </button> -->
+        <div class="prompt-shortcut i-prompt hidden js-open"></div>
+        <div class="content content--canvas-desktop"></div>
+      </main>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+  <script src="/buttonActions.js"></script>
+  <script src="/custom-tags/loading-animation/animate.js"></script>
+  <script src="/custom-tags/mobile-menu/script.js"></script>
+  <script src="/custom-tags/desktop-menu/script.js"></script>
+  <script src="/custom-tags/page-transition-animation/script.js"></script>
+  <script src="./terminal.js"></script>
 
-<script src="/ambident-canvas-background/noise.min.js"></script>
-<script src="/ambident-canvas-background/util.js"></script>
-<script src="/ambident-canvas-background/shift.js"></script>
-<script>
-  // particlesJS.load(
-  //   "particles-js-mobile",
-  //   "./particles/particlesjs-config-mobile-white.json"
-  // );
-  // particlesJS.load(
-  //   "particles-js-desktop",
-  //   "./particles/particlesjs-config.json"
-  // );
-</script>
-
+  <script src="/ambident-canvas-background/noise.min.js"></script>
+  <script src="/ambident-canvas-background/util.js"></script>
+  <script src="/ambident-canvas-background/shift.js"></script>
+  <script>
+    // particlesJS.load(
+    //   "particles-js-mobile",
+    //   "./particles/particlesjs-config-mobile-white.json"
+    // );
+    // particlesJS.load(
+    //   "particles-js-desktop",
+    //   "./particles/particlesjs-config.json"
+    // );
+  </script>
 </html>
