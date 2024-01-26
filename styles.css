@@ -2,6 +2,19 @@ body {
   overflow-x: hidden;
 }
 
+body::before {
+  --line: hsl(0 0% 80%);
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background:
+    linear-gradient(90deg, var(--line) 1px, transparent 1px 8vmin) 0 -5vmin / 8vmin 8vmin,
+    linear-gradient(var(--line) 1px, transparent 1px 8vmin) 0 -5vmin / 8vmin 8vmin;
+  mask: radial-gradient(white, transparent);
+  z-index: 3;
+}
+
 .top-0 {
   top: 0;
 }
