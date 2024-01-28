@@ -57,81 +57,81 @@ const eventDetails = [
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Bytetales",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    modalDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
-    formLink: "https://google.com",
-    icon: "data_object",
-  },
-  {
-    name: "Codeplay",
-    description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
-    modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
@@ -139,9 +139,36 @@ const eventDetails = [
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    modalDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    modalDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    formLink: "https://google.com",
+    icon: "data_object",
+  },
+  {
+    name: "Codeplay",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
+    modalDescription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum odit tempore reprehenderit vitae delectus",
     formLink: "https://google.com",
     icon: "data_object",
   },
@@ -161,17 +188,16 @@ eventDetails.forEach((event, index) => {
           />
       <div class="flex flex-col">
         <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
-        >Event Name #${index + 1}</span
+        >${event.name} #${index + 1}</span
         >
       </div>
       <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-      harum odit tempore reprehenderit vitae delectus.
+        ${event.description}
       </p>
-<hr />
+      <hr />
       <div class="cta flex justify-center">
-        <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
-    </div>
+        <span class="text-ms" style="padding: 0.5rem 0; opacity: 50%">Registrations Opening Soon</span>
+      </div>
     </div>
       `;
   eventSectionDesktop.appendChild(newEventDivDesktop);
@@ -185,17 +211,16 @@ eventDetails.forEach((event, index) => {
           />
       <div class="flex flex-col">
         <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
-        >Event Name #${index + 1}</span
+        >${event.name} #${index + 1}</span
         >
       </div>
       <p class="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-      harum odit tempore reprehenderit vitae delectus.
+        ${event.description}
       </p>
-<hr />
+      <hr />
       <div class="cta flex justify-center">
-        <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
-    </div>
+        <span class="text-lg" style="padding: 0.5rem 0; opacity: 50%">Registration Not Yet Open</span>
+      </div>
     </div>
       `;
   eventSection.appendChild(newEventDiv);

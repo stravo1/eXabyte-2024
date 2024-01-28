@@ -23,23 +23,11 @@ const sponsorDetails = [
     ],
   },
   {
-    groupName: "Broadband Partners",
+    groupName: "Broadband Partner",
     sponsorsArray: [
       {
         name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
+        sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
       },
@@ -89,43 +77,26 @@ const sponsorDetails = [
         imageSrc:
           "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
       },
+      
+    ],
+  },
+  {
+    groupName: "Food Partner",
+    sponsorsArray: [
       {
         name: "Brand Name",
-        sponsorType: "Media Partner",
+        sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
       },
     ],
   },
   {
-    groupName: "Food Partners",
+    groupName: "Radio Partner",
     sponsorsArray: [
       {
         name: "Brand Name",
-        sponsorType: "Food Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Food Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-    ],
-  },
-  {
-    groupName: "Radio Partners",
-    sponsorsArray: [
-      {
-        name: "Brand Name",
-        sponsorType: "Radio Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Radio Partner",
+        sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
       },

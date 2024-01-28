@@ -225,6 +225,10 @@ img {
   -webkit-backdrop-filter: blur(7px);
 }
 
+.RHS {
+  margin-top: 120px;
+}
+
 .LHS header,
 .LHS p,
 .socials-desktop {
