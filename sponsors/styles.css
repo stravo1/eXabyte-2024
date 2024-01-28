@@ -220,7 +220,7 @@ img {
 
 .LHS {
   /* background: var(--primary-color); */
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(31, 64, 214, 0.25);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
@@ -368,4 +368,13 @@ img {
 
 .mt-2rem {
   margin-top: 2rem;
+}
+
+.glass-white {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+}
+
+.desktop video {
+  transform: rotate(-90deg);
 }

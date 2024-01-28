@@ -151,6 +151,11 @@ function detectEnter(e) {
         outputWrapper.innerHTML = "";
         commandFound = true;
       }
+      if (prompt.input.value == "exit") {
+        outputWrapper.innerHTML = "";
+        prompt.close()
+        commandFound = true;
+      }
     }
     if (!commandFound) {
       outputWrapper.innerHTML += `<br><br><span class="cmd_err">${prompt.input.value}</span><br>ERROR: Unknown Command`;

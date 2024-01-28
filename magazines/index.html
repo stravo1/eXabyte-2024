@@ -50,6 +50,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <script src="/particles/particles.min.js"></script>
     <script src="../custom-tags/loading-animation/component.js"></script>
     <script src="../custom-tags/mobile-menu/component.js"></script>
     <script src="../custom-tags/desktop-menu/component.js"></script>
@@ -62,8 +64,19 @@
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
     <div class="desktop">
+      <div class="background absolute inset-0 w-full h-full">
+        <video
+          class="w-full h-full absolute inset-0 z-1 object-cover"
+          muted
+          autoplay
+          loop
+        >
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
-        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 m-1rem rounded flex justify-end w-fit glass-white"
       >
         <custom-desktop-menu></custom-desktop-menu>
       </div>
@@ -72,7 +85,7 @@
           ><img src="../assets/logo-bright.png" width="50px" alt="" srcset=""
         /></a>
       </div>
-      <div class="vertical-split flex justify-end">
+      <div class="vertical-split flex justify-end z-5 relative">
         <div
           class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
           id="particles-js-desktop"
@@ -81,7 +94,7 @@
             class="lhs-sect-wrapper h-full mt-2rem flex flex-dir-col justify-center"
           >
             <header class="pixelated width-100">X-Cryptus</header>
-            <p>
+            <p class="text-md">
               Xcryptus is Departmental magazine of Dept. of Computer Science.
               The latest edition is vol. 4.<br /><br />Don't forget to check out
               older editions.
@@ -108,7 +121,7 @@
           </div>
         </div>
         <div
-          class="RHS width-67 height-screen flex flex-dir-col justify-center"
+          class="RHS width-67 height-screen flex items-center justify-center"
         >
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -130,7 +143,13 @@
       </div>
     </div>
 
-    <div class="mobile">
+    <div class="mobile overflow-scroll">
+      <div class="background fixed inset-0 w-full h-full">
+        <video class="w-full h-full fixed inset-0 z-1 object-cover" muted autoplay loop>
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="fixed inset-0 w-full h-full opacity-25 z-1 bg-black"></div>
+      </div>
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
         onclick="openMenu()"
@@ -147,14 +166,15 @@
         class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
         id="particles-js-mobile"
       >
+        <div class="inset-0 absolute glass"></div>
         <div class="top-sect-wrapper mt-2rem">
           <header
             id="page-header"
-            class="pixelated width-100 top-0 flex items-center z-1 transparent-glass-bg-top"
+            class="pixelated width-100 top-0 flex items-center z-10 relative"
           >
             X-Cryptus
           </header>
-          <p id="page-msg">
+          <p id="page-msg" class="text-md z-3 relative">
             Xcryptus is Departmental magazine of our department. The latest
             edition is vol. 4. Don't forget to check out older editions.
           </p>
@@ -195,17 +215,10 @@
       document.addEventListener("DOMContentLoaded", function () {
         // Initialize Swiper for Desktop
         var swiperDesktop = new Swiper(".desktop .swiper", {
-          effect: "coverflow",
+          effect: "fade",
           grabCursor: true,
           centeredSlides: true,
-          slidesPerView: 2,
-          coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          },
+          
           initialSlide: 1,
           autoplay: {
             delay: 2000,
@@ -218,6 +231,10 @@
           grabCursor: true,
         });
       });
+      particlesJS.load(
+        "particles-js-desktop",
+        "/particles/particlesjs-config-white.json"
+      );
     </script>
     <script src="script.js"></script>
     <script src="../custom-tags/loading-animation/animate.js"></script>

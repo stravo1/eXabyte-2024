@@ -61,13 +61,13 @@
 
     <div class="desktop overflow-scroll">
       <div class="background absolute inset-0 w-full h-full">
-        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted>
-          <source src="/assets/videos/desktop-events.mp4" type="video/mp4" />
+        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted preload="auto">
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
       </div>
       <div
-        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 flex justify-end glass-white m-1rem w-fit rounded"
       >
         <custom-desktop-menu></custom-desktop-menu>
       </div>
@@ -146,7 +146,7 @@
     <div class="mobile overflow-scroll">
       <div class="background fixed inset-0 w-full h-full">
         <video class="w-full h-full fixed inset-0 z-1 object-cover" muted>
-          <source src="/assets/videos/mobile-events.mp4" type="video/mp4" />
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
         </video>
         <div class="fixed inset-0 w-full h-full opacity-75 z-1"></div>
       </div>
@@ -166,14 +166,15 @@
         class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
         id="particles-js-mobile"
       >
-        <div class="top-sect-wrapper">
+        <div class="inset-0 absolute glass"></div>
+        <div class="top-sect-wrapper z-10">
           <header
             id="page-header"
             class="pixelated width-100 top-0 flex items-center z-10"
           >
             Sponsors
           </header>
-          <p id="page-msg" class="text-md">
+          <p id="page-msg" class="text-md z-3">
             Meet our incredibble sponsors who played a vital role in making this
             fest a resounding success!
           </p>
@@ -213,6 +214,7 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="/assets/videoScrubber.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
     <script src="/custom-tags/desktop-menu/script.js"></script>

@@ -61,7 +61,13 @@
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
 
-    <div class="mobile">
+    <div class="mobile overflow-scroll">
+      <div class="background absolute inset-0 w-full h-full">
+        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted preload="auto">
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
         onclick="openMenu()"
@@ -75,17 +81,18 @@
       </div>
 
       <section
-        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative z-5 relative"
         id="particles-js-mobile"
       >
+        <div class="inset-0 absolute glass"></div>
         <div class="top-sect-wrapper">
           <header
             id="page-header"
-            class="pixelated width-100 top-0 flex items-center z-2 transparent-glass-bg-top"
+            class="pixelated width-100 top-0 flex items-center z-10 relative"
           >
             Our Team
           </header>
-          <p id="page-msg">
+          <p id="page-msg" class="z-3 relative text-md">
             Meet the brilliant minds and passionate individuals, the driving
             force that fuels this tech fest!
           </p>
@@ -93,7 +100,7 @@
       </section>
 
       <section
-        class="middle-section bg-black flex flex-dir-col justify-center items-center"
+        class="middle-section flex flex-dir-col justify-center items-center z-3 relative"
       >
         <div class="profile-card card-1">
           <div class="card-wrapper-1">
@@ -1199,7 +1206,7 @@
         </div> -->
       </section>
 
-      <div class="socials-mobile mono initial padding-bottom-16">
+      <div class="socials-mobile mono padding-bottom-16 z-3 relative">
         <div class="icons-group">
           <img src="/assets/insta.svg" />
           <img src="/assets/site.svg" />
@@ -1213,9 +1220,15 @@
     </div>
     <!-- END OF MOBILE STRUCTURE -->
 
-    <div class="desktop">
+    <div class="desktop overflow-scroll">
+      <div class="background absolute inset-0 w-full h-full">
+        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted preload="auto">
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
-        class="menu-holder link-pointer fixed top-0 right-0 z-100 width-63 flex justify-end transparent-glass-bg"
+        class="menu-holder m-1rem w-fit glass-white link-pointer fixed top-0 right-0 z-100 flex justify-end rounded"
       >
         <custom-desktop-menu></custom-desktop-menu>
       </div>
@@ -1225,7 +1238,7 @@
         /></a>
       </div>
 
-      <div class="vertical-split flex justify-end">
+      <div class="vertical-split flex justify-end z-3 relative">
         <div
           class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
           id="particles-js-desktop"
@@ -1234,7 +1247,7 @@
             class="lhs-sect-wrapper flex flex-dir-col h-full mt-2rem justify-center"
           >
             <header class="pixelated width-100">Our Team</header>
-            <p>
+            <p class="text-md">
               Meet the brilliant minds and passionate individuals, the driving
               force that fuels this tech fest!
             </p>
@@ -1480,16 +1493,17 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="/assets/videoScrubber.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
     <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
 
     <script>
-      particlesJS.load(
-        "particles-js-mobile",
-        "/particles/particlesjs-config-mobile-white.json"
-      );
+      // particlesJS.load(
+      //   "particles-js-mobile",
+      //   "/particles/particlesjs-config-mobile-white.json"
+      // );
       particlesJS.load(
         "particles-js-desktop",
         "/particles/particlesjs-config-white.json"

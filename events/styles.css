@@ -231,7 +231,7 @@ body {
 /* Body elements styling */
 
 .LHS {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(31, 64, 214, 0.25);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
@@ -382,9 +382,9 @@ body {
   padding: 1rem;
 }
 
-.text-lg {
+/* .text-lg {
   font-size: 24px;
-}
+} */
 
 .text-sm {
   font-size: 12px;
@@ -440,4 +440,8 @@ button:disabled {
 .glass-white {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
+}
+
+.desktop video {
+  transform: rotate(-90deg);
 }

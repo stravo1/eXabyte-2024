@@ -154,167 +154,61 @@ eventDetails.forEach((event, index) => {
   let newEventDivDesktop = document.createElement("div");
   newEventDivDesktop.className = "nft relative z-3";
   newEventDivDesktop.innerHTML = `
-  <div class="main">
-    <img
-      class="tokenImage black-bg"
-      src="/assets/images/events/bytetales1.jpg"
-    />
-    <div class="flex flex-col">
-      <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
+    <div class="main">
+          <img
+          class="tokenImage black-bg"
+          src="/assets/images/events/bytetales1.jpg"
+          />
+      <div class="flex flex-col">
+        <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
         >Event Name #${index + 1}</span
-      >
-    </div>
-    <p class="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+        >
+      </div>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
       harum odit tempore reprehenderit vitae delectus.
-    </p>
-    <hr />
-    <div class="cta flex justify-center">
-      <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
+      </p>
+<hr />
+      <div class="cta flex justify-center">
+        <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
     </div>
-  </div>
-  `;
+    </div>
+      `;
   eventSectionDesktop.appendChild(newEventDivDesktop);
   let newEventDiv = document.createElement("div");
   newEventDiv.className = "nft relative z-3";
   newEventDiv.innerHTML = `
-  <div class="main">
-    <img
-      class="tokenImage black-bg"
-      src="/assets/images/events/bytetales1.jpg"
-    />
-    <div class="flex flex-col">
-      <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
+    <div class="main">
+          <img
+          class="tokenImage black-bg"
+          src="/assets/images/events/bytetales1.jpg"
+          />
+      <div class="flex flex-col">
+        <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
         >Event Name #${index + 1}</span
-      >
-    </div>
-    <p class="description">
+        >
+      </div>
+      <p class="description">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
       harum odit tempore reprehenderit vitae delectus.
-    </p>
-    <hr />
-    <div class="cta flex justify-center">
-      <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
+      </p>
+<hr />
+      <div class="cta flex justify-center">
+        <span class="text-lg" style="padding: 0.5rem 0">Register Now</span>
     </div>
-  </div>
-  `;
+    </div>
+      `;
   eventSection.appendChild(newEventDiv);
-});
+})
 
-let video = document.querySelector(".mobile video");
-let videoDesktop = document.querySelector(".desktop video");
+function setVideoDims() {
+  let desktopBackground = document.querySelector(".desktop .background")
+  let desktopVideo = document.querySelector(".desktop video")
 
-let mobileWrapper = document.querySelector(".mobile");
-let desktopWrapper = document.querySelector(".desktop");
-
-video.currentTime = 0.1
-let playBackwardsOnMobile = false;
-function playBackward() {
-  setTimeout(() => {
-    video.currentTime =
-      (video.currentTime - 0.15).toFixed(2) < video.currentTime
-        ? (video.currentTime - 0.15).toFixed(2)
-        : video.currentTime;
-    console.log(video.currentTime);
-    promise = false;
-  }, 75);
+  desktopVideo.style.width = desktopBackground.clientHeight + "px"
+  desktopVideo.style.height = desktopBackground.clientWidth + "px"
+  desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
+  desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
 }
-
-function playForward() {
-  setTimeout(() => {
-    video.currentTime =
-      (video.currentTime + 0.15).toFixed(2) > video.currentTime
-        ? (video.currentTime + 0.15).toFixed(2)
-        : video.currentTime;
-    console.log(video.currentTime);
-    promise = false;
-  }, 75);
-}
-
-let promise;
-let lastScrollPos;
-video.currentTime = 0.5;
-mobileWrapper.addEventListener("scroll", async () => {
-  if (promise) return;
-  if (video.currentTime == 0) {
-    playBackwardsOnMobile = !playBackwardsOnMobile;
-  }
-  promise = true;
-  if (lastScrollPos > mobileWrapper.scrollTop) {
-    console.log("scrolling back");
-    if (playBackwardsOnMobile) {
-      console.log("playing forward");
-      playForward();
-    } else {
-      playBackward();
-    }
-  } else {
-    if (playBackwardsOnMobile) {
-      playBackward();
-    } else {
-      playForward();
-    }
-  }
-  lastScrollPos = mobileWrapper.scrollTop;
-});
-
-let promiseDesktop = false;
-let lastScrollPosDesktop;
-let playBackwards = false;
-videoDesktop.currentTime = 0.1;
-function playBackwardDesktop() {
-  setTimeout(() => {
-    videoDesktop.currentTime =
-      (videoDesktop.currentTime - 0.25).toFixed(2) < videoDesktop.currentTime
-        ? (videoDesktop.currentTime - 0.25).toFixed(2)
-        : videoDesktop.currentTime;
-    console.log(videoDesktop.currentTime);
-    promiseDesktop = false;
-  }, 75);
-}
-
-function playForwardDesktop() {
-  setTimeout(() => {
-    videoDesktop.currentTime =
-      (videoDesktop.currentTime + 0.25).toFixed(2) > videoDesktop.currentTime
-        ? (videoDesktop.currentTime + 0.25).toFixed(2)
-        : videoDesktop.currentTime;
-    console.log(videoDesktop.currentTime);
-    promiseDesktop = false;
-  }, 75);
-}
-desktopWrapper.addEventListener("scroll", async () => {
-  if (promiseDesktop) return;
-  if (videoDesktop.currentTime == 0) {
-    playBackwards = !playBackwards;
-  }
-  promiseDesktop = true;
-  if (lastScrollPosDesktop > desktopWrapper.scrollTop) {
-    console.log("scrolling back");
-    if (playBackwards) {
-      console.log("playing forward");
-      playForwardDesktop();
-    } else {
-      playBackwardDesktop();
-    }
-  } else {
-    if (playBackwards) {
-      playBackwardDesktop();
-    } else {
-      playForwardDesktop();
-    }
-  }
-  lastScrollPosDesktop = desktopWrapper.scrollTop;
-});
-
-videoDesktop.addEventListener("ended", () => {
-  console.log("ended");
-  playBackwards = !playBackwards;
-});
-
-video.addEventListener("ended", () => {
-  console.log("ended");
-  playBackwardsOnMobile = !playBackwardsOnMobile;
-});
-
-// observerForLastCard.observe(document.querySelector(".nft"))
+setVideoDims()
+window.addEventListener("resize", setVideoDims)

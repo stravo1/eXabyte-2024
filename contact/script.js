@@ -16,9 +16,10 @@ const resetPositions = () => {
     topSection.style.height = "45%";
     topSection.style.minHeight = "300px";
     // sponsorSection.style.paddingTop = "70px";
+    header.classList.remove("transparent-glass-bg-top");
 }
 
-window.addEventListener("scroll", function () {
+document.querySelector(".mobile").addEventListener("scroll", function () {
     let msgPositionFromTop = msg.getBoundingClientRect().top;
     console.log(msgPositionFromTop);
     if (msg.style.paddingTop == "65px") {
@@ -32,6 +33,9 @@ window.addEventListener("scroll", function () {
         if (msgPositionFromTop < 85) {
             header.style.fontSize = "1.8rem";
             msg.style.transition = "none";
+        }
+        if (msgPositionFromTop < 55) {
+            header.classList.add("transparent-glass-bg-top");
         }
         if (msgPositionFromTop <= 0) {
             msg.style.paddingTop = "65px";
@@ -50,3 +54,15 @@ window.addEventListener("scroll", function () {
     }, 100)
 });
 //  -- END
+
+function setVideoDims() {
+    let desktopBackground = document.querySelector(".desktop .background")
+    let desktopVideo = document.querySelector(".desktop video")
+
+    desktopVideo.style.width = desktopBackground.clientHeight + "px"
+    desktopVideo.style.height = desktopBackground.clientWidth + "px"
+    desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
+    desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
+}
+setVideoDims()
+window.addEventListener("resize", setVideoDims)

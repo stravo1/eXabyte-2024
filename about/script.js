@@ -16,9 +16,10 @@ const resetPositions = () => {
     topSection.style.height = "45%";
     topSection.style.minHeight = "300px";
     sponsorSection.style.paddingTop = "70px";
+    header.classList.remove("transparent-glass-bg-top");
 }
 
-window.addEventListener("scroll", function () {
+document.querySelector(".mobile").addEventListener("scroll", function () {
     let msgPositionFromTop = msg.getBoundingClientRect().top;
     console.log(msgPositionFromTop);
     if (msg.style.paddingTop == "65px") {
@@ -32,6 +33,9 @@ window.addEventListener("scroll", function () {
         if (msgPositionFromTop < 85) {
             header.style.fontSize = "1.8rem";
             msg.style.transition = "none";
+        }
+        if (msgPositionFromTop < 55) {
+            header.classList.add("transparent-glass-bg-top");
         }
         if (msgPositionFromTop <= 0) {
             msg.style.paddingTop = "65px";
@@ -138,7 +142,7 @@ let phone_number_box = document.querySelectorAll('.phone-number-box');
 
 function openBox(n) {
     phone_number_box[n].classList.remove('hide-number');
-        phone_number_box[n].classList.add('show-number');
+    phone_number_box[n].classList.add('show-number');
 }
 
 function closeBox(n) {
@@ -147,17 +151,17 @@ function closeBox(n) {
 }
 
 function initBox() {
-    for(let i=0; i < phone_number_box.length; i++)
+    for (let i = 0; i < phone_number_box.length; i++)
         closeBox(i);
 }
 
 function phoneBox(card_number) {
-    
-    if(phone_number_box[card_number].className.includes('hide-number')) {
+
+    if (phone_number_box[card_number].className.includes('hide-number')) {
         initBox();
         openBox(card_number);
     }
-    else if(phone_number_box[card_number].className.includes('show-number')) {
+    else if (phone_number_box[card_number].className.includes('show-number')) {
         closeBox(card_number);
     }
 }
@@ -180,3 +184,15 @@ function copyNumber(card_number) {
     copy_icon[card_number].innerHTML = "check_box";
     copy_icon[card_number].style.color = "green";
 }
+
+function setVideoDims() {
+    let desktopBackground = document.querySelector(".desktop .background")
+    let desktopVideo = document.querySelector(".desktop video")
+
+    desktopVideo.style.width = desktopBackground.clientHeight + "px"
+    desktopVideo.style.height = desktopBackground.clientWidth + "px"
+    desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
+    desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
+}
+setVideoDims()
+window.addEventListener("resize", setVideoDims)
