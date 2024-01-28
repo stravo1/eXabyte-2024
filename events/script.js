@@ -20,7 +20,7 @@ const resetPositions = () => {
 
 document.querySelector(".mobile").addEventListener("scroll", function () {
   let msgPositionFromTop = msg.getBoundingClientRect().top;
-  console.log(msgPositionFromTop);
+  // console.log(msgPositionFromTop);
   if (msg.style.paddingTop == "65px") {
     if (msgPositionFromTop > 50) {
       resetPositions();
@@ -207,65 +207,114 @@ let videoDesktop = document.querySelector(".desktop video");
 let mobileWrapper = document.querySelector(".mobile");
 let desktopWrapper = document.querySelector(".desktop");
 
+video.currentTime = 0.1
+let playBackwardsOnMobile = false;
+function playBackward() {
+  setTimeout(() => {
+    video.currentTime =
+      (video.currentTime - 0.15).toFixed(2) < video.currentTime
+        ? (video.currentTime - 0.15).toFixed(2)
+        : video.currentTime;
+    console.log(video.currentTime);
+    promise = false;
+  }, 75);
+}
+
+function playForward() {
+  setTimeout(() => {
+    video.currentTime =
+      (video.currentTime + 0.15).toFixed(2) > video.currentTime
+        ? (video.currentTime + 0.15).toFixed(2)
+        : video.currentTime;
+    console.log(video.currentTime);
+    promise = false;
+  }, 75);
+}
+
 let promise;
 let lastScrollPos;
 video.currentTime = 0.5;
 mobileWrapper.addEventListener("scroll", async () => {
   if (promise) return;
+  if (video.currentTime == 0) {
+    playBackwardsOnMobile = !playBackwardsOnMobile;
+  }
   promise = true;
   if (lastScrollPos > mobileWrapper.scrollTop) {
-    setTimeout(() => {
-      video.currentTime =
-        (video.currentTime - 0.05).toFixed(2) < video.currentTime
-          ? (video.currentTime - 0.05).toFixed(2)
-          : video.currentTime;
-      console.log(video.currentTime);
-      promise = false;
-    }, 100);
+    console.log("scrolling back");
+    if (playBackwardsOnMobile) {
+      console.log("playing forward");
+      playForward();
+    } else {
+      playBackward();
+    }
   } else {
-    setTimeout(() => {
-      video.currentTime =
-        (video.currentTime + 0.05).toFixed(2) > video.currentTime
-          ? (video.currentTime + 0.05).toFixed(2)
-          : video.currentTime;
-      console.log(video.currentTime);
-      promise = false;
-    }, 100);
+    if (playBackwardsOnMobile) {
+      playBackward();
+    } else {
+      playForward();
+    }
   }
   lastScrollPos = mobileWrapper.scrollTop;
 });
 
 let promiseDesktop = false;
 let lastScrollPosDesktop;
-videoDesktop.currentTime = 2.5
-videoDesktop.play();
-setTimeout(() => {
-  videoDesktop.pause();
-}, 2500);
+let playBackwards = false;
+videoDesktop.currentTime = 0.1;
+function playBackwardDesktop() {
+  setTimeout(() => {
+    videoDesktop.currentTime =
+      (videoDesktop.currentTime - 0.25).toFixed(2) < videoDesktop.currentTime
+        ? (videoDesktop.currentTime - 0.25).toFixed(2)
+        : videoDesktop.currentTime;
+    console.log(videoDesktop.currentTime);
+    promiseDesktop = false;
+  }, 75);
+}
+
+function playForwardDesktop() {
+  setTimeout(() => {
+    videoDesktop.currentTime =
+      (videoDesktop.currentTime + 0.25).toFixed(2) > videoDesktop.currentTime
+        ? (videoDesktop.currentTime + 0.25).toFixed(2)
+        : videoDesktop.currentTime;
+    console.log(videoDesktop.currentTime);
+    promiseDesktop = false;
+  }, 75);
+}
 desktopWrapper.addEventListener("scroll", async () => {
-  console.log(99);
   if (promiseDesktop) return;
+  if (videoDesktop.currentTime == 0) {
+    playBackwards = !playBackwards;
+  }
   promiseDesktop = true;
   if (lastScrollPosDesktop > desktopWrapper.scrollTop) {
-    setTimeout(() => {
-      videoDesktop.currentTime =
-        (videoDesktop.currentTime - 0.3).toFixed(2) < videoDesktop.currentTime
-          ? (videoDesktop.currentTime - 0.3).toFixed(2)
-          : videoDesktop.currentTime;
-      console.log(videoDesktop.currentTime);
-      promiseDesktop = false;
-    }, 75);
+    console.log("scrolling back");
+    if (playBackwards) {
+      console.log("playing forward");
+      playForwardDesktop();
+    } else {
+      playBackwardDesktop();
+    }
   } else {
-    setTimeout(() => {
-      videoDesktop.currentTime =
-        (videoDesktop.currentTime + 0.3).toFixed(2) > videoDesktop.currentTime
-          ? (videoDesktop.currentTime + 0.3).toFixed(2)
-          : videoDesktop.currentTime;
-      console.log(videoDesktop.currentTime);
-      promiseDesktop = false;
-    }, 75);
+    if (playBackwards) {
+      playBackwardDesktop();
+    } else {
+      playForwardDesktop();
+    }
   }
   lastScrollPosDesktop = desktopWrapper.scrollTop;
+});
+
+videoDesktop.addEventListener("ended", () => {
+  console.log("ended");
+  playBackwards = !playBackwards;
+});
+
+video.addEventListener("ended", () => {
+  console.log("ended");
+  playBackwardsOnMobile = !playBackwardsOnMobile;
 });
 
 // observerForLastCard.observe(document.querySelector(".nft"))
