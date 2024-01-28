@@ -1,5 +1,6 @@
 const homeDesktop = document.getElementById("home-desktop");
-const eventsDesktop = document.getElementById("sponsors-desktop");
+const eventsDesktop = document.getElementById("events-desktop");
+const sponsorsDesktop = document.getElementById("sponsors-desktop");
 const magazinesDesktop = document.getElementById("magazines-desktop");
 const contactDesktop = document.getElementById("contact-desktop");
 const aboutDesktop = document.getElementById("about-desktop");

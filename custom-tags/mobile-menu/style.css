@@ -81,7 +81,7 @@
 }
 
 .current-route {
-  color: var(--primary-color-text) !important;
+  color: var(--primary-color) !important;
 }
 
 .slide-in{

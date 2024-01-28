@@ -1,19 +1,6 @@
-body {
-  height: 100dvh;
-  width: 100dvw;
-  margin: 0px;
-  background-color: black;
-  color: whitesmoke;
-  overflow: scroll;
-  font-family: "IBM Plex Mono", monospace;
-  --primary-color: #AE3444;
-  --primary-color-text: #FF5F74;
-  --primary-color-text-dark: #611A23;
-  --accent-color: rgb(255, 151, 165);
-}
-
 .top-section {
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  background-color: rgba(67, 67, 67, 0.421);
   min-height: 250px;
   transition: 0.1s ease-in-out;
 }
@@ -22,15 +9,16 @@ body {
   height: 60px;
   font-size: 2.5rem;
   padding: 0 0 0 40px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   box-shadow: 0 0 0 black;
-  transition: 0.2s font-size, 0.1s padding, top 0.3s linear, box-shadow 1s linear;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear,
+    box-shadow 1s linear;
 }
 
 .top-section p {
   margin: 0;
   padding: 10px 40px;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   transition: 0.8s;
 }
 
@@ -47,7 +35,6 @@ body {
 
 .favicon img {
   height: 10dvh;
-
 }
 
 * {
@@ -184,41 +171,12 @@ body {
   background: black;
 }
 
-.material-symbols-outlined {
-  position: relative;
-  color: #611A23;
-  left:3px;
-  top: 3px;
-  font-size: 30px;
-}
-.ellipseshape .material-symbols-outlined
-{
-  left:7px;
-  top:7px;
+.h-full {
+  height: 100%;
 }
 
-.ellipseshape {
-  display:flex;
-  position: relative;
-  left:235px;
-  bottom: 70px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  align-content: end;
-  background-color: #FF5F74;
-  border-radius: 50%;
-}
-
-.mellipseshape {
-  position: relative;
-  display: flex;
-  margin-left: 240px;
-  width: 30px;
-  height: 30px;
-  align-content: end;
-  background-color: #FF5F74;
-  border-radius: 50%;
+.mt-2rem {
+  margin-top: 2rem;
 }
 
 /*ID'S */
@@ -243,7 +201,7 @@ body {
 }
 
 #button3 {
-  top: 70px
+  top: 70px;
 }
 
 /* Desktop mode */
@@ -273,7 +231,9 @@ body {
 /* Body elements styling */
 
 .LHS {
-  background: var(--primary-color);
+  background: rgba(31, 64, 214, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
 }
 
 .LHS header,
@@ -290,15 +250,12 @@ body {
   padding: 80px 0 50px;
   gap: 1rem;
   margin-top: 120px;
+  height: fit-content;
 }
 
 .RHS header {
   font-size: 2rem;
   margin: 25px 0 10px;
-}
-
-.lhs-sect-wrapper {
-  height: 50vh;
 }
 
 .socials-desktop {
@@ -313,101 +270,13 @@ body {
   padding: 0 40px;
 }
 
-
 .carddetails {
   font-size: 2.4rem;
   font-weight: bold;
   color: black;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   top: 20px;
   left: 10px;
-}
-
-.registerbtn1 button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 0;
-  outline: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  color: white;
-  background-color: #AE3444;
-  cursor: pointer;
-}
-
-.registerbtn1 button:hover {
-  background-color: WHITE;
-  transition-duration: 2s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
-}
-
-.detailsbtn button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.buttons {
-  margin-bottom: 10px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mbuttons {
-  font-weight: bold;
-  margin-top: 80px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-around;
-}
-
-
-.detailsbtn button:hover {
-  background-color: #AE3444;
-  transition-duration: 2s;
-  color: white;
-  border: solid 1px #6934ae;
-}
-
-.detailsbtn2 button {
-  position: relative;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  top: 5vh;
-  left: 10vw;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.detailsbtn2 button:hover {
-  background-color: #AE3444;
-  transition-duration: 2s;
-  color: white;
-  border: solid 1px #6934ae;
-}
-
-.registerbtn2 button:hover {
-  background-color: WHITE;
-  transition-duration: 2s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
 }
 
 #dicon2 {
@@ -433,7 +302,6 @@ body {
   text-overflow: ellipsis;
 }
 
-
 .event-logo-desktop {
   width: 290px;
   height: 290px;
@@ -445,57 +313,6 @@ body {
 }
 
 /*mobile*/
-.carddetails {
-  margin-left: 10px;
-}
-
-.mregisterbtn button {
-  position: relative;
-  display: flex;
-  border: 0;
-  font-weight: bold;
-  outline: 0;
-  padding: 15px 40px;
-  border-radius: 30px;
-  color: white;
-  background-color: #AE3444;
-  cursor: pointer;
-}
-
-.mregisterbtn button:hover {
-  background-color: WHITE;
-  transition-duration: 1s;
-  color: #AE3444;
-  border: solid 1px #AE3444;
-}
-
-.mdetailsbtn button {
-  position: relative;
-  font-weight: bold;
-  display: flex;
-  border: 1px solid #AE3444;
-  outline: 0;
-  border-radius: 30px;
-  padding: 15px 40px;
-  color: #AE3444;
-  background-color: white;
-  cursor: pointer;
-}
-
-.buttons {
-  display: flex;
-  position: relative;
-  top: 90px;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mdetailsbtn button:hover {
-  background-color: #AE3444;
-  transition-duration: 1s;
-  color: white;
-  border: solid 1px #6934ae;
-}
 
 .event-logo-mobile {
   width: 290px;
@@ -511,32 +328,28 @@ body {
   margin-bottom: 20px;
 }
 
-.bigger-card>.event-logo-desktop {
+.bigger-card > .event-logo-desktop {
   height: 200px;
   width: 300px;
 }
 
-.bigger-card>.event-mobile-desktop {
+.bigger-card > .event-mobile-desktop {
   height: 200px;
   width: 300px;
 }
 
-.bigger-card>.carddetails {
+.bigger-card > .carddetails {
   font-size: 2rem;
 }
 
-
-.bigger-card>.bigger-card>.carddetails,
-
-.bigger-card>.carddetails span,
-
-
-.cards:hover>div>.highlighter {
+.bigger-card > .bigger-card > .carddetails,
+.bigger-card > .carddetails span,
+.cards:hover > div > .highlighter {
   height: 45%;
   opacity: 1;
 }
 
-.cards:hover>.event-logo-desktop {
+.cards:hover > .event-logo-desktop {
   transform: scale(1.15);
 }
 
@@ -547,4 +360,88 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
+}
+
+.transparent-glass-bg-top {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  /* background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(3px); */
+}
+
+.event-card {
+  width: 270px;
+  height: 230px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+/* .text-lg {
+  font-size: 24px;
+} */
+
+.text-sm {
+  font-size: 12px;
+}
+
+.card-symbol {
+  background-color: var(--primary-color-text);
+  padding: 0.25rem;
+}
+
+.circle {
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.gap-1rem {
+  gap: 1rem;
+}
+
+.gap-3rem {
+  gap: 3rem;
+}
+
+.card-button,
+.card-content {
+  padding-top: 0.5rem;
+}
+.card-button button {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.card-button .filled {
+  background-color: var(--primary-color);
+  color: white;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.glass-white {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+}
+
+.desktop video {
+  transform: rotate(-90deg);
 }
