@@ -35,6 +35,9 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
@@ -56,7 +59,97 @@
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
 
-    <div class="mobile">
+    <div class="desktop overflow-scroll">
+      <div class="background absolute inset-0 w-full h-full">
+        <video class="w-full h-full absolute inset-0 z-1 object-cover" muted preload="auto">
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
+      <div
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 flex justify-end glass-white m-1rem w-fit rounded"
+      >
+        <custom-desktop-menu></custom-desktop-menu>
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
+      </div>
+
+      <div class="vertical-split flex justify-end z-3 relative">
+        <div
+          class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
+          id="particles-js-desktop"
+        >
+          <div
+            class="lhs-sect-wrapper h-full flex flex-dir-col justify-center mt-2rem"
+          >
+            <header class="pixelated width-100">Sponsors</header>
+            <p class="text-md">
+              Meet our incredibble sponsors who played a vital role in making
+              this fest a resounding success!
+            </p>
+          </div>
+
+          <div class="socials-desktop mono initial z-100">
+            <div class="icons-group">
+              <a
+                href="https://www.instagram.com/exabyte.sxc"
+                target="_blank"
+                class="link-pointer"
+                id="instagram"
+              >
+                <img src="/assets/insta.svg" />
+              </a>
+              <a href="" target="_blank" class="link-pointer" id="site">
+                <img src="/assets/site.svg" />
+              </a>
+            </div>
+            <div class="info-desktop">
+              Postgraduate and Research <br />
+              Department of Computer Science
+              <br />
+              St. Xavier's College (Autonomous), Kolkata
+            </div>
+          </div>
+        </div>
+
+        <div class="RHS width-67 flex flex-dir-col justify-center items-center">
+          <!-- <div class="sponsor-card bigger-card">
+            <div class="brand-logo-desktop">
+              <img
+                class="brand-img height-100 width-100"
+                src="/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg"
+                alt=""
+              />
+            </div>
+            <div class="brand-name-desktop text-center relative">
+              <span>Brand Name</span>
+              <div class="highlighter hl-1"></div>
+            </div>
+            <div class="sponsor-title-desktop text-center relative">
+              <span>Title Sponsor</span>
+              <div class="highlighter hl-2"></div>
+            </div>
+          </div> -->
+          <div
+            class="top-sponsors-desktop partners-desktop flex flex-wrap justify-center"
+          ></div>
+          <div
+            class="other-sponsors-desktop flex flex-dir-col gap-1rem items-center"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile overflow-scroll">
+      <div class="background fixed inset-0 w-full h-full">
+        <video class="w-full h-full fixed inset-0 z-1 object-cover" muted>
+          <source src="/assets/videos/output-2.mp4" type="video/mp4" />
+        </video>
+        <div class="fixed inset-0 w-full h-full opacity-75 z-1"></div>
+      </div>
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
         onclick="openMenu()"
@@ -64,16 +157,78 @@
         <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <a href="/"><img src="/assets/logo-dark.png" width="50px" alt="" srcset="" /></a>
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
       </div>
+
       <div
-        class="main flex flex-dir-col width-100 height-100 justify-center items-center pixelated white-bg"
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+        id="particles-js-mobile"
       >
-        Sponsors @ eXabyte '24
+        <div class="inset-0 absolute glass"></div>
+        <div class="top-sect-wrapper z-10">
+          <header
+            id="page-header"
+            class="pixelated width-100 top-0 flex items-center z-10"
+          >
+            Sponsors
+          </header>
+          <p id="page-msg" class="text-md z-3">
+            Meet our incredibble sponsors who played a vital role in making this
+            fest a resounding success!
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="sponsor-items z-5 relative flex flex-dir-col justify-center items-center"
+      >
+        <div class="sponsor-card">
+          <div class="brand-logo">
+            <img
+              class="height-100 width-100"
+              src="/assets/images/sponsor-logos/91.9-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="brand-name text-center">Brand Name</div>
+          <div class="sponsor-title text-center">Title Sponsor</div>
+        </div>
+        <div
+          class="other-sponsors-mobile flex flex-dir-col gap-1rem items-center"
+        ></div>
+      </div>
+
+      <div class="socials-mobile mono initial padding-bottom-16">
+        <div class="icons-group">
+          <img src="/assets/insta.svg" />
+          <img src="/assets/site.svg" />
+        </div>
+        <div class="info-mobile">
+          Department of Computer Science
+          <br />
+          St. Xavier's College (Autonomous), Kolkata
+        </div>
       </div>
     </div>
+
+    <script src="./script.js"></script>
+    <script src="/assets/videoScrubber.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
+    <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
+
+    <script>
+      // particlesJS.load(
+      //   "particles-js-mobile",
+      //   "/particles/particlesjs-config-mobile-white.json"
+      // );
+      particlesJS.load(
+        "particles-js-desktop",
+        "/particles/particlesjs-config-white.json"
+      );
+    </script>
   </body>
 </html>

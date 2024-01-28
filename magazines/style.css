@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.top-0 {
+  top: 0;
+}
+.top-70 {
+  top: 70px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.menu-holder {
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.logo-holder {
+  left: 0;
+  padding: 0.5rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.width-33 {
+  width: 33%;
+}
+
+.width-63 {
+  width: 63%;
+}
+
+.width-67 {
+  width: 67%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-45 {
+  height: 45%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.height-screen {
+  height: 100vh;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link-pointer {
+  cursor: pointer;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.padding-bottom-16 {
+  padding-bottom: 16px;
+}
+
+.initial {
+  position: initial;
+}
+
+.bg-black {
+  background: black;
+}
+
+/* Desktop style */
+.LHS {
+  /* background: var(--primary-color); */
+  background: rgba(31, 64, 214, 0.25);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.LHS header,
+.LHS p,
+.socials-desktop {
+  padding: 0 40px;
+}
+
+.LHS header {
+  font-size: 3rem;
+}
+
+.RHS {
+
+  padding: 80px 0 50px;
+  gap: 1rem;
+  position: relative;
+}
+
+.RHS > .swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RHS header {
+  font-size: 2rem;
+  margin: 25px 0 10px;
+}
+
+.lhs-sect-wrapper {
+  height: 50vh;
+}
+
+.socials-desktop {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+@media (min-width: 850px) {
+  .swiper {
+    border-radius: 10px !important;
+    overflow: hidden;
+    height: 600px;
+    width: 400px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide img {
+    width: 400px;
+    height: 600px;
+    aspect-ratio: calc(3 / 4);
+    object-fit: cover;
+    border-radius: 5px !important;
+  }
+}
+
+/* Mobile style */
+
+.top-section {
+  /* background: var(--primary-color); */
+  background-color: rgba(67, 67, 67, 0.421);
+  min-height: 250px;
+  transition: 0.1s ease-in-out;
+}
+
+.top-section header {
+  height: 60px;
+  font-size: 2.5rem;
+  padding: 0 0 0 40px;
+  transition: 0.2s font-size, 0.1s padding, top 0.3s linear;
+}
+.top-section p {
+  margin: 0;
+  padding: 10px 40px;
+  /* background: var(--primary-color); */
+  transition: 0.8s;
+}
+
+.xcryptusmob-items {
+  gap: 1rem;
+  padding: 70px 0px 40px;
+  transition: 0.3s;
+}
+@media (max-width: 850px) {
+  .swiper {
+    width: 60vw;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .xcryptusmob-items .swiper-slide {
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .xcryptusmob-items .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+  }
+}
+.transparent-glass-bg {
+  background: rgba(0, 0, 0, 0.36);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
+.transparent-glass-bg-top {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mt-2rem {
+  margin-top: 2rem;
+}
+
+.initial {
+  position: initial !important;
+}
+
+.desktop video {
+  transform: rotate(-90deg);
+}
+.glass-white {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+}
