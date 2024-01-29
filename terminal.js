@@ -7,7 +7,6 @@ var commandOutputs = {
     sponsors
     <br>
     about us
-    <br>
     `,
   date: `
     12th and 13th Feb
@@ -44,6 +43,7 @@ var commandOutputs = {
     `,
 };
 
+let infoSection = document.querySelector(".info-section");
 var prompt = {
   window: document.querySelector(".window"),
   shortcut: document.querySelector(".prompt-shortcut"),
@@ -84,13 +84,15 @@ var prompt = {
     }, 500);
   },
   close: function () {
+    infoSection.style.zIndex = "90";
     prompt.window.classList.add("window--destroyed");
-    prompt.window.classList.remove("window--maximized");
-    prompt.window.classList.remove("window--minimized");
+    // prompt.window.classList.remove("window--maximized");
+    // prompt.window.classList.remove("window--minimized");
     prompt.shortcut.classList.remove("hidden");
     prompt.input.value = "";
   },
   open: function () {
+    infoSection.style.zIndex = "102";
     prompt.window.classList.remove("window--destroyed");
     prompt.shortcut.classList.add("hidden");
     prompt.focus();
@@ -122,27 +124,27 @@ function detectEnter(e) {
         let path = prompt.input.value.split(" ")[1];
         switch (path) {
           case undefined:
-            outputWrapper.innerHTML += `<br><br><span class="cmd">${prompt.input.value}</span><br>Insufficient args: Mention a page name<br>Eg: cd events`;
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>Insufficient args: Mention a page name<br>Eg: cd events`;
             commandFound = true;
             break;
           case "events":
             window.location.replace("/events");
-            outputWrapper.innerHTML += `<br><br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "about":
             window.location.replace("/about");
-            outputWrapper.innerHTML += `<br><br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "x-cryptus":
             window.location.replace("/magazines");
-            outputWrapper.innerHTML += `<br><br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "sponsors":
             window.location.replace("/sponsors");
-            outputWrapper.innerHTML += `<br><br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
         }
@@ -158,7 +160,7 @@ function detectEnter(e) {
       }
     }
     if (!commandFound) {
-      outputWrapper.innerHTML += `<br><br><span class="cmd_err">${prompt.input.value}</span><br>ERROR: Unknown Command`;
+      outputWrapper.innerHTML += `<br><span class="cmd_err">${prompt.input.value}</span><br>ERROR: Unknown Command`;
     }
     prompt.input.value = "";
     prompt.input.style.width = "0.5rem";
@@ -190,3 +192,4 @@ function getTextWidth(text, font) {
 }
 
 prompt.init();
+prompt.close();
