@@ -192,4 +192,3 @@ function getTextWidth(text, font) {
 }
 
 prompt.init();
-prompt.close();
