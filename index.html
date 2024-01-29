@@ -140,8 +140,8 @@
           </div>
         </section>
 
-        <section class="info-section">
-          <div class="about-fest flex items-center justify-center">
+        <section class="info-section flex items-center justify-center">
+          <!-- <div class="about-fest flex items-center justify-center">
             <div
               class="info-button absolute flex items-center justify-center"
               onclick="infoButtonAction()"
@@ -165,53 +165,35 @@
                 here.
               </div>
             </div>
+          </div> -->
+          <div class="terminal-window window">
+            <header class="window-header">
+              <div class="window-title flex items-center justify-center">console</div>
+              <nav class="window-controls">
+                <span class="control-item control-minimize js-minimize"></span>
+                <span class="control-item control-maximize js-maximize"></span>
+                <span class="control-item control-close js-close"></span>
+              </nav>
+            </header>
+            <main class="window-content">
+              <div class="outputs">type :help for more</div>
+              <div class="window-cursor">
+                <span class="i-cursor-indicator" style="margin-right: 0.25rem"
+                  >user@exabyte-24:~$</span
+                >
+                <input
+                  type="text"
+                  class="window-input js-prompt-input"
+                  oninput="setInputWidth(this)"
+                  onkeyup="detectEnter(event)"
+                />
+                <span class="i-cursor-underscore"></span>
+              </div>
+            </main>
           </div>
         </section>
 
-        <section class="window" onclick="prompt.input.focus()">
-          <header class="window-header">
-            <nav class="window-controls">
-              <span class="control-item control-minimize js-minimize">‒</span>
-              <span class="control-item control-maximize js-maximize">□</span>
-              <span class="control-item control-close js-close">x</span>
-            </nav>
-          </header>
-          <main class="window-content">
-            <div class="outputs p-1rem">type :help for more</div>
-            <div class="window-cursor">
-              <span class="i-cursor-indicator" style="margin-right: 0.25rem"
-                >user@exabyte-24$</span
-              >
-              <input
-                type="text"
-                class="window-input js-prompt-input"
-                oninput="setInputWidth(this)"
-                onkeyup="detectEnter(event)"
-              />
-              <span class="i-cursor-underscore"></span>
-            </div>
-          </main>
-        </section>
-        <!-- <div class="scattered-texts">
-          <span class="text-1 absolute">&lt;html/&gt;</span>
-          <span class="text-2 absolute">JavaScript</span>
-          <span class="text-3 absolute">CSS</span>
-          <span class="text-4 absolute">java</span>
-          <span class="text-5 absolute">C++</span>
-          <span class="text-6 absolute">#python</span>
-          <span class="text-7 absolute">sql.</span>
-          <span class="text-8 absolute">php</span>
-        </div>
-        <div class="timer flex flex-dir-col justify-center">
-          <div class="larger-text">12 - 05 - 30 - 45</div>
-          <div class="mono text-para">See you at runtime!</div>
-        </div>
-        <button class="register-button">
-          <span class="button-content-wrapper">
-            Register Now
-          </span>
-        </button> -->
-        <div class="prompt-shortcut i-prompt hidden js-open flex items-center justify-center">&gt;_</div>
+        <div class="prompt-shortcut i-prompt hidden js-open flex items-center justify-center" accesskey="T">&gt;_</div>
         <div class="content content--canvas-desktop"></div>
       </main>
     </div>
@@ -227,14 +209,4 @@
   <script src="/ambident-canvas-background/noise.min.js"></script>
   <script src="/ambident-canvas-background/util.js"></script>
   <script src="/ambident-canvas-background/shift.js"></script>
-  <script>
-    // particlesJS.load(
-    //   "particles-js-mobile",
-    //   "./particles/particlesjs-config-mobile-white.json"
-    // );
-    // particlesJS.load(
-    //   "particles-js-desktop",
-    //   "./particles/particlesjs-config.json"
-    // );
-  </script>
 </html>

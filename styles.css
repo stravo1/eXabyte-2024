@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body::before {
@@ -300,8 +300,8 @@ button {
 }
 
 .info-section {
-  /* top: 100vh; */
   background: transparent;
+  z-index: 90;
 }
 
 .register-button {
@@ -417,24 +417,6 @@ button {
   font-weight: bold;
   background: rgba(255, 255, 255, 0.4);
   /* animation: flicker 3s linear infinite; */
-}
-
-@keyframes light-glitch {
-  0% {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  25% {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  50% {
-    animation-delay: 2s;
-  }
-  75% {
-    background: rgba(37, 31, 95, 0.3);
-  }
-  100% {
-    background: rgba(37, 31, 95, 0.3);
-  }
 }
 
 @-webkit-keyframes flicker {

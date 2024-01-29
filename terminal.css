@@ -1,64 +1,87 @@
 /* https://codepen.io/pedbernardo/pen/rOxbav */
 
 .window {
-  position: fixed;
+  position: absolute;
+  /* bottom: 0; */
   z-index: 100;
-  top: 10rem;
-  left: 10rem;
-  width: 500px;
-  height: 350px;
+  width: 800px;
+  height: 500px;
   background-color: rgba(37, 37, 37, 0.85);
-  border: 1px solid #c9c9c9;
+  background-color: rgba(37, 3, 44, 0.85);
+  background: #262c33;
+  border: 1px solid #171924;
+  border-radius: 10px;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
   transition: all ease-in-out 0.3s;
   font-family: "Space Mono", monospace;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  transform: scale(1);
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.7);
 }
-.window.window--maximized {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.window--maximized {
+  width: 98vw;
+  height: 95vh;
   flex-grow: 1;
 }
 .window.window--minimized {
-  height: 25px;
-  width: 180px;
+  height: 30px;
+  width: 400px;
+  bottom: 0;
+  transform: scale(1);
+  transition: 0.3s;
 }
 .window.window--minimized .window-content {
   display: none;
 }
 .window.window--destroyed {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  transform: scale(0);
 }
 .window-header {
-  background-color: #eee;
-  height: 25px;
+  position: relative;
+  background-color: #484a49;
+  /* background: linear-gradient(to bottom, #eaeaea, #d2d2d2); */
+  height: 30px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: inset 1px 1px 2px rgba(201, 198, 198, 0.7);
+}
+.window-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.95rem;
+  font-family: sans-serif;
 }
 .window-controls {
+  position: relative;
+  z-index: 100;
   display: flex;
   height: 100%;
+  padding-right: 0.5rem;
+  gap: 0.5rem;
   justify-content: flex-end;
   align-items: center;
 }
 .window-controls .control-item {
-  width: 25px;
-  height: 25px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
   text-align: center;
   color: #333;
   transition: all ease-in 0.15s;
   cursor: pointer;
 }
 .window-controls .control-item:hover {
-  background-color: #ccc;
+  opacity: 0.9;
 }
 .control-item.control-close {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+  background: #fc5c53;
 }
 .control-item.control-close:hover {
   background-color: #ec6060;
@@ -66,20 +89,22 @@
 }
 .control-item.control-maximize {
   line-height: 19px;
+  background: #e4c12f;
 }
 .control-item.control-minimize {
   line-height: 22px;
+  background: #55c22e;
 }
 .window-cursor {
   display: flex;
-  margin: 5px;
+  /* margin: 5px; */
   align-items: center;
 }
 .window-cursor .i-cursor-indicator {
   color: #7ca8d4;
   font-size: 1em;
   font-family: "Consolas", monospace;
-  margin: 0 2px 0 5px;
+  margin: 0 2px 0 0px;
 }
 .window-cursor .i-cursor-underscore {
   width: 10px;
@@ -106,29 +131,122 @@
 }
 .i-prompt {
   position: fixed;
-  top: 11rem;
-  right: 11rem;
+  bottom: 5rem;
+  right: 5rem;
   z-index: 100;
   width: 62px;
   height: 62px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 2.5rem;
   /* background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/terminal-48.png")
     no-repeat center; */
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: all ease-in-out 0.15s;
+  /* animation: flicker 3s linear infinite; */
 }
 .i-prompt:hover {
   background-position: center 4px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .i-prompt.hidden {
   width: 0;
   height: 0;
   opacity: 0;
+}
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.80;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 1; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: 1; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
 }
 @-webkit-keyframes blink {
   to {
@@ -142,15 +260,29 @@
 }
 
 .window-content {
-    height: 90%;
-    width: 90%;
+    height: 92%;
+    width: 99.8%;
+    margin: 5px 0;
     box-sizing: border-box;
-    padding: 1rem;
-    overflow: scroll;
+    padding: 0.5rem 1.5rem;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
 }
 
 .window-content::-webkit-scrollbar {
-    display: none;
+  background: #262c33;
+  width: 18px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(101, 101, 102);
+  border: 5px solid #262c33;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(90, 90, 92);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(77, 86, 90);
 }
 
 .window .outputs {
