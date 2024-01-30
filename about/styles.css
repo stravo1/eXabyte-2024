@@ -435,7 +435,7 @@ body, html {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
 }
-
+/* 
 .desktop video {
   transform: rotate(-90deg);
-}
+} */

@@ -179,61 +179,47 @@ let eventSectionDesktop = document.querySelector(".event-items-desktop");
 
 eventDetails.forEach((event, index) => {
   let newEventDivDesktop = document.createElement("div");
-  newEventDivDesktop.className = "nft relative z-3";
+  newEventDivDesktop.className = "event-card flex relative mt-1rem p-1rem flex flex-col justify-between items-start gap-1rem h-15rem rounded w-85p";
   newEventDivDesktop.innerHTML = `
-    <div class="main">
-          <img
-          class="tokenImage black-bg"
-          src="/assets/images/events/bytetales1.jpg"
-          />
-      <div class="flex flex-col">
-        <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
-        >${event.name} #${index + 1}</span
-        >
-      </div>
-      <p class="description">
+  <div class="flex justify-between w-full items-center gap-1rem p-025rem">
+    <div class="display text-xl z-5">${event.name}</div>
+    <span class="material-symbols-outlined text-xl"> menu </span>
+  </div>
+
+  </div>
+  <div class="z-5">
         ${event.description}
-      </p>
-      <hr />
-      <div class="cta flex justify-center">
-        <span class="text-ms" style="padding: 0.5rem 0; opacity: 50%">Registrations Opening Soon</span>
-      </div>
-    </div>
+  </div>
+  <div class="flex z-5 event-button-group w-full gap-05rem">
+    <button class="register-button">View Details</button>
+  </div>
       `;
   eventSectionDesktop.appendChild(newEventDivDesktop);
   let newEventDiv = document.createElement("div");
-  newEventDiv.className = "nft relative z-3";
+  newEventDiv.className = "event-card flex relative mt-1rem p-1rem flex flex-col justify-between items-start gap-1rem h-15rem rounded w-85p";
   newEventDiv.innerHTML = `
-    <div class="main">
-          <img
-          class="tokenImage black-bg"
-          src="/assets/images/events/bytetales1.jpg"
-          />
-      <div class="flex flex-col">
-        <span class="text-lg font-bold p-1rem" style="padding-left: 0px"
-        >${event.name} #${index + 1}</span
-        >
-      </div>
-      <p class="description">
-        ${event.description}
-      </p>
-      <hr />
-      <div class="cta flex justify-center">
-        <span class="text-lg" style="padding: 0.5rem 0; opacity: 50%">Registration Not Yet Open</span>
-      </div>
+  <div class="flex justify-between w-full items-center gap-1rem p-025rem">
+    <div class="display text-xl z-5">${event.name}</div>
+    <span class="material-symbols-outlined text-xl"> menu </span>
+  </div>
+  <div class="z-5 text-md">
+      ${event.description}
     </div>
+  <div class="flex z-5 event-button-group w-full gap-05rem">
+    <button class="register-button">View Details</button>
+  </div>
       `;
   eventSection.appendChild(newEventDiv);
 })
 
-function setVideoDims() {
-  let desktopBackground = document.querySelector(".desktop .background")
-  let desktopVideo = document.querySelector(".desktop video")
+// function setVideoDims() {
+//   let desktopBackground = document.querySelector(".desktop .background")
+//   let desktopVideo = document.querySelector(".desktop video")
 
-  desktopVideo.style.width = desktopBackground.clientHeight + "px"
-  desktopVideo.style.height = desktopBackground.clientWidth + "px"
-  desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
-  desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
-}
-setVideoDims()
-window.addEventListener("resize", setVideoDims)
+//   desktopVideo.style.width = desktopBackground.clientHeight + "px"
+//   desktopVideo.style.height = desktopBackground.clientWidth + "px"
+//   desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
+//   desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
+// }
+// // setVideoDims()
+// window.addEventListener("resize", setVideoDims)

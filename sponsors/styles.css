@@ -379,6 +379,6 @@ img {
   backdrop-filter: blur(3px);
 }
 
-.desktop video {
+/* .desktop video {
   transform: rotate(-90deg);
-}
+} */

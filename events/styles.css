@@ -96,7 +96,7 @@ body {
 }
 
 .width-33 {
-  width: 33%;
+  width: 37%;
 }
 
 .width-63 {
@@ -104,7 +104,7 @@ body {
 }
 
 .width-67 {
-  width: 67%;
+  width: 63%;
 }
 
 .width-100 {
@@ -443,5 +443,5 @@ button:disabled {
 }
 
 .desktop video {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
 }

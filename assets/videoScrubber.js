@@ -18,7 +18,7 @@ function playBackward() {
         : video.currentTime;
     console.log(video.currentTime);
     promise = false;
-  }, 75);
+  }, 60);
 }
 
 function playForward() {
@@ -30,7 +30,7 @@ function playForward() {
         : video.currentTime;
     console.log(video.currentTime);
     promise = false;
-  }, 75);
+  }, 60);
 }
 
 let promise;
