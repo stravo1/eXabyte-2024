@@ -72,6 +72,7 @@ var prompt = {
       let contentWrapper = document.querySelector(".window-content");
       contentWrapper.scrollTop = contentWrapper.scrollHeight;
     }, 500);
+    prompt.focus();
   },
   maximize: function () {
     prompt.window.classList.remove("window--minimized");
@@ -160,7 +161,7 @@ function detectEnter(e) {
       }
     }
     if (!commandFound) {
-      outputWrapper.innerHTML += `<br><span class="cmd_err">${prompt.input.value}</span><br>ERROR: Unknown Command`;
+      outputWrapper.innerHTML += `<br><br><span class="cmd_err">${prompt.input.value}</span><br>ERROR: Unknown Command`;
     }
     prompt.input.value = "";
     prompt.input.style.width = "0.5rem";

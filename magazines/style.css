@@ -56,7 +56,7 @@ body {
 }
 
 .width-33 {
-  width: 33%;
+  width: 35%;
 }
 
 .width-63 {
@@ -64,7 +64,7 @@ body {
 }
 
 .width-67 {
-  width: 67%;
+  width: 65%;
 }
 
 .width-100 {
@@ -135,8 +135,8 @@ body {
 .LHS {
   /* background: var(--primary-color); */
   background: rgba(31, 64, 214, 0.25);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .LHS header,
@@ -150,7 +150,6 @@ body {
 }
 
 .RHS {
-
   padding: 80px 0 50px;
   gap: 1rem;
   position: relative;
@@ -185,6 +184,9 @@ body {
     width: 400px;
     margin-left: 0px !important;
     margin-right: 0px !important;
+    /* -webkit-box-shadow: 0px 0px 35px 8px rgba(116, 220, 255, 0.5);
+    -moz-box-shadow: 0px 0px 35px 8px rgba(116, 220, 255, 0.5);
+    box-shadow: 0px 0px 35px 8px rgba(116, 220, 255, 0.5); */
   }
   .swiper-slide {
     display: flex;
@@ -202,6 +204,7 @@ body {
     aspect-ratio: calc(3 / 4);
     object-fit: cover;
     border-radius: 5px !important;
+    border: 3px white solid;
   }
 }
 
@@ -209,7 +212,7 @@ body {
 
 .top-section {
   /* background: var(--primary-color); */
-  background-color: rgba(67, 67, 67, 0.421);
+  background-color: rgba(67, 67, 67, 0.5);
   min-height: 250px;
   transition: 0.1s ease-in-out;
 }
@@ -242,17 +245,18 @@ body {
   .xcryptusmob-items .swiper-slide {
     display: flex;
     justify-content: center;
-    border-radius: 18px;
+    border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    border: 2px rgba(255, 255, 255, 0.5) solid;
   }
 
   .xcryptusmob-items .swiper-slide img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 18px;
+    border-radius: 10px;
   }
 }
 .transparent-glass-bg {
@@ -287,4 +291,12 @@ body {
 .glass-white {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
+}
+
+.desktop .current-route {
+  color: rgb(151, 162, 255) !important;
+}
+
+.current-route::after {
+  background-color: rgb(151, 162, 255) !important;
 }

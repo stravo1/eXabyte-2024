@@ -2,6 +2,7 @@
   display: flex;
   position: relative;
   z-index: 101;
+  margin: 1rem;
 }
 
 .routes-desktop,
@@ -27,7 +28,14 @@
 
 .text-white > a {
   color: rgba(255, 255, 255, 0.8);
+  opacity: 0.3;
+  transition: all 250ms ease;
 }
+
+.text-white:hover > a {
+  opacity: 1;
+}
+
 
 .current-route {
   color: var(--primary-color) !important;
@@ -101,13 +109,14 @@
   display: flex;
   align-items: center;
   border: 2px solid rgb(15, 184, 156);
+  border-radius: 5px;
 }
 #events-desktop > a {
   color: rgb(18, 196, 166);
   z-index: 1;
   transition: 250ms;
 }
-.open-x{
+.open-x {
   background: rgb(15, 184, 156);
   width: 100%;
   height: 0%;
@@ -116,10 +125,15 @@
   left: 0;
   transition: 250ms ease-in-out;
 }
-#events-desktop:hover .open-x{
+#events-desktop:hover .open-x {
   top: 0;
   height: 100%;
 }
-#events-desktop:hover > a{
+#events-desktop:hover > a {
   color: black !important;
+  opacity: 1;
+}
+
+#events-desktop > a {
+  opacity: 1;
 }

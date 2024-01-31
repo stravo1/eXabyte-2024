@@ -58,7 +58,7 @@ html {
 }
 
 .width-33 {
-  width: 33%;
+  width: 35%;
 }
 
 .width-63 {
@@ -66,7 +66,7 @@ html {
 }
 
 .width-67 {
-  width: 67%;
+  width: 65%;
 }
 
 .width-100 {
@@ -141,7 +141,7 @@ html {
 
 .top-section {
   /* background: var(--primary-color); */
-  background-color: rgba(67, 67, 67, 0.421);
+  background-color: rgba(67, 67, 67, 0.6);
   min-height: 250px;
   transition: 0.1s ease-in-out;
 }
@@ -333,7 +333,8 @@ html {
 
 .LHS {
   /* background: var(--primary-color); */
-  background: rgba(31, 64, 214, 0.25);
+  background: rgba(31, 180, 214, 0.25);
+  /* background: rgba(31, 64, 214, 0.15); */
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
 }
@@ -450,12 +451,13 @@ textarea {
   padding: 1rem;
   box-sizing: border-box;
   font-family: "product_sans", sans-serif;
+  backdrop-filter: blur(1px);
 }
 
 input::placeholder,
 textarea::placeholder {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Karla", sans-serif;
+  font-family: "product_sans", sans-serif;
   font-weight: bold;
 }
 
@@ -471,14 +473,20 @@ textarea::placeholder {
   font-weight: 600;
   border-radius: 5px;
   border: none;
-  background-color: white;
+  background-color: wheat;
   font-family: "product_sans", sans-serif;
 }
+.desktop .submit-button, .desktop .call-button {
+  background-color: rgb(184, 209, 255);
+}
 
+.desktop input, .desktop textarea {
+  backdrop-filter: blur(5px);
+}
 .call-button {
   width: 20%;
   padding: 1rem;
-  background-color: white;
+  background-color: wheat;
   color: black;
   display: flex;
   justify-content: center;

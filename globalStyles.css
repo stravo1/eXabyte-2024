@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("/assets/fonts/stylesheet.css");
 
+.desktop, .mobile {
+  overflow-x: hidden !important;
+}
+
 body {
   height: 100dvh;
   width: 100dvw;
@@ -238,6 +242,12 @@ canvas {
   line-height: 1.25;
   font-size: 1rem;
 }
+
+.text-base {
+  line-height: 1.35;
+  font-size: 0.97rem;
+}
+
 .text-md {
   line-height: 1.35;
   font-size: 1.1rem;
@@ -367,6 +377,10 @@ canvas {
 
 .opacity-50 {
   opacity: 50%;
+}
+
+.opacity-60 {
+  opacity: 60%;
 }
 
 .opacity-75 {

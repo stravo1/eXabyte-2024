@@ -51,15 +51,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 100);
   });
 });
-
-function setVideoDims() {
-  let desktopBackground = document.querySelector(".desktop .background")
-  let desktopVideo = document.querySelector(".desktop video")
-
-  desktopVideo.style.width = desktopBackground.clientHeight + "px"
-  desktopVideo.style.height = desktopBackground.clientWidth + "px"
-  desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
-  desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
-}
-setVideoDims()
-window.addEventListener("resize", setVideoDims)

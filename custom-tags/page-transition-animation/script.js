@@ -9,6 +9,39 @@ var routesLinksDesktopGroup2 = document.querySelector(
   ".desktop .nav-group-2"
 ).childNodes;
 
+var homeIconDesktop = document.querySelector(".desktop .logo-holder")
+var homeIconMobile = document.querySelector(".mobile .logo-holder")
+
+homeIconDesktop.addEventListener("click", (e) => {
+  e.stopPropagation();
+  e.preventDefault();
+  if ("/" == path || path == "/index.html") {
+    closeMenu();
+    return;
+  }
+  localStorage.setItem("playTransitionAnimation", true);
+  transitionWrapper.classList.remove("transition-invisible");
+  transitionWrapper.classList.add("transition-visible");
+  setTimeout(() => {
+    window.location.replace(`/`);
+  }, 250);
+});
+
+homeIconMobile.addEventListener("click", (e) => {
+  e.stopPropagation();
+  e.preventDefault();
+  if ("/" == path || path == "/index.html") {
+    closeMenu();
+    return;
+  }
+  localStorage.setItem("playTransitionAnimation", true);
+  transitionWrapper.classList.remove("transition-invisible");
+  transitionWrapper.classList.add("transition-visible");
+  setTimeout(() => {
+    window.location.replace(`/`);
+  }, 250);
+});
+
 routesLinks.forEach((node) => {
   node.addEventListener("click", (e) => {
     e.stopPropagation();
@@ -73,12 +106,14 @@ routesLinksDesktopGroup2.forEach((node) => {
   });
 });
 
-if (localStorage.getItem("playTransitionAnimation")) {
-  localStorage.removeItem("playTransitionAnimation");
-  setTimeout(() => {
-    transitionWrapper.classList.add("transition-invisible");
-    transitionWrapper.classList.remove("transition-visible");
-  }, 250);
-} else {
-  transitionWrapper.classList.add("transition-invisible-no-anim");
-}
+window.addEventListener("load", () => {
+  if (localStorage.getItem("playTransitionAnimation")) {
+    localStorage.removeItem("playTransitionAnimation");
+    setTimeout(() => {
+      transitionWrapper.classList.add("transition-invisible");
+      transitionWrapper.classList.remove("transition-visible");
+    }, 250);
+  } else {
+    transitionWrapper.classList.add("transition-invisible-no-anim");
+  }
+})

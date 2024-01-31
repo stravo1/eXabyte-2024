@@ -71,9 +71,10 @@ function openItems(n) {
     plus_icon_wrapper[n].style.transitionDelay = "0s";
     plus_icon_wrapper[n].classList.add('open');
     plus_icon_wrapper[n].classList.remove('close');
-    plus_icon_wrapper[n].style.background = "var(--primary-color)";
-    items_wrapper[n].style.background = "wheat";
-    items_wrapper[n].style.borderColor = "goldenrod";
+    plus_icon_wrapper[n].style.background = "#999999";
+    items_wrapper[n].style.background = "#ffffff75";
+    items_wrapper[n].style.backdropFilter = "blur(3px)";
+    items_wrapper[n].style.borderColor = "#00000075";
     items_wrapper[n].style.boxShadow = '0 0 10px 2px';
     let val = 0;
     for (let i = 0; i < item.length; i++) {
@@ -87,7 +88,7 @@ function openItems(n) {
     items_wrapper[n].style.height = val + 45 + 'px';
     items_wrapper[n].style.transitionDelay = "0.12s";
     profile_card[n].style.bottom = "12px";
-    profile_card[n].style.boxShadow = "rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px"
+    profile_card[n].style.boxShadow = "rgba(46, 240, 240, 0.4) 0px 5px, rgba(46, 240, 240, 0.3) 0px 10px, rgba(46, 240, 240, 0.2) 0px 15px, rgba(46, 240, 240, 0.1) 0px 20px, rgba(46, 240, 240, 0.05) 0px 25px"
 }
 
 function closeItems(n) {
@@ -96,7 +97,7 @@ function closeItems(n) {
     plus_icon[n].style.transitionDelay = "0.2s";
     plus_icon[n].style.filter = "invert(0)";
     plus_icon_wrapper[n].style.transitionDelay = "0.2s";
-    plus_icon_wrapper[n].style.background = "white";
+    plus_icon_wrapper[n].style.background = "transparent";
     plus_icon_wrapper[n].classList.add('close');
     plus_icon_wrapper[n].classList.remove('open');
     for (let i = 0; i < item.length; i++) {
@@ -108,6 +109,7 @@ function closeItems(n) {
     items_wrapper[n].style.height = '45px';
     items_wrapper[n].style.background = "transparent";
     items_wrapper[n].style.borderColor = "transparent";
+    items_wrapper[n].style.backdropFilter = "none";
     items_wrapper[n].style.boxShadow = '0 0 0';
     profile_card[n].style.bottom = "0";
     profile_card[n].style.boxShadow = '0 0 0'
@@ -130,10 +132,8 @@ function moreItems(card_number) {
         closeItems(card_number);
 }
 
-document.addEventListener('click', function (event) {
-    if (!event.target.className.includes('plus-icon')) {
-        initItems();
-    }
+window.addEventListener('load', function (event) {
+    initItems();
 });
 
 // -- END
@@ -184,15 +184,3 @@ function copyNumber(card_number) {
     copy_icon[card_number].innerHTML = "check_box";
     copy_icon[card_number].style.color = "green";
 }
-
-function setVideoDims() {
-    let desktopBackground = document.querySelector(".desktop .background")
-    let desktopVideo = document.querySelector(".desktop video")
-
-    desktopVideo.style.width = desktopBackground.clientHeight + "px"
-    desktopVideo.style.height = desktopBackground.clientWidth + "px"
-    desktopVideo.style.top = (desktopBackground.clientHeight - desktopBackground.clientWidth) / 2 + "px"
-    desktopVideo.style.left = (desktopBackground.clientWidth - desktopBackground.clientHeight) / 2 + "px"
-}
-setVideoDims()
-window.addEventListener("resize", setVideoDims)
