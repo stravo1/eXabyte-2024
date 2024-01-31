@@ -57,93 +57,120 @@ const eventDetails = [
   {
     name: "Codeplay",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Where tech enthusiasts unite, showcasing innovation through collaborative coding, workshops, and networking.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Where tech enthusiasts unite, showcasing innovation through collaborative coding, workshops, and networking.",
     formLink: "https://google.com",
     icon: "data_object",
   },
   {
-    name: "Codeplay",
+    name: "Webbed",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Unleash creativity &  Elevate your coding skills at this immersive web development event.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Unleash creativity &  Elevate your coding skills at this immersive web development event.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "language",
   },
   {
-    name: "Codeplay",
+    name: "Crypt-X",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Dive into the cryptic challenge, solve puzzles & crack encrypted messages.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Dive into the cryptic challenge, solve puzzles & crack encrypted messages.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "key",
   },
   {
-    name: "Codeplay",
+    name: "Brainstorm",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Ignite your intellect in a thrilling quiz challenge, testing knowledge and quick thinking.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Ignite your intellect in a thrilling quiz challenge, testing knowledge and quick thinking.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "psychology_alt",
   },
   {
-    name: "Codeplay",
+    name: "Verb-O-War",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Engage in thought-provoking debates, where ideas clash and minds spark intellectual fireworks.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Engage in thought-provoking debates, where ideas clash and minds spark intellectual fireworks.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "campaign",
   },
   {
-    name: "Codeplay",
+    name: "Digitbit",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Unleash creativity in hardware design challenges, where circuits come to life with innovation.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Unleash creativity in hardware design challenges, where circuits come to life with innovation.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "electrical_services",
   },
   {
-    name: "Codeplay",
+    name: "Em-Bleed",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Transform imagination into pixels at this digital art and design event, sparking creative brilliance.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Transform imagination into pixels at this digital art and design event, sparking creative brilliance.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "palette",
   },
   {
-    name: "Codeplay",
+    name: "Byte Tales",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Sculpt powerful narratives in tiny spaces, where words spark worlds in microfiction mastery",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Sculpt powerful narratives in tiny spaces, where words spark worlds in microfiction mastery",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "auto_stories",
   },
   {
-    name: "Codeplay",
+    name: "X-Hunt",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Embark on a thrilling clue hunt, decode mysteries, and unravel the enigma.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Embark on a thrilling clue hunt, decode mysteries, and unravel the enigma.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "map",
   },
 
   {
-    name: "Codeplay",
+    name: "Cube-X",
     description:
-      "Experience the mesmerizing spectacle of diverse rhythms colliding on one stage in Xavotsav.",
+      "Twist, turn, and conquer the challenge in this Rubik's Cube-solving showdown.",
     modalDescription:
-      "Immerse in the rhythmic world of dance at Xavotsav 2024, where movement reigns supreme, stirring hearts and sparking expressive passion. This vibrant genre promises a kaleidoscope of performances, showcasing the dynamic diversity within the dance community.<br><br>Join us in celebrating the artistry, dedication, and sheer brilliance that dance brings to life at Xavotsav 2024. <ul><li>Eastern solo</li><li>Bollywood Dance</li><li>Street Battle</li><li>Western Duet</li><li>Western Group</li></ul>",
+      "Twist, turn, and conquer the challenge in this Rubik's Cube-solving showdown.",
     formLink: "https://google.com",
-    icon: "data_object",
+    icon: "deployed_code",
+  },
+  {
+    name: "Snappit",
+    description:
+      "Capture the essence of moments, express creativity through lenses in this captivating photography event.",
+    modalDescription:
+      "Capture the essence of moments, express creativity through lenses in this captivating photography event.",
+    formLink: "https://google.com",
+    icon: "photo_camera",
+  },
+  {
+    name: "Sudo-X",
+    description:
+      "Tackle number puzzles, sharpen your mind, and conquer Sudoku mastery in this event.",
+    modalDescription:
+      "Tackle number puzzles, sharpen your mind, and conquer Sudoku mastery in this event.",
+    formLink: "https://google.com",
+    icon: "grid_on",
+  },
+  {
+    name: "Excelerate",
+    description:
+      "Dive into the adrenaline-fueled world of esports, where skills clash and champions emerge.",
+    modalDescription:
+      "Dive into the adrenaline-fueled world of esports, where skills clash and champions emerge.",
+    formLink: "https://google.com",
+    icon: "sports_esports",
   },
 ];
 
@@ -156,7 +183,7 @@ eventDetails.forEach((event, index) => {
   newEventDivDesktop.innerHTML = `
   <div class="flex justify-between w-full items-center gap-1rem p-025rem">
     <div class="display text-xl z-5">${event.name}</div>
-    <span class="material-symbols-outlined text-xl"> menu </span>
+    <span class="material-symbols-outlined text-xl"> ${event.icon} </span>
   </div>
   <div class="z-5 text-base">
         ${event.description}
@@ -171,7 +198,7 @@ eventDetails.forEach((event, index) => {
   newEventDiv.innerHTML = `
   <div class="flex justify-between w-full items-center gap-1rem p-025rem">
     <div class="display text-xl z-5">${event.name}</div>
-    <span class="material-symbols-outlined text-xl"> menu </span>
+    <span class="material-symbols-outlined text-xl"> ${event.icon} </span>
   </div>
   <div class="z-5 text-base">
         ${event.description}

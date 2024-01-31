@@ -1,3 +1,359 @@
+
+let profileCount = 1;
+
+const profileDetails = [
+    {
+        category: "Working Committee Members",
+        members: [
+            {
+                name: "Sulagna Chatterjee",
+                phone: "+918100293262",
+                email: "csulagna.03@gmail.com",
+                position: "WCM",
+                insta: "https://www.instagram.com/sulagna_cjee?igsh=MWdybzQzeTMwMDZvcw==",
+                linkedin: "https://www.linkedin.com/in/sulagna-chatterjee-607702221",
+            },
+        ],
+        
+    }
+]
+
+const mobileWrapper = document.querySelector(".mobile .middle-section")
+
+mobileWrapper.innerHTML += `
+        <div class="profile-card card-1">
+          <div class="card-wrapper-1">
+            <img
+              src="/assets/images/team-pictures/soumyadeep.jpg"
+              alt="profile pic"
+              class="profile-picture"
+            />
+            <div class="profile-name pixelated">Soumyadeep Lobwo</div>
+          </div>
+          <div class="card-wrapper-2 flex justify-between items-center">
+            <div class="role">Convenor</div>
+            <div class="profile-icons-group flex items-center">
+              <a id="call" href="tel:+910123456789"
+                ><span class="material-symbols-outlined">call</span></a
+              >
+              <div class="more-items relative flex flex-dir-col">
+                <a class="more-item-links" href="mailto:xyz@example.com"
+                  ><img
+                    class="mailbox-icon"
+                    src="/assets/logos/mail-outlined.svg"
+                    alt="mail"
+                /></a>
+                <a
+                  class="more-item-links"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="insta-icon"
+                    src="/assets/logos/insta.svg"
+                    alt="instagram"
+                /></a>
+                <a
+                  class="more-item-links"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="linkedin-icon"
+                    src="/assets/logos/linkedin-outlined.svg"
+                    alt="linkedin"
+                /></a>
+                <div class="plus-icon-wrapper close" onclick="moreItems(0)">
+                  <span class="plus-icon material-symbols-outlined"
+                    >add_circle</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+`
+profileCount++;
+
+profileDetails.forEach((item) => {
+    let innerHTML = ``;
+    item.members.forEach((profile) => {
+        let content = `
+        <div class="profile-card card-${profileCount}">
+            <div class="card-wrapper-1">
+              <img
+                src="/assets/images/team-pictures/${profile.name.split(" ")[0].toLowerCase()}.jpg"
+                alt="profile pic"
+                class="profile-picture"
+              />
+              <div class="profile-name">${profile.name}</div>
+            </div>
+            <div class="card-wrapper-2 flex justify-between items-center">
+              <div class="role">${profile.position}</div>
+              <div class="profile-icons-group flex items-center">
+                <a id="call" href="tel:${profile.phone}"
+                  ><span class="material-symbols-outlined">call</span></a
+                >
+                <div class="more-items relative flex flex-dir-col">
+                  <a class="more-item-links" href="mailto:${profile.email}"
+                    ><img
+                      class="mailbox-icon"
+                      src="/assets/logos/mail-outlined.svg"
+                      alt="mail"
+                  /></a>
+                  ${profile.insta ?
+                `
+                        <a
+                        class="more-item-links"
+                        href="${profile.insta}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          class="insta-icon"
+                          src="/assets/logos/insta.svg"
+                          alt="instagram"
+                        /></a>
+                    `: ``
+            }
+                  ${profile.linkedin ?
+                `
+                        <a
+                        class="more-item-links"
+                        href="${profile.linkedin}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          class="linkedin-icon"
+                          src="/assets/logos/linkedin-outlined.svg"
+                          alt="linkedin"
+                        /></a>
+                ` : ``
+            }
+                ${profile.github ?
+                `
+                        <a
+                        class="more-item-links"
+                        href="${profile.github}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          class="linkedin-icon"
+                          src="/assets/logos/github-outlined.svg"
+                          alt="github"
+                        /></a>
+                ` : ``
+            }
+                  <div class="plus-icon-wrapper close" onclick="moreItems(${profileCount - 1})">
+                    <span class="plus-icon material-symbols-outlined"
+                      >add_circle</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        `
+        innerHTML = `
+        ${innerHTML}
+        ${content}
+        `
+        profileCount++;
+    })
+    innerHTML = `
+    <header class="pixelated">${item.category}</header>
+    <div class="team-members flex flex-wrap justify-center">
+        ${innerHTML}
+    </div>
+    `
+    mobileWrapper.innerHTML += innerHTML;
+})
+
+let callButtonCount = 0;
+
+const desktopWrapper = document.querySelector(".desktop .RHS");
+desktopWrapper.innerHTML += `
+    <div class="profile-card card-${profileCount} mt-2rem">
+        <div class="card-wrapper-1">
+          <img
+            src="/assets/images/team-pictures/soumyadeep.jpg"
+            alt="profile pic"
+            class="profile-picture"
+          />
+          <div class="profile-name">Soumyadeep Lobwo</div>
+        </div>
+        <div class="card-wrapper-2 flex justify-between items-center">
+          <div class="role">Convenor</div>
+          <div class="profile-icons-group flex items-center">
+            <div id="call">
+              <div class="phone-number-box hide-number">
+                <span class="phone-number">+91 0123456789</span>
+                <span
+                  class="copy-icon material-symbols-outlined"
+                  title="copy"
+                  onclick="copyNumber(${callButtonCount})"
+                  >content_copy</span
+                >
+              </div>
+              <span
+                class="call-icon material-symbols-outlined"
+                onclick="phoneBox(${callButtonCount})"
+                >call</span
+              >
+            </div>
+            <div class="more-items relative flex flex-dir-col">
+              <a class="more-item-links" href="mailto:xyz@example.com"
+                ><img
+                  class="mailbox-icon"
+                  src="/assets/logos/mail-outlined.svg"
+                  alt="mail"
+              /></a>
+              <a
+                class="more-item-links"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="insta-icon"
+                  src="/assets/logos/insta.svg"
+                  alt="instagram"
+              /></a>
+              <a
+                class="more-item-links"
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="linkedin-icon"
+                  src="/assets/logos/linkedin-outlined.svg"
+                  alt="linkedin"
+              /></a>
+              <div class="plus-icon-wrapper close" onclick="moreItems(${profileCount - 1})">
+                <!-- <span class="plus-icon material-symbols-outlined">add_circle</span> -->
+                <img
+                  class="plus-icon plus-icon-desktop plus-icon-desktop-hover"
+                  src="/assets/logos/add-plus-circle.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+`
+
+profileCount++;
+callButtonCount++;
+
+profileDetails.forEach((item) => {
+    let innerHTML = ``;
+    item.members.forEach((profile) => {
+        let content = `
+            <div class="profile-card card-${profileCount}">
+              <div class="card-wrapper-1">
+                <img
+                  src="/assets/images/team-pictures/${profile.name.split(" ")[0].toLowerCase()}.jpg"
+                  alt="profile pic"
+                  class="profile-picture"
+                />
+                <div class="profile-name">${profile.name}</div>
+              </div>
+              <div class="card-wrapper-2 flex justify-between items-center">
+                <div class="role">${profile.position}</div>
+                <div class="profile-icons-group flex items-center">
+                  <div id="call">
+                    <div class="phone-number-box hide-number">
+                      <span class="phone-number">${profile.phone}</span>
+                      <span
+                        class="copy-icon material-symbols-outlined"
+                        title="copy"
+                        onclick="copyNumber(${callButtonCount})"
+                        >content_copy</span
+                      >
+                    </div>
+                    <span
+                      class="call-icon material-symbols-outlined"
+                      onclick="phoneBox(${callButtonCount})"
+                      >call</span
+                    >
+                  </div>
+                  <div class="more-items relative flex flex-dir-col">
+                    <a class="more-item-links" href="mailto:${profile.email}"
+                      ><img
+                        class="mailbox-icon"
+                        src="/assets/logos/mail-outlined.svg"
+                        alt="mail"
+                    /></a>
+                    ${profile.insta ?
+                `
+                    <a
+                        class="more-item-links"
+                        href="${profile.insta}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                        class="insta-icon"
+                        src="/assets/logos/insta.svg"
+                        alt="instagram"
+                    /></a>
+                        `: ``
+            }
+                    ${profile.linkedin ?
+                `
+                    <a
+                      class="more-item-links"
+                      href="${profile.linkedin}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="linkedin-icon"
+                        src="/assets/logos/linkedin-outlined.svg"
+                        alt="linkedin"
+                    /></a>
+                        ` : ``
+            }
+                ${profile.github ?
+                `
+                        <a
+                        class="more-item-links"
+                        href="${profile.github}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          class="linkedin-icon"
+                          src="/assets/logos/github-outlined.svg"
+                          alt="github"
+                        /></a>
+                ` : ``
+            }
+                    <div class="plus-icon-wrapper close" onclick="moreItems(${profileCount - 1})">
+                      <!-- <span class="plus-icon material-symbols-outlined">add_circle</span> -->
+                      <img
+                        class="plus-icon plus-icon-desktop plus-icon-desktop-hover"
+                        src="/assets/logos/add-plus-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        `
+        innerHTML = `
+        ${innerHTML}
+        ${content}
+        `
+        profileCount++;
+        callButtonCount++;
+    })
+    innerHTML = `
+    <header class="pixelated">${item.category}</header>
+    <div class="team-members flex flex-wrap gap-2rem justify-center">
+        ${innerHTML}
+    </div>
+    `
+    desktopWrapper.innerHTML += innerHTML;
+})
+
 // Code scrolling effects of the page header:
 // -- START
 let header = document.querySelector("#page-header");

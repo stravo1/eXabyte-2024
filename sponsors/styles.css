@@ -179,7 +179,7 @@ body {
 }
 .sponsor-card img {
   border-radius: 12px;
-  filter: grayscale(0.9);
+  /* filter: grayscale(0.9); */
 }
 
 .brand-name,
@@ -347,7 +347,7 @@ img {
 
 .sponsor-card:hover > .brand-logo-desktop {
   transform: scale(1.15);
-  box-shadow: 0 0 30px rgb(141, 63, 219);
+  filter: drop-shadow(0 0 30px rgb(63, 105, 219));
 }
 
 .transparent-glass-bg {

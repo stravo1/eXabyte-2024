@@ -243,6 +243,11 @@ canvas {
   font-size: 1rem;
 }
 
+.mobile .text-base {
+  line-height: 1.35;
+  font-size: 1rem;
+}
+
 .text-base {
   line-height: 1.35;
   font-size: 0.97rem;

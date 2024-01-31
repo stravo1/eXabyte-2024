@@ -1,47 +1,63 @@
 // REMEMBER TO REMOVE GREYSCALE ON IMAGES
 const sponsorDetails = [
+  // {
+  //   groupName: "Top Sponsors",
+  //   sponsorsArray: [
+  //     {
+  //       name: "Newton School",
+  //       sponsorType: "Broadband Partner",
+  //       imageSrc: "/assets/images/sponsor-logos/gtpl-removebg-preview.png",
+  //     },
+
+  //   ],
+  // },
   {
-    groupName: "Top Sponsors",
+    groupName: "Broadband Partner",
     sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc: "/assets/images/sponsor-logos/ns_primary_logo.png",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Study Abroad Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Cybersecurity Training Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+        name: "GTPLKCBPL",
+        sponsorType: "",
+        imageSrc: "/assets/images/sponsor-logos/gtpl-removebg-preview.png",
       },
     ],
   },
   {
-    groupName: "Broadband Partners",
+    groupName: "Restaurant Partner",
     sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+        name: "Gazeeboo",
+        sponsorType: "",
+        imageSrc: "/assets/images/sponsor-logos/gazeeboo.jpeg",
       },
+    ],
+  },
+  {
+    groupName: "Education Partner",
+    sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+        name: "Edureka",
+        sponsorType: "",
+        imageSrc: "/assets/images/sponsor-logos/Edureka.png",
       },
+    ],
+  },
+  {
+    groupName: "Study Abroad Partner",
+    sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Broadband Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+        name: "EduAims",
+        sponsorType: "",
+        imageSrc: "/assets/images/sponsor-logos/eduaims.jpeg",
+      },
+    ],
+  },
+  {
+    groupName: "Exclusive Radio Partner",
+    sponsorsArray: [
+      {
+        name: "91.9 Friends FM",
+        sponsorType: "",
+        imageSrc: "/assets/images/sponsor-logos/91.9-removebg-preview.png",
       },
     ],
   },
@@ -49,34 +65,28 @@ const sponsorDetails = [
     groupName: "Event Partners",
     sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Event Partner",
+        name: "Newton School",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/ns_primary_logo.png",
       },
       {
-        name: "Brand Name",
-        sponsorType: "Event Partner",
+        name: "Tcg Crest",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/tcg-crest-2000pxl.png",
       },
       {
-        name: "Brand Name",
-        sponsorType: "Event Partner",
+        name: "Cubelelo",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/cubelelo.png",
       },
       {
-        name: "Brand Name",
-        sponsorType: "Event Partner",
+        name: "Sum",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Event Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/sumeintrruments.jpg",
       },
     ],
   },
@@ -85,53 +95,61 @@ const sponsorDetails = [
     sponsorsArray: [
       {
         name: "Brand Name",
-        sponsorType: "Media Partner",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/The Telegraph Online Edugraph Logo White Background.png",
       },
+
+    ],
+  },
+  {
+    groupName: "Electronics Partners",
+    sponsorsArray: [
       {
         name: "Brand Name",
-        sponsorType: "Media Partner",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/desai.jpeg",
+      },
+
+    ],
+  },
+  {
+    groupName: "Marketing Partners",
+    sponsorsArray: [
+      {
+        name: "Brand Name",
+        sponsorType: "",
+        imageSrc:
+          "/assets/images/sponsor-logos/Festa.jpg",
+      },
+
+    ],
+  },
+  {
+    groupName: "Food Partner",
+    sponsorsArray: [
+      {
+        name: "Moktu",
+        sponsorType: "",
+        imageSrc:
+          "/assets/images/sponsor-logos/moktu.png",
       },
     ],
   },
   {
-    groupName: "Food Partners",
+    groupName: "Pizza Partner",
     sponsorsArray: [
       {
-        name: "Brand Name",
-        sponsorType: "Food Partner",
+        name: "La Pino'z Pizza",
+        sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Food Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-    ],
-  },
-  {
-    groupName: "Radio Partners",
-    sponsorsArray: [
-      {
-        name: "Brand Name",
-        sponsorType: "Radio Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
-      },
-      {
-        name: "Brand Name",
-        sponsorType: "Radio Partner",
-        imageSrc:
-          "/assets/images/sponsor-logos/official-sponsor-grunge-stamp.jpg",
+          "/assets/images/sponsor-logos/pizza.jpeg",
       },
     ],
   },
 ];
+
 
 // Code scrolling effects of the page header:
 let header = document.querySelector("#page-header");
