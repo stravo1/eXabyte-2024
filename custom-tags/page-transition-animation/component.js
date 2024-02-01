@@ -17,7 +17,7 @@ class CustomPageTransition extends HTMLElement {
                 <span></span>
               </div>
               <div class="pixelated bottom-text">
-                eXabyte' 24
+                eXabyte '24
               </div>
             </div>
           `
