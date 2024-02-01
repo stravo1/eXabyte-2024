@@ -186,7 +186,7 @@ const profileDetails = [
         phone: "+917001760855",
         email: "arnabchakraborty.ac50@gmail.com",
         position: "Web Dev Lead",
-        linkedin: "https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav",
+        linkedin: "https://in.linkedin.com/in/arnab-chakraborty-b9101a208",
         insta: "https://www.instagram.com/anonymous_arnab/"
       },
       {
