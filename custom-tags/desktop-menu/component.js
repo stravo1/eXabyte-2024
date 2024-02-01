@@ -16,8 +16,8 @@ class CustomDesktopMenu extends HTMLElement {
               </div>
               <div class="nav-groups nav-group-2 nav-group-invisible">
                 <li id="sponsors-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/sponsors">sponsors</a></li>
-                <li id="contact-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/contact">contact-us</a></li>
                 <li id="about-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/about">about-us</a></li>
+                <li id="contact-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/contact">contact-us</a></li>
               </div>
               <button class="nav-group-toggle underline-on-hover">more</button>
             </div>

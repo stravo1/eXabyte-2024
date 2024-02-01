@@ -12,7 +12,7 @@ var commandOutputs = {
     12th and 13th Feb
     `,
   location: `
-    St. Xavier’s College (Autonomous), Kolkata
+    St. Xavier's College (Autonomous), Kolkata
     <br>
     30, Mother Teresa Sarani,
     <br>
@@ -36,8 +36,6 @@ var commandOutputs = {
     - location: locate us
     <br>
     - date: when we will go live
-    <br>
-    - contact: solve all your queries
     <br>
     - clear: clear terminal screen
     `,
@@ -129,22 +127,27 @@ function detectEnter(e) {
             commandFound = true;
             break;
           case "events":
-            window.location.replace("/events");
+            window.location.href = ("/events");
             outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "about":
-            window.location.replace("/about");
+            window.location.href = ("/about");
             outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "x-cryptus":
-            window.location.replace("/magazines");
+            window.location.href = ("/magazines");
             outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;
           case "sponsors":
-            window.location.replace("/sponsors");
+            window.location.href = ("/sponsors");
+            outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
+            commandFound = true;
+            break;
+          case "contacts":
+            window.location.href = ("/contacts");
             outputWrapper.innerHTML += `<br><span class="cmd">${prompt.input.value}</span><br>redirecting...`;
             commandFound = true;
             break;

@@ -23,7 +23,7 @@ homeIconDesktop.addEventListener("click", (e) => {
   transitionWrapper.classList.remove("transition-invisible");
   transitionWrapper.classList.add("transition-visible");
   setTimeout(() => {
-    window.location.replace(`/`);
+    window.location.href = (`/`);
   }, 250);
 });
 
@@ -38,7 +38,7 @@ homeIconMobile.addEventListener("click", (e) => {
   transitionWrapper.classList.remove("transition-invisible");
   transitionWrapper.classList.add("transition-visible");
   setTimeout(() => {
-    window.location.replace(`/`);
+    window.location.href = (`/`);
   }, 250);
 });
 
@@ -57,7 +57,7 @@ routesLinks.forEach((node) => {
     transitionWrapper.classList.remove("transition-invisible");
     transitionWrapper.classList.add("transition-visible");
     setTimeout(() => {
-      window.location.replace(`/${node.id == "home" ? "" : node.id}`);
+      window.location.href = (`/${node.id == "home" ? "" : node.id}`);
     }, 250);
   });
 });
@@ -80,7 +80,7 @@ routesLinksDesktopGroup1.forEach((node) => {
     transitionWrapper.classList.remove("transition-invisible");
     transitionWrapper.classList.add("transition-visible");
     setTimeout(() => {
-      window.location.replace(`/${nodePath == "home" ? "" : nodePath}`);
+      window.location.href = (`/${nodePath == "home" ? "" : nodePath}`);
     }, 250);
   });
 });
@@ -101,19 +101,15 @@ routesLinksDesktopGroup2.forEach((node) => {
     transitionWrapper.classList.remove("transition-invisible");
     transitionWrapper.classList.add("transition-visible");
     setTimeout(() => {
-      window.location.replace(`/${nodePath == "home" ? "" : nodePath}`);
+      window.location.href = (`/${nodePath == "home" ? "" : nodePath}`);
     }, 250);
   });
 });
 
 window.addEventListener("load", () => {
-  if (localStorage.getItem("playTransitionAnimation")) {
-    localStorage.removeItem("playTransitionAnimation");
-    setTimeout(() => {
-      transitionWrapper.classList.add("transition-invisible");
-      transitionWrapper.classList.remove("transition-visible");
-    }, 250);
-  } else {
-    transitionWrapper.classList.add("transition-invisible-no-anim");
-  }
+  localStorage.removeItem("playTransitionAnimation");
+  setTimeout(() => {
+    transitionWrapper.classList.add("transition-invisible");
+    transitionWrapper.classList.remove("transition-visible");
+  }, 250);
 })

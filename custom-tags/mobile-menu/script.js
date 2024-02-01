@@ -35,21 +35,27 @@ console.log(window.location.pathname);
 
 switch (path) {
     case "/":
+    case "/index.html":
         home.childNodes[0].classList.add("current-route");
         break;
     case "/events/":
+    case "/events/index.html":
         events.childNodes[0].classList.add("current-route");
         break;
     case "/sponsors/":
+    case "/sponsors/index.html":
         sponsors.childNodes[0].classList.add("current-route");
         break;
     case "/magazines/":
+    case "/magazines/index.html":
         magazines.childNodes[0].classList.add("current-route");
         break;
     case "/contact/":
+    case "/contact/index.html":
         contact.childNodes[0].classList.add("current-route");
         break;
     case "/about/":
+    case "/about/index.html":
         about.childNodes[0].classList.add("current-route");
         break;
 }
