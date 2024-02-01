@@ -56,7 +56,7 @@ var prompt = {
       .addEventListener("click", prompt.maximize);
     document.querySelector(".js-close").addEventListener("click", prompt.close);
     document.querySelector(".js-open").addEventListener("click", prompt.open);
-    prompt.input.focus();
+    // prompt.input.focus();
     // prompt.input.blur(prompt.focus);
   },
   focus: function () {
@@ -194,5 +194,11 @@ function getTextWidth(text, font) {
   const textMetrics = context.measureText(text);
   return textMetrics.width;
 }
+
+document.addEventListener("click", (event) => {
+  // console.log(event);
+  if (event.target.className.includes('window') || event.target.className.includes('window-header') || event.target.className.includes('window-content') || event.target.className.includes('window-title') || event.target.className.includes('outputs') || event.target.className.includes('window-cursor'))
+    prompt.focus()
+})
 
 prompt.init();
