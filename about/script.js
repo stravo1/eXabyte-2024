@@ -20,19 +20,19 @@ const profileDetails = [
         linkedin: "https://www.linkedin.com/in/sulagna-chatterjee-607702221",
       },
       {
+        name: "Sania Rahaman",
+        phone: "+918391870993",
+        email: "saniarahaman17@gmail.com",
+        position: "WCM",
+        insta: "https://www.instagram.com/__sania__17?igsh=YzdwYnNjMjlnZXdu",
+      },
+      {
         name: "Debarshi Mukherjee",
         phone: "+919051464021",
         email: "debarshigdsc@gmail.com",
         position: "WCM",
         insta: "https://www.instagram.com/deboz500?igsh=emFqcGU2dDYzdnFx",
         linkedin: "https://www.linkedin.com/in/debarshi-mukherjee-336544190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      },
-      {
-        name: "Sania Rahaman",
-        phone: "+918391870993",
-        email: "saniarahaman17@gmail.com",
-        position: "WCM",
-        insta: "https://www.instagram.com/__sania__17?igsh=YzdwYnNjMjlnZXdu",
       },
     ],
   },
@@ -48,7 +48,7 @@ const profileDetails = [
         linkedin: "https://www.linkedin.com/in/shahmeer24mondal"
       },
       {
-        name: "Riddhik Dalal",
+        name: "Riddhick Dalal",
         phone: "+919735593303",
         email: "riddhick14@gmail.com",
         position: "Events OCM",
@@ -59,7 +59,7 @@ const profileDetails = [
         name: "Priyanshu Acharya",
         phone: "+918116209351",
         email: "priyanshu1802@outlook.com",
-        position: "Public Relatons OCM",
+        position: "Public Relations OCM",
         insta: "https://www.instagram.com/priyanshu___acharya/",
         linkedin: "http://www.linkedin.com/in/priyanshu-acharya",
       },
@@ -67,7 +67,7 @@ const profileDetails = [
         name: "Anushree Chakraborty",
         phone: "+918240942176",
         email: "anushreechakraborty56@gmail.com",
-        position: "Public Relatons OCM",
+        position: "Public Relatoins OCM",
         insta: "https://www.instagram.com/shreeee.c?igsh=MXJ6M3B1eTFzM3pvdQ==",
         linkedin: "https://www.linkedin.com/in/anushree-chakraborty-3a6814299"
       },
@@ -84,7 +84,7 @@ const profileDetails = [
         phone: "+918017712562",
         email: "mailingadityavs@gmail.com",
         position: "Finance OCM",
-        linkedin: "https://www.linkedin.com/aadityavs"
+        linkedin: "https://www.linkedin.com/in/aadityavs"
       },
       {
         name: "Ayush Ghatak",
@@ -183,8 +183,8 @@ const profileDetails = [
       },
       {
         name: "Arnab Chakraborty",
-        phone: "+917001056020",
-        email: "mail.sntn.dev@gmail.com",
+        phone: "+917001760855",
+        email: "arnabchakraborty.ac50@gmail.com",
         position: "Web Dev Lead",
         linkedin: "https://www.linkedin.com/me?trk=p_mwlite_profile_self-secondary_nav",
         insta: "https://www.instagram.com/anonymous_arnab/"
@@ -235,11 +235,11 @@ mobileWrapper.innerHTML += `
           <div class="card-wrapper-2 flex justify-between items-center">
             <div class="role">Convenor</div>
             <div class="profile-icons-group flex items-center">
-              <a id="call" href="tel:+910123456789"
+              <a id="call" href="tel:+917980145025"
                 ><span class="material-symbols-outlined">call</span></a
               >
               <div class="more-items relative flex flex-dir-col">
-                <a class="more-item-links" href="mailto:xyz@example.com"
+                <a class="more-item-links" href="mailto:soumyadeeplobwo@gmail.com"
                   ><img
                     class="mailbox-icon"
                     src="/assets/logos/mail-outlined.svg"
@@ -247,23 +247,13 @@ mobileWrapper.innerHTML += `
                 /></a>
                 <a
                   class="more-item-links"
-                  href="http://"
+                  href="http://www.instagram.com/soumyadeepanthony"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><img
                     class="insta-icon"
                     src="/assets/logos/insta.svg"
                     alt="instagram"
-                /></a>
-                <a
-                  class="more-item-links"
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    class="linkedin-icon"
-                    src="/assets/logos/linkedin-outlined.svg"
-                    alt="linkedin"
                 /></a>
                 <div class="plus-icon-wrapper close" onclick="moreItems(0)">
                   <span class="plus-icon material-symbols-outlined"
@@ -416,7 +406,7 @@ desktopWrapper.innerHTML += `
           <div class="profile-icons-group flex items-center">
             <div id="call">
               <div class="phone-number-box hide-number">
-                <span class="phone-number">+91 0123456789</span>
+                <span class="phone-number">+917980145025</span>
                 <span
                   class="copy-icon material-symbols-outlined"
                   title="copy"
@@ -431,7 +421,7 @@ desktopWrapper.innerHTML += `
               >
             </div>
             <div class="more-items relative flex flex-dir-col">
-              <a class="more-item-links" href="mailto:xyz@example.com"
+              <a class="more-item-links" href="mailto:soumyadeeplobwo@gmail.com"
                 ><img
                   class="mailbox-icon"
                   src="/assets/logos/mail-outlined.svg"
@@ -439,23 +429,13 @@ desktopWrapper.innerHTML += `
               /></a>
               <a
                 class="more-item-links"
-                href="http://"
+                href="http://www.instagram.com/soumyadeepanthony"
                 target="_blank"
                 rel="noopener noreferrer"
                 ><img
                   class="insta-icon"
                   src="/assets/logos/insta.svg"
                   alt="instagram"
-              /></a>
-              <a
-                class="more-item-links"
-                href="http://"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  class="linkedin-icon"
-                  src="/assets/logos/linkedin-outlined.svg"
-                  alt="linkedin"
               /></a>
               <div class="plus-icon-wrapper close" onclick="moreItems(${profileCount - 1})">
                 <!-- <span class="plus-icon material-symbols-outlined">add_circle</span> -->
@@ -517,7 +497,7 @@ profileDetails.forEach((item) => {
         `
                     <a
                         class="more-item-links"
-                        href="${profile.insta}
+                        href="${profile.insta}"
                         target="_blank"
                         rel="noopener noreferrer"
                         ><img
