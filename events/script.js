@@ -189,7 +189,7 @@ eventDetails.forEach((event, index) => {
         ${event.description}
   </div>
   <div class="flex z-5 event-button-group w-full gap-05rem">
-    <button class="register-button">View Details</button>
+    <button disabled class="register-button">Opening Soon</button>
   </div>
       `;
   eventSectionDesktop.appendChild(newEventDivDesktop);
@@ -204,7 +204,7 @@ eventDetails.forEach((event, index) => {
         ${event.description}
   </div>
   <div class="flex z-5 event-button-group w-full gap-05rem">
-    <button class="register-button">View Details</button>
+    <button disabled class="register-button">Opening Soon</button>
   </div>
       `;
   eventSection.appendChild(newEventDiv);
