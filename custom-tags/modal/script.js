@@ -33,7 +33,7 @@ function openModal(headerName, description, link) {
     } else {
         modalLink.style.display = "block";
         modalBottom.style.backgroundColor = "rgb(255, 213, 136)";
-        modalLink.href = link;
+        // modalLink.href = link;
     }
 }
 
@@ -53,3 +53,8 @@ modalWrapper.addEventListener("click", (e) => {
         closeModal();
     }
 })
+
+function noClick(event) {
+    event.preventDefault(); 
+    console.log(event);
+}
