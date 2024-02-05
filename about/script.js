@@ -191,7 +191,7 @@ const profileDetails = [
       },
       {
         name: "Rohit Roy",
-        phone: "+919051809293",
+        phone: "",
         email: "deroyace97@gmail.com",
         position: "Frontend Dev",
         linkedin: "https://www.linkedin.com/in/rohit-roy-51b2b6222/",
