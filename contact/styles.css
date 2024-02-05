@@ -442,21 +442,26 @@ html {
 
 input,
 textarea {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
-  color: white;
+  color: rgb(0, 0, 0);
   border-width: 2px !important;
   border-style: solid;
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   font-family: "product_sans", sans-serif;
+  font-weight: bold;
   backdrop-filter: blur(1px);
+}
+
+.desktop input, .desktop textarea {
+  color: white;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.7);
   font-family: "product_sans", sans-serif;
   font-weight: bold;
 }
