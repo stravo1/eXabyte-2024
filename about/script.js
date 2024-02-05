@@ -67,7 +67,7 @@ const profileDetails = [
         name: "Anushree Chakraborty",
         phone: "+918240942176",
         email: "anushreechakraborty56@gmail.com",
-        position: "Public Relatoins OCM",
+        position: "Public Relations OCM",
         insta: "https://www.instagram.com/shreeee.c?igsh=MXJ6M3B1eTFzM3pvdQ==",
         linkedin: "https://www.linkedin.com/in/anushree-chakraborty-3a6814299"
       },

@@ -41,7 +41,7 @@ class CustomModal extends HTMLElement {
                 </ul>
             </div>
             <div class="modal-bottom register-button-wrapper">
-                <a onclick="noClick(event)" class="modal-link cursor-pointer" href="" target="__blank">Registrations Opening Soon</a>
+                <a class="modal-link cursor-pointer" href="" target="_blank">Open Registration Form</a>
             </div>
         </div>
         `
