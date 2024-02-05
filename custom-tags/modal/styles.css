@@ -5,7 +5,7 @@
   justify-content: center;
   opacity: 0;
   position: fixed;
-  z-index: 99;
+  z-index: 101;
   inset: 0;
   width: 100dvw;
   height: 100dvh;
@@ -59,6 +59,10 @@
     text-decoration: none;
     font-weight: bold;
     color: black;
+    display: flex !important;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
 }
 .cursor-pointer {
   cursor: pointer;

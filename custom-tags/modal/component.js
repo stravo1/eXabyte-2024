@@ -41,7 +41,12 @@ class CustomModal extends HTMLElement {
                 </ul>
             </div>
             <div class="modal-bottom register-button-wrapper">
-                <a class="modal-link cursor-pointer" href="" target="_blank">Open Registration Form</a>
+                <a class="modal-link cursor-pointer" href="" target="_blank">
+                    Open Registration Form
+                    <span class="material-symbols-outlined text-md">
+                        open_in_new
+                    </span>
+                </a>
             </div>
         </div>
         `
