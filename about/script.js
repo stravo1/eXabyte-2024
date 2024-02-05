@@ -208,12 +208,9 @@ const profileDetails = [
       },
       {
         name: "Diptanil Saha",
-        phone: "+917003135584",
+        phone: "",
         email: "diptanilsaha@protonmail.com",
-        position: "Backend Dev",
-        website: "https://diptanil.page/",
-        github: "https://github.com/diptanilsaha",
-        twitter: "https://twitter.com/DiptanilSaha"
+        position: "Backend Dev"
       },
 
     ],
@@ -358,7 +355,7 @@ profileDetails.forEach((item) => {
                         rel="noopener noreferrer"
                         ><img
                           class="linkedin-icon"
-                          src="/assets/logos/twitter-outlined.svg"
+                          src="/assets/logos/web-outlined.svg"
                           alt="github"
                         /></a>
                 ` : ``

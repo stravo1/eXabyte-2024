@@ -444,3 +444,11 @@ ul {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
+.socials-desktop {
+  z-index: 150;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
