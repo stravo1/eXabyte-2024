@@ -92,7 +92,7 @@ const profileDetails = [
         email: "ayushghatak@gmail.com",
         position: "Hospitality OCM",
         insta: "https://www.instagram.com/__ghatakayush__?igsh=MWNteDA1N2g4N3QzeQ==",
-        linkedin: "https://www.linkedin.com/aadityavs"
+        linkedin: "https://www.linkedin.com/in/ayush-ghatak-7b88ba24b"
       },
       {
         name: "Basabdutta Mondal",

@@ -106,8 +106,23 @@ routesLinksDesktopGroup2.forEach((node) => {
   });
 });
 
+let pageLoaded = false;
+
 window.addEventListener("load", () => {
+  pageLoaded = true;
   localStorage.removeItem("playTransitionAnimation");
+  setTimeout(() => {
+    transitionWrapper.classList.add("transition-invisible");
+    transitionWrapper.classList.remove("transition-visible");
+  }, 250);
+})
+
+window.addEventListener("pageshow", () => {
+  if (!pageLoaded) {
+    return
+  }
+  console.log("pageshow");
+  closeMenu()
   setTimeout(() => {
     transitionWrapper.classList.add("transition-invisible");
     transitionWrapper.classList.remove("transition-visible");

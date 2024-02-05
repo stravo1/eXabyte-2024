@@ -19,10 +19,12 @@ var commandOutputs = {
     Kolkata - 700016, West Bengal, India
   `,
   info: `
-    The 8th edition Annual Technical Festival of St. Xavier's
-    College (Autonomous), Kolkata organized by Department of
-    Computer Science, St. Xavier's College (Autonomous), Kolkata is
-    here.
+  The Post Graduate and Research Dept. of St. Xaver's College (Autonomous), Kolkata 
+  organizes the eight edition of the Annual Technological Festival,
+  eXabyte 2024' with the theme "Beyond Binary" on 12th and 13th February, 2024. 
+  As an exempler to showcase our eminence in the world of the technology, 
+  the students at the Department of Computer Science strive to bring together future 
+  legionaries of the technological arena and kindle in them a thirst for answers, quest for horizons.
     `,
   help: `
     available commands:

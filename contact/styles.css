@@ -475,7 +475,7 @@ textarea::placeholder {
   padding: 1rem;
   font-size: 1.2rem;
   width: 100%;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 5px;
   border: none;
   background-color: wheat;
@@ -497,6 +497,7 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .bg-white {

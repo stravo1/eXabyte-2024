@@ -94,7 +94,7 @@ const sponsorDetails = [
     groupName: "Media Partners",
     sponsorsArray: [
       {
-        name: "Brand Name",
+        name: "The Edugraph",
         sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/The Telegraph Online Edugraph Logo White Background.png",
@@ -106,7 +106,7 @@ const sponsorDetails = [
     groupName: "Electronics Partners",
     sponsorsArray: [
       {
-        name: "Brand Name",
+        name: "Desai Electronics",
         sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/desai.jpeg",
@@ -118,7 +118,7 @@ const sponsorDetails = [
     groupName: "Marketing Partners",
     sponsorsArray: [
       {
-        name: "Brand Name",
+        name: "Festa",
         sponsorType: "",
         imageSrc:
           "/assets/images/sponsor-logos/Festa.jpg",

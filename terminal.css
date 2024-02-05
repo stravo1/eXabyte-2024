@@ -104,7 +104,7 @@
 .window-cursor .i-cursor-indicator {
   color: #7ca8d4;
   font-size: 1em;
-  font-family: "Consolas", monospace;
+  font-family: "Space Mono", monospace;
   margin: 0 2px 0 0px;
 }
 .window-cursor .i-cursor-underscore {
