@@ -19,10 +19,10 @@ var commandOutputs = {
     Kolkata - 700016, West Bengal, India
   `,
   info: `
-  The Post Graduate and Research Dept. of St. Xaver's College (Autonomous), Kolkata 
+  The Post Graduate and Research Dept. of St. Xavier's College (Autonomous), Kolkata 
   organizes the eight edition of the Annual Technological Festival,
   eXabyte 2024' with the theme "Beyond Binary" on 12th and 13th February, 2024. 
-  As an exempler to showcase our eminence in the world of the technology, 
+  As an exemplar to showcase our eminence in the world of the technology, 
   the students at the Department of Computer Science strive to bring together future 
   legionaries of the technological arena and kindle in them a thirst for answers, quest for horizons.
     `,
