@@ -31,7 +31,7 @@ function openModal(headerName, description, link) {
         modalBottom.style.backgroundColor = "white";
         modalLink.href = "";
     } else {
-        modalLink.style.display = "block";
+        modalLink.style.display = "flex";
         modalBottom.style.backgroundColor = "rgb(255, 213, 136)";
         modalLink.href = link;
     }

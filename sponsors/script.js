@@ -1,53 +1,46 @@
 // REMEMBER TO REMOVE GREYSCALE ON IMAGES
 const sponsorDetails = [
-  // {
-  //   groupName: "Top Sponsors",
-  //   sponsorsArray: [
-  //     {
-  //       name: "Newton School",
-  //       sponsorType: "Broadband Partner",
-  //       imageSrc: "/assets/images/sponsor-logos/gtpl-removebg-preview.png",
-  //     },
-
-  //   ],
-  // },
   {
-    groupName: "Broadband Partner",
+    groupName: "Top Sponsors",
     sponsorsArray: [
       {
-        name: "GTPLKCBPL",
-        sponsorType: "",
+        name: "Newton School",
+        sponsorType: "Broadband Partner",
         imageSrc: "/assets/images/sponsor-logos/gtpl-removebg-preview.png",
       },
+
     ],
   },
   {
-    groupName: "Restaurant Partner",
+    groupName: "Powered By",
     sponsorsArray: [
       {
-        name: "Gazeeboo",
+        name: "Merlin Group",
         sponsorType: "",
-        imageSrc: "/assets/images/sponsor-logos/gazeeboo.jpeg",
+        imageSrc: "/assets/images/sponsor-logos/merlin.png",
+        link: "https://www.merlinprojects.com/"
       },
     ],
   },
   {
-    groupName: "Education Partner",
+    groupName: "Technology Partner",
     sponsorsArray: [
       {
-        name: "Edureka",
+        name: "LapITUp",
         sponsorType: "",
-        imageSrc: "/assets/images/sponsor-logos/Edureka.png",
+        imageSrc: "/assets/images/sponsor-logos/lap-it-up.jpg",
+        link: "https://www.lapitup.shop",
       },
     ],
   },
   {
-    groupName: "Study Abroad Partner",
+    groupName: "Cyber Security Partner",
     sponsorsArray: [
       {
-        name: "EduAims",
+        name: "BIT IT",
         sponsorType: "",
-        imageSrc: "/assets/images/sponsor-logos/eduaims.jpeg",
+        imageSrc: "/assets/images/sponsor-logos/bitit.jpg",
+        link: "https://www.jsdl.in/DT-37SQDX4H",
       },
     ],
   },
@@ -65,86 +58,23 @@ const sponsorDetails = [
     groupName: "Event Partners",
     sponsorsArray: [
       {
-        name: "Newton School",
-        sponsorType: "",
+        name: "Coding Ninja",
+        sponsorType: "Codeplay Event Partner",
         imageSrc:
-          "/assets/images/sponsor-logos/ns_primary_logo.png",
-      },
-      {
-        name: "Tcg Crest",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/tcg-crest-2000pxl.png",
-      },
-      {
-        name: "Cubelelo",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/cubelelo.png",
-      },
-      {
-        name: "Sum",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/sumeintrruments.jpg",
+          "/assets/images/sponsor-logos/coding-ninja.jpg",
+        link: "https://www.codingninjas.com/"
       },
     ],
   },
   {
-    groupName: "Media Partners",
+    groupName: "eXabyte Partners",
     sponsorsArray: [
       {
-        name: "The Edugraph",
+        name: "Cooke & Kelvey",
         sponsorType: "",
         imageSrc:
-          "/assets/images/sponsor-logos/The Telegraph Online Edugraph Logo White Background.png",
-      },
-
-    ],
-  },
-  {
-    groupName: "Electronics Partners",
-    sponsorsArray: [
-      {
-        name: "Desai Electronics",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/desai.jpeg",
-      },
-
-    ],
-  },
-  {
-    groupName: "Marketing Partners",
-    sponsorsArray: [
-      {
-        name: "Festa",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/Festa.jpg",
-      },
-
-    ],
-  },
-  {
-    groupName: "Food Partner",
-    sponsorsArray: [
-      {
-        name: "Moktu",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/moktu.png",
-      },
-    ],
-  },
-  {
-    groupName: "Pizza Partner",
-    sponsorsArray: [
-      {
-        name: "La Pino'z Pizza",
-        sponsorType: "",
-        imageSrc:
-          "/assets/images/sponsor-logos/pizza.jpeg",
+          "/assets/images/sponsor-logos/c-n-k.jpg",
+        link: "https://cookeandkelvey.com"
       },
     ],
   },
@@ -213,17 +143,17 @@ const otherSponsorsDivDesktop = document.querySelector(
 );
 const otherSponsorsDivMobile = document.querySelector(".other-sponsors-mobile");
 
-const topSponsors = sponsorDetails[0];
-topSponsors.sponsorsArray.forEach((item) => {
-  const newTopSponsorsDiv = document.createElement("div");
-  newTopSponsorsDiv.className = "sponsor-card";
-  newTopSponsorsDiv.innerHTML = `
-          <div class="brand-logo-desktop"><img class="brand-img height-100 width-100" src="${item.imageSrc}" alt=""/></div>
-          <div class="brand-name-desktop text-center">${item.name}</div>
-          <div class="sponsor-title-desktop text-center">${item.sponsorType}</div>
-    `;
-  topSponsorsDivDesktop.appendChild(newTopSponsorsDiv);
-});
+// const topSponsors = sponsorDetails[0];
+// topSponsors.sponsorsArray.forEach((item) => {
+//   const newTopSponsorsDiv = document.createElement("div");
+//   newTopSponsorsDiv.className = "sponsor-card";
+//   newTopSponsorsDiv.innerHTML = `
+//           <div class="brand-logo-desktop"><img class="brand-img height-100 width-100" src="${item.imageSrc}" alt=""/></div>
+//           <div class="brand-name-desktop text-center">${item.name}</div>
+//           <div class="sponsor-title-desktop text-center">${item.sponsorType}</div>
+//     `;
+//   topSponsorsDivDesktop.appendChild(newTopSponsorsDiv);
+// });
 
 const otherSponsors = sponsorDetails.slice(1);
 otherSponsors.forEach((item) => {
@@ -237,20 +167,17 @@ otherSponsors.forEach((item) => {
     `;
   item.sponsorsArray.forEach((sponsor) => {
     let newSponsorDesktopHTML = `
-            <div class="sponsor-card">
-              <div class="brand-logo-desktop"><img class="brand-img height-100 width-100" src="${sponsor.imageSrc}" alt=""/></div>
+            <div class="sponsor-card flex-col">
+              <div class="brand-logo-desktop">
+                ${sponsor.link ? `<a href="${sponsor.link}" target="_blank">` : ""}<img class="brand-img height-100 width-100" src="${sponsor.imageSrc}" alt=""/>${sponsor.link ? "</a>" : ""}</div>
               <div class="brand-name-desktop text-center">${sponsor.name}</div>
               <div class="sponsor-title-desktop text-center">${sponsor.sponsorType}</div>
             </div>
         `;
     let newSponsorMobileHTML = `
-        <div class="sponsor-card">
+        <div class="sponsor-card flex-col">
             <div class="brand-logo">
-              <img
-                class="height-100 width-100"
-                src="${sponsor.imageSrc}"
-                alt=""
-              />
+              ${sponsor.link ? `<a href="${sponsor.link}" target="_blank">` : ""}<img class="height-100 width-100" src="${sponsor.imageSrc}" alt=""/>${sponsor.link ? "</a>" : ""}
             </div>
             <div class="brand-name text-center">${sponsor.name}</div>
             <div class="sponsor-title text-center">${sponsor.sponsorType}</div>

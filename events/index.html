@@ -61,7 +61,7 @@
     />
 
     <script src="/custom-tags/modal/component.js"></script>
-    <link rel="stylesheet" href="/custom-tags/modal/styles.css" />
+    <link rel="stylesheet" href="/custom-tags/modal/styles-1.css" />
 
     <link
       rel="stylesheet"
@@ -115,17 +115,32 @@
               Whether you're a seasoned tech expert or just starting out, we
               have an event for you. Here's the Rulebook and Schedule. So go
               ahead and register, see you at runtime!
-              <!-- <a
-                href="./eXabyte 2024 Rulebook Final.pdf"
+              <div class = "flex justify-start items-end" style="margin-left: 2.5rem">
+            <a
+              href="./eXabyte 2k24 Rulebook Final.pdf"
+              style="
+                color: white;
+                margin-top: 1rem;
+                margin-right: 0.5rem;
+                z-index: 99;
+                display: block;
+              "
+              download
+              >Download Rulebook</a
+            > | 
+             <a
+                href="./eXabyte 2024 Day 2 Final Schedule.pdf"
                 style="
                   color: white;
                   margin-top: 1rem;
-                  z-index: 101;
+                  margin-left: 0.5rem;
+                  z-index: 99;
                   display: block;
                 "
                 download
-                >Download Rulebook</a
-              > -->
+                >Download Schedule</a
+               >
+           </div>
             </p>
           </div>
 
@@ -190,7 +205,7 @@
         class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
         id="particles-js-mobile"
       >
-        <div class="inset-0 absolute"></div>
+        
         <div class="top-sect-wrapper mt-2rem">
           <header
             id="page-header"
@@ -198,20 +213,35 @@
           >
             Events
           </header>
-          <p id="page-msg" class="z-3 relative text-md">
+          <p id="page-msg" class="z-3 text-md">
             Whether you're a seasoned tech expert or just starting out, we have
             an event for you. So go ahead and register, see you at runtime!
-            <!-- <a
-              href="./eXabyte 2024 Rulebook Final.pdf"
+         <div class = "flex justify-start items-end" style="margin-left: 2.5rem">
+            <a
+              href="./eXabyte 2k24 Rulebook Final.pdf"
               style="
                 color: white;
                 margin-top: 1rem;
-                z-index: 101;
+                margin-right: 0.5rem;
+                z-index: 9;
                 display: block;
               "
               download
               >Download Rulebook</a
-            > -->
+            > | 
+             <a
+                href="./eXabyte 2024 Day 2 Final Schedule.pdf"
+                style="
+                  color: white;
+                  margin-top: 1rem;
+                  margin-left: 0.5rem;
+                  z-index: 9;
+                  display: block;
+                "
+                download
+                >Download Schedule</a
+               >
+           </div>
           </p>
         </div>
       </div>
@@ -261,6 +291,17 @@
         "particles-js-desktop",
         "/particles/particlesjs-config-white.json"
       );
+      openModal("IMPORTANT", `
+Hello everyone, hope you are ready for the Annual Departmental Tech Fest, eXabyte'24 - Beyond Binary.
+<br>
+<br>
+Due to the unfortunate demise of Rev. Fr. P.C. Mathew SJ, the former principal of St. Xavier's College (Autonomous), Kolkata, we have to postpone the second day of eXabyte'24 to 15th February, 2024. 
+<br>
+Thank you for your participation and support. 
+<br>
+<br>
+<b>See you at runtime!</b>
+`)
     </script>
   </body>
 </html>

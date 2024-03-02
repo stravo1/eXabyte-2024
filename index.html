@@ -60,6 +60,8 @@
       rel="stylesheet"
       href="/custom-tags/page-transition-animation/styles.css"
     />
+    <script src="/custom-tags/modal/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/modal/styles-1.css" />
 
     <link
       rel="stylesheet"
@@ -82,6 +84,7 @@
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
+    <custom-modal></custom-modal>
 
     <div class="mobile">
       <div
@@ -121,7 +124,7 @@
         <div
           class="glass flex flex-dir-col justify-center height-20 z-20 p-2rem"
         >
-          <div class="pixelated text-2xl">12th & 13th Feb</div>
+          <div class="pixelated text-2xl" id="timer">12th & 13th Feb</div>
           <div class="mono text-lg">See you at runtime!</div>
         </div>
       </div>
@@ -216,19 +219,20 @@
           class="prompt-shortcut i-prompt js-open flex items-center justify-center"
           accesskey="T"
         >
-          &gt;_
+          >_
         </div>
         <div class="content content--canvas-desktop"></div>
       </main>
     </div>
   </body>
-  <script src="/script.js"></script>
   <script src="/buttonActions.js"></script>
   <script src="/custom-tags/loading-animation/animate.js"></script>
   <script src="/custom-tags/mobile-menu/script.js"></script>
   <script src="/custom-tags/desktop-home-menu/script.js"></script>
   <script src="/custom-tags/page-transition-animation/script.js"></script>
+  <script src="/custom-tags/modal/script.js"></script>
   <script src="./terminal.js"></script>
+  <script src="/script-1.js"></script>
 
   <script src="/ambident-canvas-background/noise.min.js"></script>
   <script src="/ambident-canvas-background/util.js"></script>

@@ -48,7 +48,7 @@ const interval = setInterval(function () {
     // If the countdown is over, stop the interval
     if (distance < 0) {
         clearInterval(interval);
-        document.getElementById("timer").innerHTML = "EXPIRED";
+        document.getElementById("timer").innerHTML = "We are LIVE!";
     }
 }, 1000);
 
@@ -56,14 +56,9 @@ openModal("IMPORTANT", `
 Hello everyone, hope you are ready for the Annual Departmental Tech Fest, eXabyte'24 - Beyond Binary.
 <br>
 <br>
-Due to the unfortunate demise of Rev. Fr. P.C. Mathew SJ, the former principal of St. Xavier's College (Autonomous), Kolkata, we have to postpone the second day of eXabyte'24. 
-However we are trying to accommodate it within this week, probably on 15th. 
-Please patiently wait till further notice. 
+Due to the unfortunate demise of Rev. Fr. P.C. Mathew SJ, the former principal of St. Xavier's College (Autonomous), Kolkata, we have to postpone the second day of eXabyte'24 to 15th February, 2024.
 <br>
-Day 1 is still on! So gear up to be a part of an amazing experience!!!
-<br>
-<br>
-Everyone is welcome to attend the Opening ceremony of eXabyte'24 on 12th Feb and take part in the various events. Thank you for your participation and support. 
+Thank you for your participation and support. 
 <br>
 <br>
 <b>See you at runtime!</b>
