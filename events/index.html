@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="eXabyte is the annual tech fest of St. Xavier's College (Autonomous), Kolkata where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+    />
+    <meta
+      name="keywords"
+      content="exabyte, exabyte 24, exabyte 2024, tech fest, innovation, technology, coding, robotics, workshops, competitions"
+    />
+    <meta
+      property="og:title"
+      content="eXabyte '24 - Annual Tech Fest of St. Xavier's College (Autonomous), Kolkata"
+    />
+    <meta
+      property="og:description"
+      content="Join eXabyte, the ultimate tech fest where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+    />
 
     <link
       rel="icon"
@@ -35,11 +51,17 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
+    <script src="/custom-tags/desktop-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
       href="/custom-tags/page-transition-animation/styles.css"
     />
+
+    <script src="/custom-tags/modal/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/modal/styles-1.css" />
 
     <link
       rel="stylesheet"
@@ -50,13 +72,123 @@
     <title>Events | eXabyte '24</title>
     <link rel="stylesheet" href="/globalStyles.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./cards.css" />
   </head>
+
   <body>
     <custom-mobile-menu></custom-mobile-menu>
     <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
+    <custom-modal></custom-modal>
+    <div class="desktop overflow-scroll">
+      <div class="background absolute inset-0 w-full h-full">
+        <img
+          src="/assets/images/backgrounds/behance-1.png"
+          class="w-full h-full absolute inset-0 z-1 object-cover"
+          muted
+        />
+        <div
+          class="absolute inset-0 w-full h-full opacity-50 bg-black z-1"
+        ></div>
+      </div>
+      <div
+        class="menu-holder w-fit link-pointer fixed top-0 right-0 z-100 p-1rem m-1rem flex justify-end rounded glass-white"
+      >
+        <custom-desktop-menu></custom-desktop-menu>
+      </div>
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
+      </div>
 
-    <div class="mobile">
+      <div class="vertical-split z-3 relative flex justify-end h-full">
+        <div
+          class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
+          id="particles-js-desktop"
+        >
+          <div
+            class="lhs-sect-wrapper h-full flex flex-dir-col justify-center mt-2rem z-100"
+          >
+            <header class="pixelated width-100">Events</header>
+            <p class="text-md">
+              Whether you're a seasoned tech expert or just starting out, we
+              have an event for you. Here's the Rulebook and Schedule. So go
+              ahead and register, see you at runtime!
+              <div class = "flex justify-start items-end" style="margin-left: 2.5rem">
+            <a
+              href="./eXabyte 2k24 Rulebook Final.pdf"
+              style="
+                color: white;
+                margin-top: 1rem;
+                margin-right: 0.5rem;
+                z-index: 99;
+                display: block;
+              "
+              download
+              >Download Rulebook</a
+            > | 
+             <a
+                href="./eXabyte 2024 Day 2 Final Schedule.pdf"
+                style="
+                  color: white;
+                  margin-top: 1rem;
+                  margin-left: 0.5rem;
+                  z-index: 99;
+                  display: block;
+                "
+                download
+                >Download Schedule</a
+               >
+           </div>
+            </p>
+          </div>
+
+          <div class="socials-desktop mono initial">
+            <div class="icons-group">
+              <a
+                href="https://www.instagram.com/exabyte.sxc"
+                target="_blank"
+                class="link-pointer"
+                id="instagram"
+              >
+                <img src="/assets/insta.svg" />
+              </a>
+              <a
+                href="https://sxccal.edu/"
+                target="_blank"
+                class="link-pointer"
+                id="site"
+              >
+                <img src="/assets/site.svg" />
+              </a>
+            </div>
+            <div class="info-desktop">
+              Postgraduate and Research <br />
+              Department of Computer Science
+              <br />
+              St. Xavier's College (Autonomous), Kolkata
+            </div>
+          </div>
+        </div>
+
+        <div class="RHS width-67 flex flex-dir-col justify-center items-center">
+          <div
+            class="cardinit event-items-desktop flex flex-wrap justify-center"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile relative overflow-scroll">
+      <div class="background fixed inset-0 w-full h-full">
+        <img
+          src="/assets/images/backgrounds/behance-2.jpg"
+          class="w-full h-full absolute inset-0 z-1 object-cover"
+        />
+        <div
+          class="absolute inset-0 w-full h-full opacity-50 bg-black z-1"
+        ></div>
+      </div>
       <div
         class="menu-holder link-pointer fixed top-0 right-0 z-100"
         onclick="openMenu()"
@@ -64,16 +196,112 @@
         <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <a href="/"><img src="/assets/logo-dark.png" width="50px" alt="" srcset="" /></a>
+        <a href="/"
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+        /></a>
       </div>
+
       <div
-        class="main flex flex-dir-col width-100 height-100 justify-center items-center pixelated white-bg"
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+        id="particles-js-mobile"
       >
-        Events @ eXabyte '24
+        
+        <div class="top-sect-wrapper mt-2rem">
+          <header
+            id="page-header"
+            class="pixelated width-100 top-0 flex items-center z-10 relative"
+          >
+            Events
+          </header>
+          <p id="page-msg" class="z-3 text-md">
+            Whether you're a seasoned tech expert or just starting out, we have
+            an event for you. So go ahead and register, see you at runtime!
+         <div class = "flex justify-start items-end" style="margin-left: 2.5rem">
+            <a
+              href="./eXabyte 2k24 Rulebook Final.pdf"
+              style="
+                color: white;
+                margin-top: 1rem;
+                margin-right: 0.5rem;
+                z-index: 9;
+                display: block;
+              "
+              download
+              >Download Rulebook</a
+            > | 
+             <a
+                href="./eXabyte 2024 Day 2 Final Schedule.pdf"
+                style="
+                  color: white;
+                  margin-top: 1rem;
+                  margin-left: 0.5rem;
+                  z-index: 9;
+                  display: block;
+                "
+                download
+                >Download Schedule</a
+               >
+           </div>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="events-items z-5 relative flex flex-dir-col justify-center items-center gap-3rem"
+      ></div>
+      <div class="socials-mobile mono initial padding-bottom-16">
+        <div class="icons-group">
+          <a
+            href="https://www.instagram.com/exabyte.sxc"
+            target="_blank"
+            class="link-pointer"
+            id="instagram"
+          >
+            <img src="/assets/insta.svg" />
+          </a>
+          <a
+            href="https://sxccal.edu/"
+            target="_blank"
+            class="link-pointer"
+            id="site"
+          >
+            <img src="/assets/site.svg" />
+          </a>
+        </div>
+        <div class="info-mobile">
+          Department of Computer Science
+          <br />
+          St. Xavier's College (Autonomous), Kolkata
+        </div>
       </div>
     </div>
+    <script src="./script.js"></script>
     <script src="/custom-tags/loading-animation/animate.js"></script>
     <script src="/custom-tags/mobile-menu/script.js"></script>
+    <script src="/custom-tags/desktop-menu/script.js"></script>
     <script src="/custom-tags/page-transition-animation/script.js"></script>
+    <script src="/custom-tags/modal/script.js"></script>
+
+    <script>
+      // particlesJS.load(
+      //   "particles-js-mobile",
+      //   "/particles/particlesjs-config-mobile-white.json"
+      // );
+      particlesJS.load(
+        "particles-js-desktop",
+        "/particles/particlesjs-config-white.json"
+      );
+      openModal("IMPORTANT", `
+Hello everyone, hope you are ready for the Annual Departmental Tech Fest, eXabyte'24 - Beyond Binary.
+<br>
+<br>
+Due to the unfortunate demise of Rev. Fr. P.C. Mathew SJ, the former principal of St. Xavier's College (Autonomous), Kolkata, we have to postpone the second day of eXabyte'24 to 15th February, 2024. 
+<br>
+Thank you for your participation and support. 
+<br>
+<br>
+<b>See you at runtime!</b>
+`)
+    </script>
   </body>
 </html>

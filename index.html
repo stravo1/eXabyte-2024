@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta
+      name="description"
+      content="eXabyte is the annual tech fest of St. Xavier's College (Autonomous), Kolkata where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+    />
+    <meta
+      name="keywords"
+      content="exabyte, exabyte 24, exabyte 2024, tech fest, innovation, technology, coding, robotics, workshops, competitions"
+    />
+    <meta
+      property="og:title"
+      content="eXabyte '24 - Annual Tech Fest of St. Xavier's College (Autonomous), Kolkata"
+    />
+    <meta
+      property="og:description"
+      content="Join eXabyte, the ultimate tech fest where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -35,14 +52,16 @@
     <script src="/custom-tags/mobile-menu/component.js"></script>
     <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
 
-    <script src="/custom-tags/desktop-menu/component.js"></script>
-    <link rel="stylesheet" href="/custom-tags/desktop-menu/style.css" />
+    <script src="/custom-tags/desktop-home-menu/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/desktop-home-menu/style.css" />
 
     <script src="/custom-tags/page-transition-animation/component.js"></script>
     <link
       rel="stylesheet"
       href="/custom-tags/page-transition-animation/styles.css"
     />
+    <script src="/custom-tags/modal/component.js"></script>
+    <link rel="stylesheet" href="/custom-tags/modal/styles-1.css" />
 
     <link
       rel="stylesheet"
@@ -50,18 +69,22 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="globalStyles.css" />
+    <link rel="stylesheet" href="terminal.css" />
+    <link rel="stylesheet" href="/ambident-canvas-background/style.css" />
     <link
       rel="shortcut icon"
       href="./favicon/favicon.ico"
       type="image/x-icon"
     />
     <script src="./particles/particles.js"></script>
-    <title>eXabyte</title>
+    <title>eXabyte 2024</title>
   </head>
+
   <body>
     <custom-mobile-menu></custom-mobile-menu>
-    <!-- <custom-loader></custom-loader> -->
+    <custom-loader></custom-loader>
     <custom-page-transition></custom-page-transition>
+    <custom-modal></custom-modal>
 
     <div class="mobile">
       <div
@@ -71,19 +94,22 @@
         <span class="material-symbols-outlined smaller-icon"> menu </span>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <img src="./assets/logo-dark.png" width="50px" alt="" srcset="" />
+        <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
       </div>
       <div class="main flex flex-dir-col width-100 height-100">
         <div
-          class="white-bg height-75 z-20 flex flex-dir-col justify-end"
+          class="white-bg height-75 z-20 flex flex-dir-col justify-end relative"
           id="particles-js-mobile"
         >
-          <div class="content flex flex-dir-col z-20 margin-bottom-15">
-            <div class="pixelated text-heading">eXabyte ‘24</div>
-            <div class="monospace text-para">
+          <div class="content--canvas-mobile"></div>
+          <div
+            class="content flex flex-dir-col z-20 margin-bottom-15 text-white"
+          >
+            <div class="pixelated text-2xl">eXabyte '24</div>
+            <div class="sans text-md">
               The 8th edition Annual Technical Festival of St. Xavier's College
-              (Autonomous), Kolkata organized by Department of Computer Science,
-              St. Xavier's College (Autonomous), Kolkata is here.
+              (Autonomous), Kolkata organized by the Post Graduate and Research
+              Dept. of Computer Science is here!.
             </div>
             <div class="button-group flex relative">
               <button class="cta-button-text">Register Now</button>
@@ -95,75 +121,120 @@
             </div>
           </div>
         </div>
-        <div class="black-bg flex flex-dir-col justify-center height-25">
-          <div class="pixelated larger-text">12 - 05 - 30 - 45</div>
-          <div class="mono text-para">See you at runtime!</div>
+        <div
+          class="glass flex flex-dir-col justify-center height-20 z-20 p-2rem"
+        >
+          <div class="pixelated text-2xl" id="timer">12th & 13th Feb</div>
+          <div class="mono text-lg">See you at runtime!</div>
         </div>
       </div>
     </div>
+
     <div class="desktop">
       <div class="menu-holder link-pointer fixed top-0 right-0 z-100">
-        <custom-desktop-menu textColor="black" />
+        <custom-desktop-menu></custom-desktop-menu>
       </div>
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <img src="./assets/logo-bright.png" width="50px" alt="" srcset="" />
+        <img src="./assets/x-logo.png" width="55px" alt="" srcset="" />
       </div>
-      <div class="horizontal-split flex width-100 height-100">
+      <main>
+        <section class="intro">
+          <header>
+            <span class="tech-fest-name"> exabyte'24 </span>
+            beckons tech enthusiasts to a realm of innovation.
+          </header>
+          <div class="event-details">
+            <div class="event-date">12th & 13th February, 2024.</div>
+            <!-- <div class="venue-details">
+              <div class="venue-name">St. Xavier's (Autonomous) College, Kolkata</div>
+              <div class="address">
+                30, Mother Teresa Sarani,<br>
+                Mullick Bazar, Park Street area,<br>
+                Kolkata, West Bengal - 700016.
+              </div>
+            </div> -->
+          </div>
+        </section>
+
+        <section class="info-section flex items-center justify-center">
+          <!-- <div class="about-fest flex items-center justify-center">
+            <div
+              class="info-button absolute flex items-center justify-center"
+              onclick="infoButtonAction()"
+            >
+              <span class="info-button-content flex items-center justify-center"
+                >i</span
+              >
+              <div class="arc"></div>
+            </div>
+            <div class="about-pop-up">
+              <button
+                class="close-pop-up flex items-center justify-center"
+                onclick="closePopUp()"
+              >
+                <span class="material-symbols-outlined"> close </span>
+              </button>
+              <div class="about-details-wrapper flex items-center">
+                The 8th edition Annual Technical Festival of St. Xavier's
+                College (Autonomous), Kolkata organized by Department of
+                Computer Science, St. Xavier's College (Autonomous), Kolkata is
+                here.
+              </div>
+            </div>
+          </div> -->
+          <div class="terminal-window window window--destroyed">
+            <header class="window-header">
+              <div class="window-title flex items-center justify-center">
+                console
+              </div>
+              <nav class="window-controls">
+                <span class="control-item control-minimize js-minimize"></span>
+                <span class="control-item control-maximize js-maximize"></span>
+                <span class="control-item control-close js-close"></span>
+              </nav>
+            </header>
+            <main class="window-content">
+              <div class="outputs">
+                welcome user@exabyte-24
+                <br />
+                type 'help' for more info
+              </div>
+              <div class="window-cursor">
+                <span class="i-cursor-indicator" style="margin-right: 0.25rem"
+                  >user@exabyte-24:~$</span
+                >
+                <input
+                  type="text"
+                  class="window-input js-prompt-input"
+                  oninput="setInputWidth(this)"
+                  onkeyup="detectEnter(event)"
+                />
+                <span class="i-cursor-underscore"></span>
+              </div>
+            </main>
+          </div>
+        </section>
+
         <div
-          class="primary-color-bg relative width-33 height-100 overflow-hidden"
+          class="prompt-shortcut i-prompt js-open flex items-center justify-center"
+          accesskey="T"
         >
-          <div
-            class="image-holder absolute bottom-neg-5rem width-100 overflow-hidden"
-          >
-            <img src="./assets/pattern.png" class="fit-cover width-100" />
-          </div>
+          >_
         </div>
-        <div class="vertical-split flex flex-dir-col width-67 height-100">
-          <div
-            class="white-bg height-60 flex flex-dir-col padding-3rem justify-center gap-3rem"
-            id="particles-js-desktop"
-          >
-            <div class="pixelated text-38px">eXabyte ‘24</div>
-            <div class="monospace text-20px max-w-10rem">
-              The 8th edition Annual Technical Festival of St. Xavier's College
-              (Autonomous), Kolkata organized by Department of Computer Science,
-              St. Xavier's College (Autonomous), Kolkata is here.
-            </div>
-          </div>
-          <div
-            class="black-bg height-40 flex flex-dir-col justify-center gap-3rem"
-          >
-            <div class="monospace text-20px max-w-10rem">
-              Register in huge numbers and experience a world where technology
-              is the only fuel.
-            </div>
-            <div class="flex justify-between">
-              <div class="flex flex-dir-col">
-                <div class="pixelated text-30px">12 - 05 - 30 - 45</div>
-                <div class="mono para">See you at runtime!</div>
-              </div>
-              <div class="flex flex-dir-col">
-                <div class="pixelated text-30px">Register Now -&gt;</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <div class="content content--canvas-desktop"></div>
+      </main>
     </div>
   </body>
   <script src="/buttonActions.js"></script>
   <script src="/custom-tags/loading-animation/animate.js"></script>
   <script src="/custom-tags/mobile-menu/script.js"></script>
-  <script src="/custom-tags/desktop-menu/script.js"></script>
+  <script src="/custom-tags/desktop-home-menu/script.js"></script>
   <script src="/custom-tags/page-transition-animation/script.js"></script>
-  <script>
-    particlesJS.load(
-      "particles-js-mobile",
-      "./particles/particlesjs-config-mobile.json"
-    );
-    particlesJS.load(
-      "particles-js-desktop",
-      "./particles/particlesjs-config.json"
-    );
-  </script>
+  <script src="/custom-tags/modal/script.js"></script>
+  <script src="./terminal.js"></script>
+  <script src="/script-1.js"></script>
+
+  <script src="/ambident-canvas-background/noise.min.js"></script>
+  <script src="/ambident-canvas-background/util.js"></script>
+  <script src="/ambident-canvas-background/shift.js"></script>
 </html>

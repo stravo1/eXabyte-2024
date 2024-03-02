@@ -1,0 +1,4 @@
+/* Taken from: https://tympanus.net/Development/AmbientCanvasBackgrounds/index3.html */
+html, body {
+    background: hsla(0,0%,5%,1);
+  }

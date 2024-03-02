@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- About Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/about</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Contact Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/contact</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Events Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/events</loc>
+      <changefreq>daily</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <!-- Magazines Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/magazines</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Sponsors Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/sponsors</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Index Page -->
+   <url>
+      <loc>https://exabyte.sxccal.edu/</loc>
+      <changefreq>daily</changefreq>
+      <priority>1</priority>
+   </url>
+
+
+</urlset>

@@ -8,7 +8,7 @@ class CustomDesktopMenu extends HTMLElement {
     let textColor = this.hasAttribute("textColor") ? this.getAttribute("textColor") : "white";
     this.innerHTML = `
           <nav class="nav-bar-desktop">
-            <div class="routes-desktop monospace">
+            <div class="routes-desktop monospace text-${textColor}">
               <div class="nav-groups nav-group-1 nav-group-visible">
                 <li id="home-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/">home</a></li>
                 <li id="events-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/events">events</a></li>
@@ -16,8 +16,8 @@ class CustomDesktopMenu extends HTMLElement {
               </div>
               <div class="nav-groups nav-group-2 nav-group-invisible">
                 <li id="sponsors-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/sponsors">sponsors</a></li>
-                <li id="contact-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/contact">contact-us</a></li>
                 <li id="about-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/about">about-us</a></li>
+                <li id="contact-desktop" class="route-desktop text-${textColor}"><a class="underline-on-hover" href="/contact">contact-us</a></li>
               </div>
               <button class="nav-group-toggle underline-on-hover">more</button>
             </div>

@@ -1,79 +1,664 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
     <meta name="msapplication-TileColor" content="#ffffff" />
+
     <meta
+
       name="msapplication-TileImage"
-      content="/favicon/ms-icon-144x144.png"
+
+      content="../favicon/ms-icon-144x144.png"
+
     />
+
     <meta name="theme-color" content="#ffffff" />
 
-    <script src="/custom-tags/loading-animation/component.js"></script>
-    <link rel="stylesheet" href="/custom-tags/loading-animation/styles.css" />
+    <meta
 
-    <script src="/custom-tags/mobile-menu/component.js"></script>
-    <link rel="stylesheet" href="/custom-tags/mobile-menu/style.css" />
+      name="description"
 
-    <script src="/custom-tags/page-transition-animation/component.js"></script>
-    <link
-      rel="stylesheet"
-      href="/custom-tags/page-transition-animation/styles.css"
+      content="eXabyte is the annual tech fest of St. Xavier's College (Autonomous), Kolkata where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+
+    />
+
+    <meta
+
+      name="keywords"
+
+      content="exabyte, exabyte 24, exabyte 2024, tech fest, innovation, technology, coding, robotics, workshops, competitions"
+
+    />
+
+    <meta
+
+      property="og:title"
+
+      content="eXabyte '24 - Annual Tech Fest of St. Xavier's College (Autonomous), Kolkata"
+
+    />
+
+    <meta
+
+      property="og:description"
+
+      content="Join eXabyte, the ultimate tech fest where innovation meets inspiration. Participate in exciting events, and connect with like-minded tech enthusiasts."
+
     />
 
     <link
+
+      rel="icon"
+
+      type="image/png"
+
+      sizes="32x32"
+
+      href="../favicon/favicon-32x32.png"
+
+    />
+
+    <link
+
+      rel="icon"
+
+      type="image/png"
+
+      sizes="96x96"
+
+      href="../favicon/favicon-96x96.png"
+
+    />
+
+    <link
+
+      rel="icon"
+
+      type="image/png"
+
+      sizes="16x16"
+
+      href="../favicon/favicon-16x16.png"
+
+    />
+
+    <link
+
       rel="stylesheet"
+
+      href="../custom-tags/page-transition-animation/styles.css"
+
+    />
+
+    <link
+
+      rel="stylesheet"
+
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+
     />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
-    <script src="/particles/particles.js"></script>
-    <title>X-Cryptus | eXabyte '24</title>
-    <link rel="stylesheet" href="/globalStyles.css" />
-    <link rel="stylesheet" href="./styles.css" />
+
+
+
+    <link rel="stylesheet" href="../globalStyles.css" />
+
+    <link
+
+      rel="shortcut icon"
+
+      href="../favicon/favicon.ico"
+
+      type="image/x-icon"
+
+    />
+
+    <link rel="stylesheet" href="../custom-tags/loading-animation/styles.css" />
+
+    <link rel="stylesheet" href="../custom-tags/mobile-menu/style.css" />
+
+    <link rel="stylesheet" href="../custom-tags/desktop-menu/style.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+
+    />
+
+
+
+    <script src="/particles/particles.min.js"></script>
+
+    <script src="../custom-tags/loading-animation/component.js"></script>
+
+    <script src="../custom-tags/mobile-menu/component.js"></script>
+
+    <script src="../custom-tags/desktop-menu/component.js"></script>
+
+    <script src="../custom-tags/page-transition-animation/component.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>X-Cryptus | eXabyte 2024</title>
+
   </head>
+
   <body>
+
     <custom-mobile-menu></custom-mobile-menu>
+
     <custom-loader></custom-loader>
+
     <custom-page-transition></custom-page-transition>
 
-    <div class="mobile">
-      <div
-        class="menu-holder link-pointer fixed top-0 right-0 z-100"
-        onclick="openMenu()"
-      >
-        <span class="material-symbols-outlined smaller-icon"> menu </span>
+    <div class="desktop">
+
+      <div class="background fixed inset-0 w-full h-full">
+
+        <img
+
+          src="/assets/images/backgrounds/behance-6.jpg"
+
+          class="w-full h-full absolute inset-0 z-1 object-cover"
+
+        />
+
+        <div
+
+          class="absolute inset-0 w-full h-full opacity-60 bg-black z-1"
+
+        ></div>
+
       </div>
+
+      <div
+
+        class="menu-holder link-pointer fixed top-0 right-0 z-100 m-1rem rounded flex justify-end w-fit glass-white"
+
+      >
+
+        <custom-desktop-menu></custom-desktop-menu>
+
+      </div>
+
       <div class="logo-holder link-pointer fixed top-0 z-100">
-        <a href="/"><img src="/assets/logo-dark.png" width="50px" alt="" srcset="" /></a>
+
+        <a href="/"
+
+          ><img src="../assets/logo-bright.png" width="50px" alt="" srcset=""
+
+        /></a>
+
       </div>
-      <div
-        class="main flex flex-dir-col width-100 height-100 justify-center items-center pixelated white-bg"
-      >
-        X-Cryptus @ eXabyte '24
+
+      <div class="vertical-split flex justify-end z-5 relative">
+
+        <div
+
+          class="LHS fixed left-0 width-33 height-screen flex flex-dir-col justify-between"
+
+          id="particles-js-desktop"
+
+        >
+
+          <div
+
+            class="lhs-sect-wrapper h-full mt-2rem flex flex-dir-col justify-center"
+
+          >
+
+            <header class="pixelated width-100">X-Cryptus</header>
+
+            <p class="text-md">
+
+              X-Cryptus is Departmental magazine of Dept. of Computer Science.
+
+              The latest edition is vol. 4.<br /><br />Don't forget to check out
+
+              older editions.
+
+            </p>
+
+          </div>
+
+          <div class="socials-desktop mono initial z-100">
+
+            <div class="icons-group">
+
+              <a
+
+                href="https://www.instagram.com/exabyte.sxc"
+
+                target="_blank"
+
+                class="link-pointer"
+
+                id="instagram"
+
+              >
+
+                <img src="/assets/insta.svg" />
+
+              </a>
+
+              <a
+
+                href="https://sxccal.edu/"
+
+                target="_blank"
+
+                class="link-pointer"
+
+                id="site"
+
+              >
+
+                <img src="/assets/site.svg" />
+
+              </a>
+
+            </div>
+
+            <div class="info-desktop">
+
+              Postgraduate and Research <br />
+
+              Department of Computer Science <br />
+
+              St. Xavier's College (Autonomous), Kolkata
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div
+
+          class="RHS width-67 height-screen flex items-center justify-center"
+
+        >
+
+          <div class="flex w-full absolute justify-between p-2rem m-1rem">
+
+            <span
+
+              class="material-symbols-outlined text-2xl cursor-pointer"
+
+              onclick="swipeBackOnDesktop()"
+
+            >
+
+              chevron_left
+
+            </span>
+
+            <span
+
+              class="material-symbols-outlined text-2xl cursor-pointer"
+
+              onclick="swipeForwardOnDesktop()"
+
+            >
+
+              chevron_right
+
+            </span>
+
+          </div>
+
+          <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+
+                <a
+
+                  href="https://drive.google.com/file/d/1XqJtjzaH5zcznvgvqX62kWh9lpm9EaRb/view"
+
+                  ><img src="banners/vol1.jpg" alt="Banner 1"
+
+                /></a>
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <a
+
+                  href="https://drive.google.com/file/d/1BVvqxp0zb2VbXRFH4G4c-FfPvduCrTwM/view"
+
+                  ><img src="banners/vol2.jpg" alt="Banner 2"
+
+                /></a>
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <a
+
+                  href="https://drive.google.com/file/d/1FgF7E5YSy7e4eICYrGBAdNAYHf1PdxQE/view"
+
+                  ><img src="banners/vol3.jpg" alt="Banner 3"
+
+                /></a>
+
+              </div>
+
+              <div class="swiper-slide">
+
+                <a
+
+                  href="https://drive.google.com/file/d/188Q0ry5ba4fBknidezX2ra_RqM_fMCmT/view"
+
+                  ><img src="banners/vol4.jpg" alt="Banner 4"
+
+                /></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+        </div>
+
       </div>
+
     </div>
-    <script src="/custom-tags/loading-animation/animate.js"></script>
-    <script src="/custom-tags/mobile-menu/script.js"></script>
-    <script src="/custom-tags/page-transition-animation/script.js"></script>
+
+
+
+    <div class="mobile overflow-scroll">
+
+      <div class="background fixed inset-0 w-full h-full">
+
+        <img
+
+          src="/assets/images/backgrounds/behance-6.jpg"
+
+          class="w-full h-full absolute inset-0 z-1 object-cover"
+
+        />
+
+        <div
+
+          class="absolute inset-0 w-full h-full opacity-50 bg-black z-1"
+
+        ></div>
+
+      </div>
+
+      <div
+
+        class="menu-holder link-pointer fixed top-0 right-0 z-100"
+
+        onclick="openMenu()"
+
+      >
+
+        <span class="material-symbols-outlined smaller-icon"> menu </span>
+
+      </div>
+
+      <div class="logo-holder link-pointer fixed top-0 z-100">
+
+        <a href="/"
+
+          ><img src="/assets/logo-bright.png" width="50px" alt="" srcset=""
+
+        /></a>
+
+      </div>
+
+
+
+      <div
+
+        class="top-section width-100 height-45 flex flex-dir-col items-center justify-center relative"
+
+        id="particles-js-mobile"
+
+      >
+
+        <div class="top-sect-wrapper mt-2rem">
+
+          <header
+
+            id="page-header"
+
+            class="pixelated width-100 top-0 flex items-center z-10 relative"
+
+          >
+
+            X-Cryptus
+
+          </header>
+
+          <p id="page-msg" class="text-md z-3">
+
+            X-Cryptus is Departmental magazine of our department. The latest
+
+            edition is vol. 4. Don't forget to check out older editions.
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <div
+
+        class="xcryptusmob-items flex z-3 relative flex-dir-col justify-center items-center"
+
+      >
+
+        <div class="swiper">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+              <a
+
+                href="https://drive.google.com/file/d/1XqJtjzaH5zcznvgvqX62kWh9lpm9EaRb/view"
+
+                ><img src="banners/vol1.jpg" alt="Banner 1"
+
+              /></a>
+
+            </div>
+
+            <div class="swiper-slide">
+
+              <a
+
+                href="https://drive.google.com/file/d/1BVvqxp0zb2VbXRFH4G4c-FfPvduCrTwM/view"
+
+                ><img src="banners/vol2.jpg" alt="Banner 2"
+
+              /></a>
+
+            </div>
+
+            <div class="swiper-slide">
+
+              <a
+
+                href="https://drive.google.com/file/d/1FgF7E5YSy7e4eICYrGBAdNAYHf1PdxQE/view"
+
+                ><img src="banners/vol3.jpg" alt="Banner 3"
+
+              /></a>
+
+            </div>
+
+            <div class="swiper-slide">
+
+              <a
+
+                href="https://drive.google.com/file/d/188Q0ry5ba4fBknidezX2ra_RqM_fMCmT/view"
+
+                ><img src="banners/vol4.jpg" alt="Banner 4"
+
+              /></a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="initial socials-mobile mono padding-bottom-16">
+
+        <div class="icons-group">
+
+          <a
+
+            href="https://www.instagram.com/exabyte.sxc"
+
+            target="_blank"
+
+            class="link-pointer"
+
+            id="instagram"
+
+          >
+
+            <img src="/assets/insta.svg" />
+
+          </a>
+
+          <a
+
+            href="https://sxccal.edu/"
+
+            target="_blank"
+
+            class="link-pointer"
+
+            id="site"
+
+          >
+
+            <img src="/assets/site.svg" />
+
+          </a>
+
+        </div>
+
+        <div class="info-mobile">
+
+          Department of Computer Science<br />St. Xavier's College (Autonomous),
+
+          Kolkata
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+
+      var swiperDesktop;
+
+      document.addEventListener("DOMContentLoaded", function () {
+
+        // Initialize Swiper for Desktop
+
+        swiperDesktop = new Swiper(".desktop .swiper", {
+
+          effect: "fade",
+
+          grabCursor: true,
+
+          centeredSlides: true,
+
+          pagination: {
+
+            el: ".swiper-pagination",
+
+            type: "fraction",
+
+          },
+
+          initialSlide: 0,
+
+          autoplay: {
+
+            delay: 2000,
+
+          },
+
+        });
+
+
+
+        // Initialize Swiper for Mobile
+
+        var swiperMobile = new Swiper(".mobile .swiper", {
+
+          effect: "cards",
+
+          grabCursor: true,
+
+        });
+
+      });
+
+      function swipeBackOnDesktop() {
+
+        swiperDesktop.slidePrev();
+
+        swiperDesktop.autoplay.stop();
+
+      }
+
+      function swipeForwardOnDesktop() {
+
+        swiperDesktop.slideNext();
+
+        swiperDesktop.autoplay.stop();
+
+      }
+
+      particlesJS.load(
+
+        "particles-js-desktop",
+
+        "/particles/particlesjs-config-white.json"
+
+      );
+
+    </script>
+
+    <script src="script.js"></script>
+
+    <script src="../custom-tags/loading-animation/animate.js"></script>
+
+    <script src="../custom-tags/mobile-menu/script.js"></script>
+
+    <script src="../custom-tags/desktop-menu/script.js"></script>
+
+    <script src="../custom-tags/page-transition-animation/script.js"></script>
+
   </body>
+
 </html>
+

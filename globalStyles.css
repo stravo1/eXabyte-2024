@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=DotGothic16&family=Archivo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("/assets/fonts/stylesheet.css");
+
+.desktop, .mobile {
+  overflow-x: hidden !important;
+}
 
 body {
   height: 100dvh;
@@ -6,17 +12,19 @@ body {
   margin: 0px;
   background-color: black;
   color: whitesmoke;
-  font-family: "IBM Plex Mono", monospace;
-  --primary-color: #AE3444;
-  --primary-color-text: #FF5F74;
-  --primary-color-text-dark: #611A23;
-  --accent-color: rgb(255, 151, 165);
+  font-family: "product_sans", monospace;
+  --primary-color: #56c5a2;
+  --primary-color-text: #265452;
+  --primary-color-text-darker: #06264b;
+  --accent-color: #cff5e7;
 }
 
 canvas {
-  font-family: "IBM Plex Mono", monospace;
-  position: fixed;
+  font-family: "Space Mono", monospace;
+  position: absolute;
   z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 .material-symbols-outlined {
@@ -32,12 +40,11 @@ canvas {
 
 .pixelated {
   line-height: 1.5;
-  font-family: "DotGothic16", monospace;
+  font-family: "product_sans", monospace;
 }
 
-.monospace {
-  line-height: 1.5;
-  font-family: "IBM Plex Mono", monospace;
+.sans {
+  font-family: "product_sans", monospace;
 }
 
 .black-bg {
@@ -51,6 +58,12 @@ canvas {
 }
 
 @media only screen and (max-width: 850px) {
+  html {
+    overflow: hidden;
+  }
+  body {
+    overflow: hidden;
+  }
   .mobile {
     display: block;
   }
@@ -66,4 +79,376 @@ canvas {
   .desktop {
     display: block;
   }
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.1);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.glass-white {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Display */
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+/* Positioning */
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+/* Margins, Padding, and Borders */
+.m-1rem {
+  margin: 1rem;
+}
+
+.m-3rem {
+  margin: 3rem;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.p-2rem {
+  padding: 2rem;
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.font-medium {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/* Sizing */
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+/* Flexbox */
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+.items-end {
+  align-items: end;
+}
+
+/* Flexbox */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Borders */
+.rounded {
+  border-radius: 0.5rem;
+}
+
+/* Shadows */
+.shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Text */
+.text-sm {
+  line-height: 1.25;
+  font-size: 1rem;
+}
+
+.mobile .text-base {
+  line-height: 1.35;
+  font-size: 1rem;
+}
+
+.text-base {
+  line-height: 1.35;
+  font-size: 0.97rem;
+}
+
+.text-md {
+  line-height: 1.35;
+  font-size: 1.1rem;
+}
+
+.text-lg {
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.text-2xl {
+  line-height: 1.75;
+  font-size: 2rem;
+}
+
+.text-3xl {
+  line-height: 2;
+  font-size: 2.5rem;
+}
+
+.font-light {
+  font-weight: lighter;
+}
+
+/* Positioning */
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.inset-0 {
+  inset: 0;
+}
+/* Cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Overflow */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Visibility */
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+/* Z-Index */
+.z-10 {
+  z-index: 10;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+/* Object Fit */
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.opacity-0 {
+  opacity: 0%;
+}
+
+.opacity-25 {
+  opacity: 25%;
+}
+
+.opacity-40 {
+  opacity: 40%;
+}
+
+.opacity-50 {
+  opacity: 50%;
+}
+
+.opacity-60 {
+  opacity: 60%;
+}
+
+.opacity-75 {
+  opacity: 75%;
+}
+
+.opacity-100 {
+  opacity: 100%;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
+.gap-1rem {
+  gap: 1rem;
+}
+
+.gap-2rem {
+  gap: 2rem;
+}
+
+.gap-3rem {
+  gap: 3rem;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.p-075rem {
+  padding: 0.75rem;
+}
+
+.p-05rem {
+  padding: 0.5rem;
+}
+
+.transition-all {
+  transition: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+.text-white {
+  color: white;
+}
+
+.info-desktop {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+ul {
+  padding-left: 1.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.socials-desktop {
+  z-index: 150;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
